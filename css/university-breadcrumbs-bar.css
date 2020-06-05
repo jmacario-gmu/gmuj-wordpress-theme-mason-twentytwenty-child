@@ -1,0 +1,10 @@
+/* University breadcrumbs bar */
+
+/* Default and small screens */
+@import 'university-breadcrumbs-bar-default.css';
+
+/* 400+ pixels */
+@import 'university-breadcrumbs-bar-400+.css' screen and (min-width: 400px);
+
+/* 1,000+ pixels */
+@import 'university-breadcrumbs-bar-1000+.css' screen and (min-width: 1000px);

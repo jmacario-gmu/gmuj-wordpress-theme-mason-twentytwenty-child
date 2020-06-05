@@ -1,0 +1,7 @@
+/* University links bar */
+
+/* Default and small screens */
+@import 'university-links-bar-default.css';
+
+/* 1,000+ pixels */
+@import 'university-links-bar-1000+.css' screen and (min-width: 1000px);

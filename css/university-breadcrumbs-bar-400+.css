@@ -1,0 +1,18 @@
+/* University breadcrumbs bar */
+
+/* 400+ pixels */
+
+div.top-header ul#prominent-links {
+    display: block;
+}
+
+div.top-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+div.top-header div.right-side {
+    margin-top: 0;
+    border-top: none;
+    padding-top: 0;    
+}

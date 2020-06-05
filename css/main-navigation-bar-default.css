@@ -1,0 +1,11 @@
+/* Main navigation bar modifications to parent theme */
+
+/* Default and small screens */
+
+ul.primary-menu > li > a {
+    text-transform: uppercase;
+}
+
+ul.primary-menu li a:hover {
+    text-decoration:none;
+}

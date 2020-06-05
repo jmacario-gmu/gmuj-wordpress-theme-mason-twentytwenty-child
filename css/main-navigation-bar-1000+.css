@@ -1,0 +1,90 @@
+/* Main navigation bar modifications to parent theme */
+
+/* 1,000+ pixels */
+
+ul.primary-menu .icon {
+    color:white !important;
+}
+
+ul.primary-menu > li > a {
+    font-size: 0.9em;
+    color: white !important;
+    font-weight: 700;
+}
+
+div.header-inner {
+    padding-top:0;
+    align-items: flex-start;
+    width:100%;
+}
+
+div.header-navigation-wrapper {
+    background-color: #00838f;
+    padding-left:1.5em;
+    align-items: flex-start;
+    margin-right: -1.5em;
+    padding-right: 4em;
+    transform: skew(-30deg);
+    padding-top:1em;
+    padding-bottom:0.35em;
+}
+
+nav.primary-menu-wrapper {
+    transform: skew(30deg);
+}
+
+div.header-toggles {
+    transform: skew(30deg);
+    margin-left: 2rem !important;
+}
+
+button.desktop-search-toggle {
+    align-items: flex-start !important;
+    padding-left:1rem !important;
+    padding-right:1rem !important;
+    height: 3rem !important;
+}
+
+button.desktop-search-toggle svg.svg-icon {
+    height:2rem;
+}
+
+button.search-toggle span {
+    color:white !important;
+}
+
+button.desktop-search-toggle span.toggle-inner span.toggle-text {
+    display:none;
+}
+
+.header-inner .toggle-wrapper::before {
+    display:none;
+}
+
+ul.primary-menu ul li a:hover {
+    background-color: #44c7cf;
+}
+
+ul.primary-menu > li > a:hover::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -1em;
+    height: 4px;
+    transform: skew(-30deg);
+    background: #febe10;
+}
+
+.primary-menu ul::after {
+    border-bottom-color: #22a5af !important;
+}
+
+.primary-menu ul ul::after {
+    border-bottom-color: transparent !important;
+    border-left-color: #22a5af !important;
+}
+
+.primary-menu ul {
+    background: #22a5af !important;
+}

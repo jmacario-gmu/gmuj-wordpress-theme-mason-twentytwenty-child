@@ -1,0 +1,10 @@
+/* General style modifications to parent theme */
+
+/* 700+ pixels */
+
+/* Remove leading space before content */
+
+body:not(.singular) main > article:first-of-type {
+    /*padding: 4rem 0 0;*/
+}
+

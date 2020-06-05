@@ -1,0 +1,9 @@
+/* University links bar */
+
+/* Default and small screens */
+
+/* Do not display on small screens */
+
+div#university-links-bar {
+    display: none;
+}

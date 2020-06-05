@@ -1,0 +1,22 @@
+/* General style modifications to parent theme */
+
+/* Default and small screens */
+
+/* Remove background color on the page body added by the Twentytwenty theme. */
+
+body {
+	background-color:transparent;
+}
+
+/* Modify default link colors */
+
+a {
+	color:#006633;
+}
+
+/* Set font and size for main content area */
+
+article, .entry-content {
+	font-family: "Open Sans", Verdana, Geneva, sans-serif !important;
+	font-size:0.9em;
+} 

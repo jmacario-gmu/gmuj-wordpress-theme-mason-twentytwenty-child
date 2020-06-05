@@ -1,0 +1,24 @@
+/* Main navigation bar modifications to parent theme */
+
+/*
+Reference: 
+
+Colors:
+
+Nav bar background color: #00838f;
+Nav bar sub-menu background color: #22a5af;
+Nav bar sub-menu links hover color: background-color:#44c7cf;
+
+Menu elements CSS selectors:
+
+Drop-down sub-menu indicator icons (down-arrows): .primary-menu .icon
+Drop-down sub-menus: .primary-menu ul
+Drop-down sub-menu backgrounds: .primary-menu ul::after
+Drop-down sub-sub-menus backgrounds: .primary-menu ul ul::after
+*/
+
+/* Default and small screens */
+@import 'main-navigation-bar-default.css';
+
+/* 1,000+ pixels */
+@import 'main-navigation-bar-1000+.css' screen and (min-width: 1000px);

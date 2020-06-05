@@ -1,0 +1,10 @@
+/* General style modifications to parent theme */
+
+/* Default and small screens */
+@import 'parent-theme-modifications-default.css';
+
+/* 700+ pixels */
+@import 'parent-theme-modifications-700+.css' screen and (min-width: 700px);
+
+/* 1,000+ pixels */
+@import 'parent-theme-modifications-1000+.css' screen and (min-width: 1000px);

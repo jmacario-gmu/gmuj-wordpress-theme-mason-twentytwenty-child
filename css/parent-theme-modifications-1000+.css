@@ -1,0 +1,9 @@
+/* General style modifications to parent theme */
+
+/* 1,000+ pixels */
+
+/* Fix logo padding */
+
+.header-titles-wrapper {
+    padding: 1em 0 0 1em;
+}

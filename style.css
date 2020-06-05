@@ -1,0 +1,22 @@
+/*
+Theme Name: Twenty Twenty Mason Child
+Template: twentytwenty
+Version: 0.0.1
+*/
+
+/* Import CSS files */
+
+/* FontAwesome (This is currently only used for the university-breadcrumb-bar icons.) */
+	@import 'css/fontawesome-all.min.css';
+
+/* General style modifications to parent theme */
+	@import 'css/parent-theme-modifications.css';
+
+/* University links bar */
+	@import 'css/university-links-bar.css';
+
+/* University breadcrumbs bar */
+	@import 'css/university-breadcrumbs-bar.css';
+
+/* Main navigation bar modifications to parent theme */
+	@import 'css/main-navigation-bar.css';
