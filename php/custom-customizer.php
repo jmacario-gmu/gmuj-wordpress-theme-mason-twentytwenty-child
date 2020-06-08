@@ -1,9 +1,12 @@
 <?php
 
-
-// Configure the theme customizer
-add_action('customize_register','gmuj_theme_customizer_register');
-
+/**
+ * Summary: Configure the theme customizer
+ * Description: We use a priority of 100 to ensure that this function runs after the parent theme customizer modifications
+ * Last modified: 2020-06-08
+ * Modified by: Jan Macario
+ */
+add_action('customize_register','gmuj_theme_customizer_register',1000);
 function gmuj_theme_customizer_register($wp_customize) {
 
   // Section: Site Identity 
@@ -65,6 +68,19 @@ function gmuj_theme_customizer_register($wp_customize) {
           )
         )
       );
+
+
+  // Section: 'Colors'
+
+  // Remove controls added by parent theme
+    // Remove custom background color control
+      $wp_customize->remove_control('background_color');
+
+    // Remove custom header and footer background color control
+      $wp_customize->remove_control('header_footer_background_color');
+
+    // Remove custom primary color control
+      $wp_customize->remove_control('accent_hue_active');
 
   // Field: theme color scheme (gmuj_theme_color)
       $wp_customize->add_setting('gmuj_theme_color',
