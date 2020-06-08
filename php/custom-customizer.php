@@ -58,18 +58,6 @@ function gmuj_theme_customizer_register($wp_customize) {
         )
       );
       
-  // Field: site logo
-      $wp_customize->add_setting('site_logo');
-      $wp_customize->add_control(
-        new WP_Customize_Image_Control($wp_customize,'site_logo',
-          array(
-            'label'      => 'Website Logo',
-            'section'    => 'title_tagline'
-          )
-        )
-      );
-
-
   // Section: 'Colors'
 
   // Remove controls added by parent theme
