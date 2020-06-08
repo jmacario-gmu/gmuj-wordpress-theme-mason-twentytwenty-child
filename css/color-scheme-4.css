@@ -1,0 +1,39 @@
+/**
+ * Summary: css file to implement custom color scheme 3
+ */
+
+/* 1,000+ pixels */
+
+@media screen and (min-width: 1000px) {
+
+	/* Set background color of navigation bar */
+	div.header-navigation-wrapper {
+	    background-color: #823676;
+	}
+
+	/* Set link hover underline color for top level of main navigation bar */
+	ul.primary-menu > li > a:hover::after {
+	    background-color: #febe10;
+	}
+
+	/* Set background color of main navigation sub-menus */
+	.primary-menu ul {
+	    background: #a45898 !important;
+	}
+
+	/* Set color of main navigation sub-menu background 'arrow' details */
+	.primary-menu ul::after {
+	    border-bottom-color: #a45898 !important;
+	}
+	.primary-menu ul ul::after {
+	    border-bottom-color: transparent !important;
+	    border-left-color: #a45898 !important;
+	}
+
+	/* Set link hover color for main navigation sub-menus */
+	ul.primary-menu ul li a:hover {
+	    background-color: #c67aba;
+	}
+
+
+}

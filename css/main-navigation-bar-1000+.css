@@ -19,7 +19,7 @@ div.header-inner {
 }
 
 div.header-navigation-wrapper {
-    background-color: #00838f;
+    /*background-color: #00838f; - background color of main navigation bar - set in custom color schemes css files */
     padding-left:1.5em;
     align-items: flex-start;
     margin-right: -1.5em;
@@ -62,7 +62,7 @@ button.desktop-search-toggle span.toggle-inner span.toggle-text {
 }
 
 ul.primary-menu ul li a:hover {
-    background-color: #44c7cf;
+    /*background-color: #44c7cf; - link hover color for main navigation sub-menus - set in custom color schemes css files */
 }
 
 ul.primary-menu > li > a:hover::after {
@@ -73,18 +73,20 @@ ul.primary-menu > li > a:hover::after {
     bottom: -1em;
     height: 4px;
     transform: skew(-30deg);
-    background: #febe10;
+    /*background-color: #febe10; - link hover underline color for top level of main navigation bar - set in custom color schemes css files */
 }
 
 .primary-menu ul::after {
-    border-bottom-color: #22a5af !important;
+    /*border-bottom-color: #22a5af !important; - color of main navigation first-level sub-menu background 'arrow' details - set in custom color schemes css files */
 }
 
 .primary-menu ul ul::after {
-    border-bottom-color: transparent !important;
-    border-left-color: #22a5af !important;
+    /*
+    border-bottom-color: transparent !important; - color of main navigation second-level sub-menu background 'arrow' details - set in custom color schemes css files 
+    border-left-color: #22a5af !important; - color of main navigation second-level sub-menu background 'arrow' details - set in custom color schemes css files 
+    */
 }
 
 .primary-menu ul {
-    background: #22a5af !important;
+    /*background: #22a5af !important; - background color of main navigation sub-menus - set in custom color schemes css files */
 }
