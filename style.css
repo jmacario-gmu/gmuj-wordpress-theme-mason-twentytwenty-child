@@ -20,3 +20,6 @@ Version: 0.0.1
 
 /* Main navigation bar modifications to parent theme */
 	@import 'css/main-navigation-bar.css';
+
+/* Footer modifications to parent theme */
+	@import 'css/footer.css';

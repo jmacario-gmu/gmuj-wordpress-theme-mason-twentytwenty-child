@@ -1,0 +1,9 @@
+/* Footer modifications to parent theme */
+
+/* 700+ pixels */
+
+footer#site-footer div.footer-credits {
+    width: 100%;
+    align-items: flex-end;
+    justify-content: space-between;
+}

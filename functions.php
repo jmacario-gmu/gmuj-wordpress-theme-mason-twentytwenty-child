@@ -10,6 +10,9 @@ require(get_stylesheet_directory(). '/php/custom-functions.php');
 // Include custom menus
 require(get_stylesheet_directory(). '/php/custom-menus.php');
 
+// Include custom fonts
+require(get_stylesheet_directory(). '/php/custom-fonts.php');
+
 // Include custom color scheme
 require(get_stylesheet_directory(). '/php/custom-color.php');
 

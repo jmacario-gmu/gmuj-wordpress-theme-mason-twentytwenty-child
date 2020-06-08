@@ -1,0 +1,7 @@
+/* Footer */
+
+/* Default and small screens */
+@import 'footer-default.css';
+
+/* 700+ pixels */
+@import 'footer-700+.css' screen and (min-width: 700px);

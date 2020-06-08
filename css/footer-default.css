@@ -1,0 +1,50 @@
+/* Footer */
+
+/* Default and small screens */
+
+/* Style footer */
+footer#site-footer {
+	/* Colors */
+	color:#fff;
+	background-color: #31302f;
+
+	/* Add Mason M graphic element */
+    background-image: url('/wp-content/themes/gmuj-twentytwenty-child/images/logo-mason-m-772x816.png');
+    background-repeat: no-repeat;
+    background-position: 120% 50%;
+}
+
+/* Style mason logo */
+footer#site-footer p.footer-logo img {
+    max-width:200px;
+}
+
+/* Style slogan/address/contact/copyright block */
+footer#site-footer p.footer-slogan-address-copyright-contact {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+footer#site-footer p.footer-slogan-address-copyright-contact span.site-slogan {
+    font-family: 'Roboto Slab', serif;
+    letter-spacing: 0.025em;
+    color: #fc3;
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+/* Hide parent theme footer elements */
+	/* Copyright*/
+	footer#site-footer p.footer-copyright {
+	    display:none;
+	}
+	/* WordPress message*/
+	footer#site-footer p.powered-by-wordpress {
+	    display:none;
+	}
+	/* Back to top link*/
+	footer#site-footer a.to-the-top {
+	    display:none;
+	}
