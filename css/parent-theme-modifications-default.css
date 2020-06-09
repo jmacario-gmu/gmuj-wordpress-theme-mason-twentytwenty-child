@@ -2,20 +2,24 @@
 
 /* Default and small screens */
 
-/* Remove background color on the page body added by the Twentytwenty theme. */
 
+/* Remove background color on the page body added by the Twentytwenty theme. */
 body {
 	background-color:transparent;
 }
 
 /* Modify default link colors */
-
 a {
 	color:#006633;
 }
 
-/* Set font and size for main content area */
+/* Modify default button colors */
+button, .button, .faux-button, .wp-block-button__link, .wp-block-file .wp-block-file__button, 
+input[type="button"], input[type="reset"], input[type="submit"] {
+	background-color:#006633;
+}
 
+/* Set font and size for main content area */
 article, .entry-content {
 	font-family: "Open Sans", Verdana, Geneva, sans-serif !important;
 	font-size:0.9em;
