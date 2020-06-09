@@ -1,38 +1,22 @@
-/* Footer */
+/* Footer modifications to parent theme */
 
 /* Default and small screens */
+
 
 /* Style footer */
 footer#site-footer {
 	/* Colors */
-	color:#fff;
-	background-color: #31302f;
-
+		color:#fff;
+		background-color: #31302f;
 	/* Add Mason M graphic element */
-    background-image: url('/wp-content/themes/gmuj-twentytwenty-child/images/logo-mason-m-772x816.png');
-    background-repeat: no-repeat;
-    background-position: 120% 50%;
+	    background-image: url('/wp-content/themes/gmuj-twentytwenty-child/images/logo-mason-m-772x816.png');
+	    background-repeat: no-repeat;
+	    background-position: 120% 50%;
 }
 
-/* Style mason logo */
-footer#site-footer p.footer-logo img {
-    max-width:200px;
-}
-
-/* Style slogan/address/contact/copyright block */
-footer#site-footer p.footer-slogan-address-copyright-contact {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 21px;
-}
-
-footer#site-footer p.footer-slogan-address-copyright-contact span.site-slogan {
-    font-family: 'Roboto Slab', serif;
-    letter-spacing: 0.025em;
-    color: #fc3;
-    font-size: 28px;
-    text-transform: uppercase;
+/* Remove flex display from footer div.section-inner */
+footer#site-footer div.section-inner {
+	display:block;
 }
 
 /* Hide parent theme footer elements */
@@ -48,3 +32,55 @@ footer#site-footer p.footer-slogan-address-copyright-contact span.site-slogan {
 	footer#site-footer a.to-the-top {
 	    display:none;
 	}
+
+/* Style mason logo */
+footer#site-footer p.footer-logo img {
+    max-width:200px;
+}
+
+/* Style slogan/address/contact/copyright block */
+footer#site-footer p.footer-slogan-address-copyright-contact {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+/* Style site slogan */
+footer#site-footer p.footer-slogan-address-copyright-contact span.site-slogan {
+    font-family: 'Roboto Slab', serif;
+    letter-spacing: 0.025em;
+    color: #fc3;
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+/* Style footer menu */
+footer#site-footer ul#footer-menu {
+	display:flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-top: 1em;
+	margin-bottom: 0;
+	margin-left:0;
+	border-top:1px solid white;
+	padding-top: 1em;
+	list-style-type:none;
+	font-family: "Open Sans", Verdana, Geneva, sans-serif;
+	font-size: 0.8em;
+	color:white;
+}
+
+footer#site-footer ul#footer-menu li {
+	margin: 1em 0;
+	border-right: 1px solid white;
+	padding: 0 1.5em;
+}
+
+footer#site-footer ul#footer-menu li:last-of-type {
+	border-right: none;
+}
+
+footer#site-footer ul#footer-menu a {
+	color:white;
+}
