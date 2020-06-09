@@ -1,3 +1,6 @@
+<!--
+Child theme template part for the footer menu.
+-->
 <?php
 wp_nav_menu(
     array(

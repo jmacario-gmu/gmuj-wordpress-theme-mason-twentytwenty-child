@@ -3,11 +3,16 @@
  * PHP file which handles custom menus specific to this child theme.
  */
 
-// Register menus
+/**
+ * Summary: Registers child theme custom menus
+ * Description: 
+ * Last modified: 2020-06-09
+ * Modified by: Jan Macario
+ */
 add_action('after_setup_theme', 'gmuj_register_menus');
 function gmuj_register_menus(){
 
-    // Register menus
+    // Register custom menus
     register_nav_menus(array(
         'university' => 'University Menu',
         'prominent' => 'Prominent Links Menu',
@@ -17,19 +22,30 @@ function gmuj_register_menus(){
 
 }
 
-// Provide fallback menus
-function menu_footer_fallback() {
-	?>
+// Provide fallback menu content, in the event a custom menu is not specified.
 
-	<ul id="footer-menu" class="menu">
-		<li><a href="https://info.gmu.edu/campus-information/university-switchboard/#SkypeChat">Contact via Skype</a></li>
-		<li><a href="https://diversity.gmu.edu/node/246">Title IX</a></li>
-		<li><a href="https://accessibility.gmu.edu/">Accessibility</a></li>
-		<li><a href="https://jobs.gmu.edu/">Jobs</a></li>
-		<li><a href="https://irr2.gmu.edu/New/N_IRRHome/HEOA/">Student Consumer Information</a></li>
-		<li><a href="https://www2.gmu.edu/node/2541">Privacy Statement</a></li>
-		<li><a href="https://www2.gmu.edu/about-mason/freedom-information-act-requests">FOIA</a></li>
-	</ul>
+	/**
+	 * Summary: Provides default HTML content for the university menu
+	 * Description: 
+	 * Last modified: 2020-06-09
+	 * Modified by: Jan Macario
+	 */
+	function menu_university_fallback() {
 
-	<?php
-}
+		//Include HTML content from content file
+		include(get_stylesheet_directory(). '/content/menu-university-default.html');
+
+	}
+
+	/**
+	 * Summary: Provides default HTML content for the footer menu
+	 * Description: 
+	 * Last modified: 2020-06-09
+	 * Modified by: Jan Macario
+	 */
+	function menu_footer_fallback() {
+
+		//Include HTML content from content file
+		include(get_stylesheet_directory(). '/content/menu-footer-default.html');
+
+	}
