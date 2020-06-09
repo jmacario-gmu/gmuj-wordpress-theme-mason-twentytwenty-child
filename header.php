@@ -25,43 +25,42 @@
 		wp_body_open();
 		?>
 
-        <!-- University Links -->
+        <!-- Child theme customization: university menu -->
         <?php if (get_theme_mod('gmuj_show_university_menu')=='1') { get_template_part('template-parts/menu','university'); } ?>
+		<!-- /Child theme customization: university menu -->
 
-        <!-- Top header -->
+        <!-- Child theme customization: university breadcrumbs bar -->
         <div class="top-header">
-            <!--<div class="container wide clearfix">-->
-                <div class="left-side">
-                    <!-- Unit and department -->
-                    <ul id="university-breadcrumbs" class="links">
-                        <li id="university">
-                            <a href="https://www2.gmu.edu"><span class="fa fa-chevron-circle-left"></span> George Mason University</a></li>
-                        <li id="unit">
-                            <a href="<?php echo get_theme_mod('gmuj_mason_unit_url')?>"><span class="fa fa-chevron-circle-left"></span> <?php echo get_theme_mod('gmuj_mason_unit')?></a>
-                        </li>
-                        <li id="department">
-                            <a href="<?php echo get_theme_mod('gmuj_mason_department_url')?>"><?php echo get_theme_mod('gmuj_mason_department')?></a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="right-side">
-                    <!-- Prominent Links -->
-                    <?php 
-                    wp_nav_menu(
-                        array(
-                            'theme_location' => 'prominent',
-                            'container' => false,
-                            'menu_id' => 'prominent-links',
-                            'menu_class' => 'links',
-                            'depth' => 1
-                        )
-                    );
-                    ?>            
-
-                </div>
-            <!--</div>-->
+            <div class="left-side">
+                <!-- University breadcrumbs -->
+                <ul id="university-breadcrumbs" class="links">
+                    <li id="university">
+                        <a href="https://www2.gmu.edu"><span class="fa fa-chevron-circle-left"></span> George Mason University</a></li>
+                    <li id="unit">
+                        <a href="<?php echo get_theme_mod('gmuj_mason_unit_url')?>"><span class="fa fa-chevron-circle-left"></span> <?php echo get_theme_mod('gmuj_mason_unit')?></a>
+                    </li>
+                    <li id="department">
+                        <a href="<?php echo get_theme_mod('gmuj_mason_department_url')?>"><?php echo get_theme_mod('gmuj_mason_department')?></a>
+                    </li>
+                </ul><!-- .university-breadcrumbs -->
+            </div>
+            <div class="right-side">
+                <!-- Prominent Links -->
+                <?php
+                wp_nav_menu(
+                    array(
+                        'theme_location' => 'prominent',
+                        'container' => false,
+                        'menu_id' => 'prominent-links',
+                        'menu_class' => 'links',
+                        'depth' => 1
+                    )
+                );
+                ?>
+                <!-- /Prominent Links -->
+            </div>
         </div>
-        <!-- End top header -->
+        <!-- /Child theme customization: university breadcrumbs bar -->
 
 		<header id="site-header" class="header-footer-group" role="banner">
 
