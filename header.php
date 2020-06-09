@@ -214,6 +214,10 @@
 
 		</header><!-- #site-header -->
 
+		<!-- Child theme customization: homepage top widget area -->
+		<?php if (is_front_page()) { get_template_part('template-parts/widget-area','homepage-top'); } ?>
+		<!-- /Child theme customization: homepage top widget area -->
+
 		<?php
 		// Output the menu modal.
 		get_template_part( 'template-parts/modal-menu' );

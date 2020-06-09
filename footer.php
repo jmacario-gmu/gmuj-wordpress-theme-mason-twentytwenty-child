@@ -4,6 +4,10 @@
  */
 
 ?>
+			<!-- Child theme customization: homepage bottom widget area -->
+			<?php if (is_front_page()) { get_template_part('template-parts/widget-area','homepage-bottom'); } ?>
+			<!-- /Child theme customization: homepage bottom widget area -->
+
 			<footer id="site-footer" role="contentinfo" class="header-footer-group">
 
 				<div class="section-inner">

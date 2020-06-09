@@ -1,0 +1,11 @@
+/* Homepage widget styles */
+
+/* Default and small screens */
+
+
+/* Style widget area */
+ul.sidebar-homepage {
+	list-style-type:none;
+	margin-left:0;
+	padding:1em;
+}
