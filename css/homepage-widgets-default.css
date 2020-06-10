@@ -9,3 +9,8 @@ ul.sidebar-homepage {
 	margin-left:0;
 	padding:1em;
 }
+
+/* Style widget area items */
+ul.sidebar-homepage li {
+	margin-left:0;
+}
