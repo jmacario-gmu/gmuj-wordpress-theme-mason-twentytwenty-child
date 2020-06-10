@@ -19,8 +19,12 @@ input[type="button"], input[type="reset"], input[type="submit"] {
 	background-color:#006633;
 }
 
-/* Set font and size for main content area */
-article, .entry-content {
+/* Set font and size for main content area and sidebars */
+article, .entry-content, .sidebar {
 	font-family: "Open Sans", Verdana, Geneva, sans-serif !important;
+}
+
+/* Set font size for sidebars */
+.sidebar {
 	font-size:0.9em;
-} 
+}
