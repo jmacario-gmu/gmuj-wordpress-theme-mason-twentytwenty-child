@@ -64,6 +64,9 @@
 
 		<header id="site-header" class="header-footer-group" role="banner">
 
+			<!-- Child theme customization: site header background-image -->
+			<img id="site-header-image" src="<?php echo get_theme_mod('default_header_image') ?>" />
+
 			<div class="header-inner section-inner">
 
 				<div class="header-titles-wrapper">

@@ -23,13 +23,31 @@ a {
 	color:#006633;
 }
 
-/* Modify default button colors */
+/* Style buttons */
 button, .button, .faux-button, .wp-block-button__link, .wp-block-file .wp-block-file__button, 
 input[type="button"], input[type="reset"], input[type="submit"] {
 	background-color:#006633;
 }
 
-/* Set font and size for main content area and sidebars */
+/* Style website header area */
+header#site-header {
+	position: relative; /* We have to position this element, so that we can make the site header image within use absolute positioning */
+}
+
+/* Style website header image */
+img#site-header-image {
+	position: absolute;
+	z-index: -1;
+}
+
+/* Style main content area */
+main#site-content {
+	background-color: white;
+	position: relative; /* it has to be positioned, so that we can set a z-index */
+	z-index: 2; /* we have to set a z-index, so that it will overlap the site header image */
+}
+
+/* Set font for main content area and sidebars */
 article, .entry-content, .sidebar {
 	font-family: "Open Sans", Verdana, Geneva, sans-serif !important;
 }
