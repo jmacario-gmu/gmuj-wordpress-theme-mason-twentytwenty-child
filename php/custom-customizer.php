@@ -12,7 +12,7 @@ function gmuj_theme_customizer_register($wp_customize) {
   // Section: Site Identity 
 
   // Remove site tagline control
-    $wp_customize->remove_control('blogdescription');
+    //$wp_customize->remove_control('blogdescription');
 
   // Field: gmuj_mason_unit
       $wp_customize->add_setting('gmuj_mason_unit');
@@ -96,6 +96,11 @@ function gmuj_theme_customizer_register($wp_customize) {
     $wp_customize->remove_section('static_front_page');
 
 
+  // Section: 'Cover Template'
+
+  // Remove 'Cover Template' section
+    $wp_customize->remove_section('cover_template_options');
+
   // Section: header area 
 
   // Add section: header_area 
@@ -131,86 +136,6 @@ function gmuj_theme_customizer_register($wp_customize) {
             'label'      => 'Default Header Image',
             'section'    => 'header_area'
           )
-        )
-      );
-
-    // Field: homepage mode (gmuj_homepage_mode)
-        $wp_customize->add_setting('gmuj_homepage_header_mode',
-          array('default'     => 'image')
-        );
-        $wp_customize->add_control('gmuj_homepage_header_mode',
-          array(
-            'type'       => 'radio',
-            'label'      => 'Homepage Header Shows:',
-            'section'    => 'header_area',
-            'choices' => array(
-              'image' => 'Banner Image',
-              'rotator' => 'Rotator',
-              'cta' => 'Calls-to-Action',
-              'search' => 'Search'
-            )
-          )
-        );
-
-
-  // Section: search header
-
-  // Add section: search_header_settings
-    $wp_customize->add_section('search_header_settings',
-       array(
-          'title'       => 'Header: Search',
-          'priority'    => 150
-       )
-    );
-
-  // Field: search_header_title
-      $wp_customize->add_setting('search_header_title');
-      $wp_customize->add_control('search_header_title',
-        array(
-          'type'       => 'text',
-          'label'      => 'Search Header Title',
-          'section'    => 'search_header_settings'
-        )
-      );
-
-  // Field: search_header_description
-      $wp_customize->add_setting('search_header_description');
-      $wp_customize->add_control('search_header_description',
-        array(
-          'type'       => 'textarea',
-          'label'      => 'Search Header Description',
-          'section'    => 'search_header_settings'
-        )
-      );
-
-
-  // Section: CTA Header
-
-  // Add section: cta_header_settings
-    $wp_customize->add_section('cta_header_settings',
-       array(
-          'title'       => 'Header: Calls-to-Action',
-          'priority'    => 150
-       )
-    );
-
-  // Field: cta_header_title
-      $wp_customize->add_setting('cta_header_title');
-      $wp_customize->add_control('cta_header_title',
-        array(
-          'type'       => 'text',
-          'label'      => 'Calls-to-Action Header Title',
-          'section'    => 'cta_header_settings'
-        )
-      );
-
-  // Field: cta_header_description
-      $wp_customize->add_setting('cta_header_description');
-      $wp_customize->add_control('cta_header_description',
-        array(
-          'type'       => 'textarea',
-          'label'      => 'Calls-to-Action Header Description',
-          'section'    => 'cta_header_settings'
         )
       );
 
