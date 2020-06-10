@@ -90,6 +90,11 @@ function gmuj_theme_customizer_register($wp_customize) {
       );
 
 
+  // Section: 'Background Image'
+
+  // Remove 'Background Image' section
+    $wp_customize->remove_section('background_image');
+
   // Section: 'Homepage Settings' 
 
   // Remove 'Homepage Settings' section
@@ -140,6 +145,7 @@ function gmuj_theme_customizer_register($wp_customize) {
       );
 
 
+  /* - disabled - currently handled by Mason Meta Information plugin
   // Section: analytics/meta
 
   // Add section: analytics/meta 
@@ -181,6 +187,7 @@ function gmuj_theme_customizer_register($wp_customize) {
           'section'    => 'analytics_meta'
         )
       );
+  */
 
 }
 
