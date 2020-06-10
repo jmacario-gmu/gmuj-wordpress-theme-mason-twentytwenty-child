@@ -28,3 +28,19 @@ article, .entry-content, .sidebar {
 .sidebar {
 	font-size:0.9em;
 }
+
+/* Remove padding before main page content */
+div.post-inner {
+	padding-top:0;
+}
+
+/* Modify entry content size */
+.entry-content > :not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide) {
+    max-width: 100rem;
+}
+
+/* Homepage customizations */
+/* Hide page title for home page */
+body.home header.entry-header {
+	display:none;
+}
