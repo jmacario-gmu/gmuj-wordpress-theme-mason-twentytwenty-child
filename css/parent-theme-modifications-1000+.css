@@ -2,8 +2,13 @@
 
 /* 1,000+ pixels */
 
-/* Fix logo padding */
 
+/* Style site title area */
 .header-titles-wrapper {
     padding: 1em 0 0 1em;
+}
+
+.header-titles {
+	align-items: flex-end !important; /* Ensure that the logo and text sit at about the same baseline */
+    margin-left:0;
 }

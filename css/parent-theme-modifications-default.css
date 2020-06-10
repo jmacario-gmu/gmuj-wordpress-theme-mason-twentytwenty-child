@@ -40,6 +40,18 @@ img#site-header-image {
 	z-index: -1;
 }
 
+/* Style site name */
+div.site-name {
+	color: white;
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+/* Hide site description/tagline */
+div.site-description {
+	display:none;
+}
+
 /* Style main content area */
 main#site-content {
 	background-color: white;
