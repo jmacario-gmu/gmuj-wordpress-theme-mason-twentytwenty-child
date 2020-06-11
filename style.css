@@ -26,3 +26,6 @@ Version: 0.0.1
 
 /* Footer modifications to parent theme */
 	@import 'css/footer.css';
+
+/* Collapse-O-Matic styles */
+	@import 'css/collapse-o-matic.css';
