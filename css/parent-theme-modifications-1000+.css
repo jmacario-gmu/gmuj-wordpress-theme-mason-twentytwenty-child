@@ -5,10 +5,14 @@
 
 /* Style site title area */
 .header-titles-wrapper {
-    padding: 1em 0 0 1em;
+    padding: 1em 1em 0;
+	background-color: rgba(0,0,0,0.5); /* Add semi-transparent background to help white text stand out more */
+	box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5); /* Add semi-transparent shadow to the bottom and right to fade out the semi-transparent background */
 }
 
 .header-titles {
 	align-items: flex-end !important; /* Ensure that the logo and text sit at about the same baseline */
     margin-left:0;
+    background-color: transparent; /* Turn-off semi-transparent background from default stylesheet */
+	box-shadow: none; /* Turn-off semi-transparent shadow  from default stylesheet */
 }
