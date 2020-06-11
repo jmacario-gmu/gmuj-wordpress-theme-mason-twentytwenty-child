@@ -25,6 +25,9 @@ require(get_stylesheet_directory(). '/php/custom-customizer.php');
 //Include theme support information feature
 require(get_stylesheet_directory(). '/php/custom-support-information.php');
 
+//Include login page upgrades feature
+require(get_stylesheet_directory(). '/php/custom-login-page-upgrades.php');
+
 //Enqueue styles
 add_action( 'wp_enqueue_scripts', 'gmuj_enqueue_styles' );
 function gmuj_enqueue_styles() {

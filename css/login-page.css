@@ -1,0 +1,8 @@
+/**
+ * Login page style modifications 
+ * 
+ * This file is called by WordPress when generating the login page, because we hooked into the login_enqueue_scripts action
+ */
+
+/* Default and small screens */
+@import 'login-page-default.css';

@@ -1,0 +1,31 @@
+/* Login page style modifications */
+
+/* Default and small screens */
+
+
+/* Set login page background to Mason brand colors */
+body.login {
+	background-image:linear-gradient(to right, #6c9 , #ff9);
+}
+
+/* Center login form content */
+div#login {
+	text-align:center;
+}
+
+/* Style logo above login form */
+div#login h1 a {
+	background-image: url('../images/logo-mason-wordpress-theme.png'); /* Replace default Wordpress logo on Wordpress login page with Mason WordPress platform logo */
+	background-color: rgba(255,255,255,0.5); /* Add semi-transparent background to help the element stand-out more */
+    box-shadow: 0px 0px 60px 60px rgba(255,255,255,0.5); /* Add semi-transparent shadow to fade-out the semi-transparent background */
+}
+
+/* Round the corners of the login form */
+form#loginform {
+	border-radius: 10px;
+}
+
+/* Style login error message */
+.login #login_error {
+	margin-top:20px;
+}
