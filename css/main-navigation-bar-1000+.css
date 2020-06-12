@@ -12,6 +12,23 @@ ul.primary-menu > li > a {
     font-weight: 700;
 }
 
+/* Style currently-active top menu item */
+ul.primary-menu li.current-menu-item > a {
+    text-decoration:none; /* Remove text decoration set by parent theme */
+}
+
+/* Style currently-active top menu item 'after' pseudoelement - used to indicate current page */
+ul.primary-menu li.current-menu-item > a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -1em;
+    height: 4px;
+    transform: skew(-30deg);
+    /* Note: color is set in color scheme stylesheets */
+}
+
 div.header-inner {
     padding-top:0;
     align-items: flex-start;

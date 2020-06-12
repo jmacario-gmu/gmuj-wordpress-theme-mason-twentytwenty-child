@@ -16,6 +16,11 @@
 	    background-color: #febe10;
 	}
 
+	/* Style currently-active top menu item */
+	ul.primary-menu li.current-menu-item > a::after {
+	    background-color: #febe10;
+	}
+
 	/* Set background color of main navigation sub-menus */
 	.primary-menu ul {
 	    background: #6a68a7 !important;
