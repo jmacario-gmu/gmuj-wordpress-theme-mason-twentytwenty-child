@@ -18,14 +18,17 @@ function gmuj_custom_dashboard_meta_boxes() {
 
   // Adds custom WordPress dashboard content boxes
 
-  // Add 'theme info' meta box
-  add_meta_box("gmuj_custom_dashboard_meta_box_theme_info", "Mason WordPress Theme Info", "gmuj_custom_dashboard_meta_box_theme_info", "dashboard","side");
-
    /* Add 'theme support' meta box */
   add_meta_box("gmuj_custom_dashboard_meta_box_theme_support", "Mason WordPress Theme Support", "gmuj_custom_dashboard_meta_box_theme_support", "dashboard","normal");
 
   /* Add 'Mason resources' meta box */
   add_meta_box("gmuj_custom_dashboard_meta_box_mason_resources", "Mason Resources", "gmuj_custom_dashboard_meta_box_mason_resources", "dashboard","normal");
+
+  // Add 'theme info' meta box
+  add_meta_box("gmuj_custom_dashboard_meta_box_theme_info", "Mason WordPress Theme Info", "gmuj_custom_dashboard_meta_box_theme_info", "dashboard","side");
+
+  /* Add 'recommended plugins' meta box */
+  add_meta_box("gmuj_custom_dashboard_meta_box_recommended_plugins", "Recommended Plugins", "gmuj_custom_dashboard_meta_box_recommended_plugins", "dashboard","side");
 
 }
 
@@ -57,6 +60,16 @@ function gmuj_custom_dashboard_meta_box_mason_resources() {
 
   //Include HTML content from file
   include(get_stylesheet_directory() . '/content/support-information/mason_resources.html');
+
+}
+
+/**
+ * Provides content for the WordPress 'Recommended plugins' meta box
+ */
+function gmuj_custom_dashboard_meta_box_recommended_plugins() {
+
+  //Include HTML content from file
+  include(get_stylesheet_directory() . '/content/support-information/recommended_plugins.html');
 
 }
 
