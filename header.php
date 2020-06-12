@@ -62,10 +62,8 @@
         </div>
         <!-- /Child theme customization: university breadcrumbs bar -->
 
-		<header id="site-header" class="header-footer-group" role="banner">
-
-			<!-- Child theme customization: site header background-image -->
-			<img id="site-header-image" src="<?php echo get_theme_mod('default_header_image') ?>" />
+		<!-- Child theme modification: site header background-image; background-image field from theme customizer is added inline -->
+		<header id="site-header" class="header-footer-group" role="banner" style="background-image:url('<?php echo get_theme_mod('default_header_image') ?>');">
 
 			<div class="header-inner section-inner">
 
@@ -218,11 +216,11 @@
 			}
 			?>
 
-		</header><!-- #site-header -->
-
 		<!-- Child theme customization: homepage top widget area -->
 		<?php if (is_front_page()) { get_template_part('template-parts/widget-area','homepage-top'); } ?>
 		<!-- /Child theme customization: homepage top widget area -->
+
+		</header><!-- #site-header -->
 
 		<?php
 		// Output the menu modal.

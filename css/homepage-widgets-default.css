@@ -17,7 +17,5 @@ ul.sidebar-homepage li {
 
 /* Style homepage top widget area */
 ul#sidebar-homepage-top {
-	color:white; /* as this image will go over the background-image,we want the text to be visible */
-	position: relative; /* it has to be positioned, so that we can set a z-index */
-	z-index: 2; /* we have to set a z-index, so that it will overlap the site header image */
+	color:white; /* as this content will go over the background-image, we want the text to be visible */
 }
