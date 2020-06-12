@@ -13,6 +13,12 @@ a {
 	color:#006633;
 }
 
+/* Modify links colors for mobile menu */
+.modal-menu a {
+	color:#006633;
+}
+
+
 /* Style buttons */
 button, .button, .faux-button, .wp-block-button__link, .wp-block-file .wp-block-file__button, 
 input[type="button"], input[type="reset"], input[type="submit"] {
