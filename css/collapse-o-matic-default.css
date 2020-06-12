@@ -1,0 +1,35 @@
+/* CSS file to implement integration of Collapse-O-Matic plugin */
+
+/* Default and small screens */
+
+
+/* The collapse-o-matic trigger element */
+.collapseomatic{
+	color: #063;
+	text-transform: uppercase;
+	font-size: 3rem;
+	font-weight: 900;
+	font-family: 'Roboto Slab', serif;
+	cursor: pointer;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	user-select: none;
+	display: block;
+	position: relative;
+	padding-right: 5rem;
+}
+
+/* Add an :after pseudo-element to the trigger for an open/close graphic that changes when the trigger is clicked */
+.collapseomatic::after{
+	display: inline-block;
+	font-family: Font Awesome\ 5 Free;
+	content: '\f055';
+	position: absolute;
+	top: .5rem;
+	right: 0;
+}
+
+/* Switch the trigger graphic when the target element is open */
+.collapseomatic.colomat-close::after{
+	content: "\f056";	
+}
