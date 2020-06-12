@@ -3,6 +3,13 @@
 /* 1,000+ pixels */
 
 
+
+/* Fix header icons for larger screens */
+.header-inner .toggle {
+	align-items: center;
+	padding: 0 2rem;
+}
+
 /* Style site title area */
 .header-titles-wrapper {
     padding: 1em 1em 0;

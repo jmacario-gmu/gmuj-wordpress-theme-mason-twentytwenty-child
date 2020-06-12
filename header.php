@@ -216,6 +216,11 @@
 			}
 			?>
 
+		<?php
+		// Output the menu modal.
+		get_template_part( 'template-parts/modal-menu' );
+		?>
+
 		<!-- Child theme customization: homepage banner widget area -->
 		<?php if (is_front_page()) { get_template_part('template-parts/widget-area','homepage-banner'); } ?>
 
@@ -223,7 +228,3 @@
 
 		<!-- Child theme customization: homepage top widget area -->
 		<?php if (is_front_page()) { get_template_part('template-parts/widget-area','homepage-top'); } ?>
-
-		<?php
-		// Output the menu modal.
-		get_template_part( 'template-parts/modal-menu' );
