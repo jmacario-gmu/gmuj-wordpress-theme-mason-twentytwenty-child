@@ -24,12 +24,6 @@ header#site-header {
 	background-color:transparent; /* Remove background color on the site header added by the Twentytwenty theme. */
 }
 
-/* Style website header image */
-img#site-header-image {
-	position: absolute;
-	z-index: -1;
-}
-
 /* Style site title area */
 .header-titles {
 	background-color: rgba(0, 0, 0, 0.5); /* Add semi-transparent background to help white text stand out more */
