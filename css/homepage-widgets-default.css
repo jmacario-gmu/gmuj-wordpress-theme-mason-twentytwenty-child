@@ -3,20 +3,25 @@
 /* Default and small screens */
 
 
-/* Style widget area */
+/* Style homepage widget areas */
 ul.sidebar-homepage {
 	list-style-type:none;
-	margin-left:0;
+	margin:0;
+	padding:0;
+}
+
+/* Style homepage widget area top-level list items */
+ul.sidebar-homepage > li {
+	margin:0;
 	padding:1em;
 }
 
-/* Style widget area items */
-ul.sidebar-homepage li {
-	margin-left:0;
+/* Style widget area item titles */
+ul.sidebar-homepage > li h3 {
+	padding-top:1em;
 }
 
 /* Style homepage banner widget area */
 ul#sidebar-homepage-banner {
 	color:white; /* as this content will go over the background-image, we want the text to be visible */
-	margin-bottom: 0;
 }

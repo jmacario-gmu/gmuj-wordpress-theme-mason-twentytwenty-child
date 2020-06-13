@@ -1,0 +1,14 @@
+/* Homepage widget styles */
+
+/* 1,000+ pixels */
+
+
+/* Homepage search form - standard WordPress search widget in homepage widget area */
+ul.sidebar-homepage li.widget_search form.search-form {
+	justify-content: center;
+}
+
+/* Homepage search form title */
+ul.sidebar-homepage li.widget_search form.search-form label {
+	width:50%;
+}
