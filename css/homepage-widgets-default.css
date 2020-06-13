@@ -18,4 +18,5 @@ ul.sidebar-homepage li {
 /* Style homepage banner widget area */
 ul#sidebar-homepage-banner {
 	color:white; /* as this content will go over the background-image, we want the text to be visible */
+	margin-bottom: 0;
 }
