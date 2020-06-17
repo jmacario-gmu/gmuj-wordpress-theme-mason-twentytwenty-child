@@ -91,6 +91,22 @@ header.entry-header {
     max-width: 100rem;
 }
 
+/* Basic widget styling */
+li.widget {
+	list-style-type: none;
+}
+
+/* Style widget item titles in content areas */
+div.entry-content li.widget h3.widget-title {
+    margin:0 1em 0.5em;
+    text-align: center;
+    letter-spacing: 0.025em;
+    padding: 20px 0px;
+    font-family: 'Roboto Slab', serif;
+    font-weight:bold;
+    color:#006633;
+}
+
 /* Homepage customizations */
 /* Hide page title for home page */
 body.home header.entry-header {
