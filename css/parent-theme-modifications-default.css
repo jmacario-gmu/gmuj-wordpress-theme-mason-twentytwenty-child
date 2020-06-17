@@ -62,7 +62,6 @@ div.site-description {
 
 /* Style main content area */
 main#site-content {
-	padding-top: 1em;
 	background-color: white;
 }
 
@@ -84,6 +83,15 @@ article, .entry-content, .sidebar {
 /* Style entry header area */
 header.entry-header {
 	padding-top: 1rem !important;
+	padding-bottom:1rem !important;
+	margin-bottom: 2em;
+}
+
+/* Style entry title */
+h1.entry-title {
+	margin-top:0.25em;
+	font-family: 'Roboto Slab', Palatino Linotype, Palatino, serif;
+	letter-spacing: 0.025em;
 }
 
 /* Modify entry content size */

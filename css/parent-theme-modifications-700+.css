@@ -3,6 +3,19 @@
 /* 700+ pixels */
 
 
+/* Style entry header area */
+header.entry-header {
+	padding-bottom:4rem !important;
+	background-color:#eff0e7 !important;
+}
+
+/* Style entry title */
+h1.entry-title {
+	text-align:left;
+	font-size:5rem;
+	color: #42413f;
+}
+
 /* Fix main content area font-size */
 .entry-content {
 	font-size:18px;
