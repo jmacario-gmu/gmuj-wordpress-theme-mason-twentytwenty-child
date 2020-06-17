@@ -16,12 +16,40 @@ ul.sidebar-homepage > li {
 	padding:1em;
 }
 
-/* Style widget area item titles */
-ul.sidebar-homepage > li h3 {
-	padding-top:1em;
-}
-
 /* Style homepage banner widget area */
 ul#sidebar-homepage-banner {
 	color:white; /* as this content will go over the background-image, we want the text to be visible */
+}
+
+/* Style regular (not banner) homepage widget item titles */
+ul.sidebar-homepage:not(#sidebar-homepage-banner) > li h3.widget-title {
+    margin:0 1em 0.5em;
+    text-align: center;
+    letter-spacing: 0.025em;
+    padding: 20px 0px;
+    font-family: 'Roboto Slab', serif;
+    font-weight:bold;
+    color:#006633;
+    position: relative;
+    z-index: 1;
+}
+
+/* Style regular (not banner) homepage widget item title before pseudo-element (to provide a background dividing line effect) */
+ul.sidebar-homepage:not(#sidebar-homepage-banner) > li h3.widget-title:before {
+    border-top: 1px solid #cdd5d4;
+    content: "";
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+/* Style regular (not banner) homepage widget item title span around the title text, which provides buffer space around the title from the before pseudo-element */
+ul.sidebar-homepage:not(#sidebar-homepage-banner) > li h3.widget-title span {
+    background: #fff;
+    padding: 0 15px;
 }
