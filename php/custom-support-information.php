@@ -24,6 +24,9 @@ function gmuj_custom_dashboard_meta_boxes() {
   /* Add 'Mason resources' meta box */
   add_meta_box("gmuj_custom_dashboard_meta_box_mason_resources", "Mason Resources", "gmuj_custom_dashboard_meta_box_mason_resources", "dashboard","normal");
 
+  /* Add 'admin links' meta box */
+  add_meta_box("gmuj_custom_dashboard_meta_box_admin_links", "Admin Links", "gmuj_custom_dashboard_meta_box_admin_links", "dashboard","side");
+
   // Add 'theme info' meta box
   add_meta_box("gmuj_custom_dashboard_meta_box_theme_info", "Mason WordPress Theme Info", "gmuj_custom_dashboard_meta_box_theme_info", "dashboard","side");
 
@@ -60,6 +63,16 @@ function gmuj_custom_dashboard_meta_box_mason_resources() {
 
   //Include HTML content from file
   include(get_stylesheet_directory() . '/content/support-information/mason_resources.html');
+
+}
+
+/**
+ * Provides content for the WordPress 'Admin links' meta box
+ */
+function gmuj_custom_dashboard_meta_box_admin_links() {
+
+  //Include HTML content from file
+  include(get_stylesheet_directory() . '/content/support-information/admin_links.php');
 
 }
 
