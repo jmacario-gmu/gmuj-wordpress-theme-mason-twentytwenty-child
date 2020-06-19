@@ -63,8 +63,19 @@
         </div>
         <!-- /Child theme customization: university breadcrumbs bar -->
 
-		<!-- Child theme modification: site header background-image; background-image field from theme customizer is added inline -->
-		<header id="site-header" class="header-footer-group" role="banner" style="background-image:url('<?php echo get_theme_mod('default_header_image') ?>');">
+		<!-- Child theme modification: site header background-image; background-image field from theme customizer is added inline if it exists, or a default is used-->
+		<?php
+		// Get URL of site header background image
+		// Do we have an image specified?
+		if (get_theme_mod('default_header_image')) {
+			// If so, use it
+			$site_header_background_image_url=get_theme_mod('default_header_image');
+		} else {
+			// If not, use the default image
+			$site_header_background_image_url='/wp-content/themes/gmuj-mason-wordpress-theme-twentytwenty-child/images/header-image-default-1900x1200.jpg';
+		}
+		?>
+		<header id="site-header" class="header-footer-group" role="banner" style="background-image:url('<?php echo $site_header_background_image_url ?>');">
 
 			<div class="header-inner section-inner">
 
