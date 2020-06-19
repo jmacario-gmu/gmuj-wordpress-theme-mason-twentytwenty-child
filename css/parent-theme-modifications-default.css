@@ -53,6 +53,13 @@ div.site-name {
 	color: white;
 	font-weight: bold;
 	font-size: 1.5em;
+	font-family: "Open Sans", Verdana, Geneva, sans-serif;
+}
+
+/* Style site name link */
+div.site-name a {
+	color: white;
+	text-decoration: none;
 }
 
 /* Hide site description/tagline */

@@ -23,3 +23,13 @@
     background-color: transparent; /* Turn-off semi-transparent background from default stylesheet */
 	box-shadow: none; /* Turn-off semi-transparent shadow  from default stylesheet */
 }
+
+/* Style site name */
+div.site-name {
+	margin-bottom:5px;
+}
+
+/* Style site name link */
+div.site-name a {
+	font-size:1.1em;
+}

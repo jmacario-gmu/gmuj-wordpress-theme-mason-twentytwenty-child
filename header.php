@@ -97,7 +97,7 @@
 							twentytwenty_site_logo();
 
 							// Child theme customization: site name
-							echo '<div class="site-name">'.get_bloginfo('name').'</div>';
+							echo '<div class="site-name"><a href="'.get_home_url().'">'.get_bloginfo('name').'</a></div>';
 
 							// Site description.
 							twentytwenty_site_description();
