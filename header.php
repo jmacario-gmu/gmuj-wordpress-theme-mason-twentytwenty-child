@@ -53,7 +53,8 @@
                         'container' => false,
                         'menu_id' => 'prominent-links',
                         'menu_class' => 'links',
-                        'depth' => 1
+                        'depth' => 1,
+                        'fallback_cb' => false // ensure that nothing will be displayed as a fallback if there is no menu set for this location
                     )
                 );
                 ?>
