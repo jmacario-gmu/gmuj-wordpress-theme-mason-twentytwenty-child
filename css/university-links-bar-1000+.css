@@ -23,14 +23,14 @@ div#university-links-bar ul#university-links li {
 div#university-links-bar ul#university-links li a {
     margin:0 0.5em;
     font-family: "Open Sans", Verdana, Geneva, sans-serif;
-    font-weight:700;
     display:block;
-    padding: 0.25em 0.75em;
-    font-size:0.65em;
+    padding: 0.35em 1em;
+    font-size:0.725em;
     font-weight: bold;
     color: #73726F;
     text-decoration: none;
     text-transform: uppercase;
+    letter-spacing: normal;
 }
 
 div#university-links-bar ul#university-links li a:hover {
