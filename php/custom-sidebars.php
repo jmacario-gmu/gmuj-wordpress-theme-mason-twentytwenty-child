@@ -10,6 +10,8 @@
 add_action('widgets_init', 'gmuj_register_custom_widget_areas');
 function gmuj_register_custom_widget_areas(){
 
+    //Register sitewide alert widget area
+    gmuj_widget_area_registration('Sitewide - Alert Ribbon', 'sidebar-sitewide-alert', 'Add an "Alert Ribbon" widget to this area to display an alert across the top of each page in your site.', '<div class="gmuj_alert_ribbon_wrapper %2$s" id="%1$s">', '</div>', '<h3 class="widget-title">', '</h3>');
     //Register homepage banner widget area
     gmuj_widget_area_registration('Homepage - Banner', 'sidebar-homepage-banner', 'Widgets in this area will appear on the homepage within the website banner area.', '<li id="%1$s" class="widget %2$s">', '</li>', '<h3 class="widget-title">', '</h3>');
     //Register homepage top widget area
