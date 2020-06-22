@@ -24,7 +24,8 @@
 		<?php
 		wp_body_open();
 		?>
-
+		<!-- Sitewide alert ribbon -->
+		<?php dynamic_sidebar('sidebar-sitewide-alert'); ?>
         <!-- Child theme customization: university menu -->
         <?php if (get_theme_mod('gmuj_show_university_menu')=='1') { get_template_part('template-parts/menu','university'); } ?>
 		<!-- /Child theme customization: university menu -->
