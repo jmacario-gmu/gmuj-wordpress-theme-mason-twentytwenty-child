@@ -18,11 +18,73 @@ a {
 	color:#006633;
 }
 
+/* Fix color of links in entry headers */
+.entry-header a {
+	color: #006633 !important;
+}
+
+/* Fix colors, generally */
+/* Only apply this to the main content area, to avoid affecting header and footer, which have differently-colored backgrounds */
+main#site-content .color-accent,
+main#site-content .color-accent-hover:hover,
+main#site-content .color-accent-hover:focus,
+main#site-content .has-accent-color,
+main#site-content .has-drop-cap:not(:focus)::first-letter,
+main#site-content .wp-block-button.is-style-outline {
+    color: #006633;
+}
+/* Apply this also to the sidebar areas */
+.sidebar .color-accent,
+.sidebar .color-accent-hover:hover,
+.sidebar .color-accent-hover:focus,
+.sidebar .has-accent-color,
+.sidebar .has-drop-cap:not(:focus)::first-letter,
+.sidebar .wp-block-button.is-style-outline {
+    color: #006633;
+}
 
 /* Style buttons */
-button, .button, .faux-button, .wp-block-button__link, .wp-block-file .wp-block-file__button, 
-input[type="button"], input[type="reset"], input[type="submit"] {
+/* Only apply this to the main content area, to avoid affecting header and footer, which have differently-colored backgrounds */
+main#site-content button,
+main#site-content .button,
+main#site-content .faux-button,
+main#site-content .wp-block-button__link,
+main#site-content .wp-block-file .wp-block-file__button,
+main#site-content input[type="button"],
+main#site-content input[type="reset"],
+main#site-content input[type="submit"] {
 	background-color:#006633;
+	color:white;
+}
+/* Apply this also to the sidebar areas */
+.sidebar button,
+.sidebar .button,
+.sidebar .faux-button,
+.sidebar .wp-block-button__link,
+.sidebar .wp-block-file .wp-block-file__button,
+.sidebar input[type="button"],
+.sidebar input[type="reset"],
+.sidebar input[type="submit"] {
+	background-color:#006633;
+	color:white;
+}
+
+/* Fix text color for outline style */
+main#site-content .is-style-outline .wp-block-button__link:not(.has-text-color) {
+    color: inherit;
+}
+/* Apply this also to the sidebar areas */
+.sidebar .is-style-outline .wp-block-button__link:not(.has-text-color) {
+    color: inherit;
+}
+
+/* Fix background color for outline style */
+main#site-content .is-style-outline .wp-block-button__link {
+    background-color: transparent !important;
+}
+/* Apply this also to the sidebar areas */
+.sidebar .is-style-outline .wp-block-button__link {
+    background-color: transparent !important;
 }
 
 /* Style website header area */
