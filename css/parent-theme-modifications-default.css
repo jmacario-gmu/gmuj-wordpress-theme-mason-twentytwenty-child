@@ -77,11 +77,6 @@ article, .entry-content, .sidebar {
 	font-family: "Open Sans", Verdana, Geneva, sans-serif !important;
 }
 
-/* Set font size for sidebars */
-.sidebar {
-	font-size:0.9em;
-}
-
 /* Remove padding before main page content */
 .post-inner {
 	padding-top:0;
@@ -109,6 +104,12 @@ h1.entry-title {
 /* Basic widget styling */
 li.widget {
 	list-style-type: none;
+}
+
+/* Fix widget fonts */
+.widget_text p, .widget_text ol, .widget_text ul, .widget_text dl, .widget_text dt, .widget-content .rssSummary {
+    font-family: inherit;
+    letter-spacing: normal;
 }
 
 /* Style widget item titles in content areas */

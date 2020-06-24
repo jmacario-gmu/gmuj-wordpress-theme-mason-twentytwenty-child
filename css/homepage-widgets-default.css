@@ -53,3 +53,10 @@ ul.sidebar-homepage:not(#sidebar-homepage-banner) > li h3.widget-title span {
     background: #fff;
     padding: 0 15px;
 }
+
+/* Style custom HTML widgets used on homepage content areas (not homepage banner) */
+ul.sidebar-homepage:not(#sidebar-homepage-banner) > li div.textwidget {
+    max-width: 100rem;
+    margin-left: auto;
+    margin-right: auto;
+}
