@@ -3,5 +3,8 @@
 /* Default and small screens */
 @import 'homepage-widgets-default.css';
 
+/* 400+ pixels */
+@import 'homepage-widgets-400+.css' screen and (min-width: 400px);
+
 /* 1,000+ pixels */
 @import 'homepage-widgets-1000+.css' screen and (min-width: 1000px);

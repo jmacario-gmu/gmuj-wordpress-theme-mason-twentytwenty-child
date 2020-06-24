@@ -1,0 +1,30 @@
+/* Homepage widget styles */
+
+/* 400+ pixels */
+
+
+/* Style regular (not banner) homepage widget item titles */
+ul.sidebar-homepage:not(#sidebar-homepage-banner) > li h3.widget-title {
+    position: relative;
+    z-index: 1;
+}
+
+/* Style regular (not banner) homepage widget item title before pseudo-element (to provide a background dividing line effect) */
+ul.sidebar-homepage:not(#sidebar-homepage-banner) > li h3.widget-title:before {
+    border-top: 1px solid #cdd5d4;
+    content: "";
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+/* Style regular (not banner) homepage widget item title span around the title text, which provides buffer space around the title from the before pseudo-element */
+ul.sidebar-homepage:not(#sidebar-homepage-banner) > li h3.widget-title span {
+    background: #fff;
+    padding: 0 15px;
+}
