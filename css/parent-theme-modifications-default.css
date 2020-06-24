@@ -80,11 +80,11 @@ main#site-content .is-style-outline .wp-block-button__link:not(.has-text-color) 
 
 /* Fix background color for outline style */
 main#site-content .is-style-outline .wp-block-button__link {
-    background-color: transparent !important;
+    background-color: transparent;
 }
 /* Apply this also to the sidebar areas */
 .sidebar .is-style-outline .wp-block-button__link {
-    background-color: transparent !important;
+    background-color: transparent;
 }
 
 /* Style website header area */
