@@ -3,6 +3,11 @@
 /* 700+ pixels */
 
 
+/* Style website header area */
+header#site-header {
+	background-size: cover;
+}
+
 /* Style entry header area */
 header.entry-header {
 	padding-bottom:4rem !important;

@@ -89,8 +89,11 @@ main#site-content .is-style-outline .wp-block-button__link {
 
 /* Style website header area */
 header#site-header {
-	background-color:transparent; /* Remove background color on the site header added by the Twentytwenty theme. */
 	min-height:14em;
+	background-color:transparent; /* Remove background color on the site header added by the Twentytwenty theme. */
+	background-repeat:no-repeat;
+	background-size: 200%;
+	background-position: top center;
 }
 
 /* Style header icons for small screens (search and menu) */
