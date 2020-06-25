@@ -3,6 +3,8 @@
 /* Default and small screens */
 
 #university-breadcrumbs-bar {
+    position:relative;
+    z-index:3;
     background: #006633;
     color: #fff;
     padding:0.25em 0.5em;

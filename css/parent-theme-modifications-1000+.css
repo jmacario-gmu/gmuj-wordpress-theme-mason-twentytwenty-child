@@ -14,7 +14,7 @@
 .header-titles-wrapper {
     padding: 1em 1em 0;
 	background-color: rgba(0,0,0,0.5); /* Add semi-transparent background to help white text stand out more */
-	box-shadow: 20px 40px 20px 30px rgba(0, 0, 0, 0.5); /* Add semi-transparent shadow to the bottom and right to fade out the semi-transparent background */
+	box-shadow: 0px 0px 60px 150px rgba(0, 0, 0, 0.5); /* Add semi-transparent shadow to the bottom and right to fade out the semi-transparent background */
 }
 
 .header-titles {

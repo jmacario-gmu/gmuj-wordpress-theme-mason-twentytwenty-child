@@ -6,6 +6,8 @@ div#university-links-bar {
     display:block;
     padding:0.25em 0;
     background-color: #fc3;
+    position: relative;
+    z-index: 3;
 }
 
 div#university-links-bar ul#university-links {
