@@ -2,54 +2,54 @@
 
 /* Default and small screens */
 
-div.top-header {
+#university-breadcrumbs-bar {
     background: #006633;
     color: #fff;
     padding:0.25em 0.5em;
     font-size:0.9em;
 }
 
-div.top-header a {
+#university-breadcrumbs-bar a {
     text-decoration: none;
 }
 
-div.top-header ul {
+#university-breadcrumbs-bar ul {
     margin-bottom: 0;
     margin-left:0;
     list-style-type: none;
 }
 
-div.top-header ul li {
+#university-breadcrumbs-bar ul li {
     margin-top:0;
     margin-left:0;
 }
 
-div.top-header ul#university-breadcrumbs a {
+#university-breadcrumbs-bar ul#university-breadcrumbs a {
     color:#CCEBDE;
 }
 
-div.top-header ul#university-breadcrumbs a:hover {
+#university-breadcrumbs-bar ul#university-breadcrumbs a:hover {
     color:white;
 }
 
-div.top-header ul#prominent-links {
+#university-breadcrumbs-bar ul#prominent-links {
     display: flex;
     justify-content: space-between;
 }
 
-div.top-header ul#prominent-links li {
+#university-breadcrumbs-bar ul#prominent-links li {
     text-align: center;
 }
 
-div.top-header ul#prominent-links a {
+#university-breadcrumbs-bar ul#prominent-links a {
     color:white;
 }
 
-div.top-header ul#prominent-links a:hover {
+#university-breadcrumbs-bar ul#prominent-links a:hover {
     color:#ffcc33;   
 }
 
-div.top-header div.right-side {
+#university-breadcrumbs-bar div.right-side {
     margin-top: 0.5em;
     border-top: 1px solid #CCEBDE;
     padding-top: 0.25em;    

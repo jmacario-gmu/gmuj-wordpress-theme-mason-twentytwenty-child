@@ -2,34 +2,34 @@
 
 /* 1,000+ pixels */
 
-div.top-header ul li {
+#university-breadcrumbs-bar ul li {
     padding-left:1em;
 }
 
-div.top-header {
+#university-breadcrumbs-bar {
     padding:0 0.5em;
 }
 
-div.top-header .links li {
+#university-breadcrumbs-bar .links li {
     display: inline-block;
 }
 
-div.top-header .links a {
+#university-breadcrumbs-bar .links a {
     display: block;
     line-height: 50px;
 }
 
-div.top-header div.left-side ul#university-breadcrumbs.links li {
+#university-breadcrumbs-bar div.left-side ul#university-breadcrumbs.links li {
     padding-left: 1em;
     padding-right: 1em;
 }
 
-div.top-header div.left-side ul#university-breadcrumbs.links li#university {
+#university-breadcrumbs-bar div.left-side ul#university-breadcrumbs.links li#university {
     padding-left:0.5em;
 }
 
-div.top-header div.left-side ul#university-breadcrumbs.links li#unit,
-div.top-header div.left-side ul#university-breadcrumbs.links li#department {
+#university-breadcrumbs-bar div.left-side ul#university-breadcrumbs.links li#unit,
+#university-breadcrumbs-bar div.left-side ul#university-breadcrumbs.links li#department {
     background: linear-gradient(to right, rgba(0,0,0,0.1) 0%,rgba(0,0,0,0) 100%);
     -webkit-transform: skewX(-30deg);
     -moz-transform: skewX(-30deg);
@@ -37,8 +37,8 @@ div.top-header div.left-side ul#university-breadcrumbs.links li#department {
     -o-transform: skewX(-30deg);
     transform: skewX(-30deg);
 }
-div.top-header div.left-side ul#university-breadcrumbs.links li#unit a,
-div.top-header div.left-side ul#university-breadcrumbs.links li#department a {
+#university-breadcrumbs-bar div.left-side ul#university-breadcrumbs.links li#unit a,
+#university-breadcrumbs-bar div.left-side ul#university-breadcrumbs.links li#department a {
     -webkit-transform: skewX(30deg);
     -moz-transform: skewX(30deg);
     -ms-transform: skewX(30deg);
