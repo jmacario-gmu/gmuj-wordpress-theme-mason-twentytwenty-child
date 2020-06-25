@@ -26,9 +26,9 @@
 		?>
 		<!-- Sitewide alert ribbon -->
 		<?php dynamic_sidebar('sidebar-sitewide-alert'); ?>
-        <!-- Child theme customization: university menu -->
-        <?php if (get_theme_mod('gmuj_show_university_menu')=='1') { get_template_part('template-parts/menu','university'); } ?>
-		<!-- /Child theme customization: university menu -->
+        <!-- Child theme customization: university links bar -->
+        <?php if (get_theme_mod('gmuj_show_university_links_bar')=='1') { get_template_part('template-parts/university-links-bar'); } ?>
+		<!-- /Child theme customization: university links bar -->
 
         <!-- Child theme customization: university breadcrumbs bar -->
         <div class="top-header">

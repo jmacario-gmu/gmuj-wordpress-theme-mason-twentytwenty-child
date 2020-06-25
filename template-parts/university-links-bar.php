@@ -1,5 +1,5 @@
 <!--
-Child theme template part for the university menu.
+Child theme template part for the university links bar
 -->
 <div id="university-links-bar">
     <?php

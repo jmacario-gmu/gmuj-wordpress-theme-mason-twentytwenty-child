@@ -116,15 +116,15 @@ function gmuj_theme_customizer_register($wp_customize) {
        ) 
     );
 
-    // Field: show university menu (gmuj_show_university_menu)
-        $wp_customize->add_setting('gmuj_show_university_menu',
+    // Field: show university links bar (gmuj_show_university_links_bar)
+        $wp_customize->add_setting('gmuj_show_university_links_bar',
           array('default'     => '1')
         );
-        $wp_customize->add_control('gmuj_show_university_menu',
+        $wp_customize->add_control('gmuj_show_university_links_bar',
           array(
             'type'       => 'radio',
-            'label'      => 'Show University Menu?:',
-            'description' => '<p>The university menu is intended for the display of links to other top-level university websites to aid in university navigation. It corresponds to the yellow menu bar at the top of the Mason core website (www2.gmu.edu). The links in this menu should correspond to the links on the Mason core website to ensure ease of navigation.</p>',
+            'label'      => 'Show University Links Bar?:',
+            'description' => '<p>The university links bar is intended for the display of links to other top-level university websites to aid in university navigation. It corresponds to the yellow menu bar at the top of the Mason core website (www2.gmu.edu). The links in this menu should correspond to the links on the Mason core website to ensure ease of navigation.</p>',
             'section'    => 'header_area',
             'choices' => array(
               '1' => 'Yes',
