@@ -1,6 +1,46 @@
 <?php
 
 /**
+ * Function to return an array of default header images
+ */
+function gmuj_default_header_images() {
+
+  // Declare array of header image files
+  $default_header_images[0] = "header-image-default-01-1900x1200.jpg";
+  $default_header_images[1] = "header-image-default-02-1900x1200.jpg";
+  $default_header_images[2] = "header-image-default-03-1900x1200.jpg";
+  $default_header_images[3] = "header-image-default-04-1900x1200.jpg";
+
+  // Return value
+  return $default_header_images;
+}
+
+/**
+ * Function to return a random default header image
+ */
+function gmuj_random_default_header_image() {
+
+  // Define path to default images
+  $default_image_path='/wp-content/themes/gmuj-mason-wordpress-theme-twentytwenty-child/images/';
+
+  // Get default header images array
+  $default_images=gmuj_default_header_images();
+
+  // Get a random image from that array
+    // First, select a random index form the array
+    $random_item = array_rand($default_images, 1);
+    // Next get the item at that index
+    $random_image = $default_images[$random_item];
+
+  // Create full URL of image by combining the path and random image filename
+  $random_image_url = $default_image_path . $random_image;
+
+  // Return URL of random image
+  return $random_image_url;
+
+}
+
+/**
  * Returns a file to use for the site header background image
  *
  * The file indicated in the background-image field from theme customizer is used if it exists. A default image is used if not.
@@ -13,8 +53,8 @@ function gmuj_get_site_header_background_image() {
     // If so, use it
     $site_header_background_image_url=get_theme_mod('default_header_image');
   } else {
-    // If not, use the default image
-    $site_header_background_image_url='/wp-content/themes/gmuj-mason-wordpress-theme-twentytwenty-child/images/header-image-default-1900x1200.jpg';
+    // If not, use a random default image
+    $site_header_background_image_url=gmuj_random_default_header_image();
   }
 
   return $site_header_background_image_url;
