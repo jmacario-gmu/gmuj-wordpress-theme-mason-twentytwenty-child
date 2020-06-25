@@ -25,8 +25,9 @@
 		wp_body_open();
 		?>
 
-		<!-- Sitewide alert ribbon -->
+		<!-- Child theme customization: Sitewide alert ribbon -->
 		<?php dynamic_sidebar('sidebar-sitewide-alert'); ?>
+		<!-- /Child theme customization: Sitewide alert ribbon -->
 
         <!-- Child theme customization: university links bar -->
         <?php if (get_theme_mod('gmuj_show_university_links_bar')=='1') { get_template_part('template-parts/university-links-bar'); } ?>
@@ -36,19 +37,9 @@
 		<?php get_template_part('template-parts/university-breadcrumbs-bar'); ?>
         <!-- /Child theme customization: university breadcrumbs bar -->
 
-		<!-- Child theme modification: site header background-image; background-image field from theme customizer is added inline if it exists, or a default is used-->
-		<?php
-		// Get URL of site header background image
-		// Do we have an image specified?
-		if (get_theme_mod('default_header_image')) {
-			// If so, use it
-			$site_header_background_image_url=get_theme_mod('default_header_image');
-		} else {
-			// If not, use the default image
-			$site_header_background_image_url='/wp-content/themes/gmuj-mason-wordpress-theme-twentytwenty-child/images/header-image-default-1900x1200.jpg';
-		}
-		?>
-		<header id="site-header" class="header-footer-group" role="banner" style="background-image:url('<?php echo $site_header_background_image_url ?>');">
+		<!-- Child theme modification: site header background-image -->
+		<header id="site-header" class="header-footer-group" role="banner" style="background-image:url('<?php echo gmuj_get_site_header_background_image() ?>');">
+		<!-- /Child theme modification: site header background-image -->
 
 			<div class="header-inner section-inner">
 
@@ -208,8 +199,10 @@
 
 		<!-- Child theme customization: homepage banner widget area -->
 		<?php if (is_front_page()) { get_template_part('template-parts/widget-area','homepage-banner'); } ?>
+		<!-- /Child theme customization: homepage banner widget area -->
 
 		</header><!-- #site-header -->
 
 		<!-- Child theme customization: homepage top widget area -->
 		<?php if (is_front_page()) { get_template_part('template-parts/widget-area','homepage-top'); } ?>
+		<!-- /Child theme customization: homepage top widget area -->

@@ -1,6 +1,4 @@
-<!--
-Child theme template part for the university breadcrumbs bar
--->
+<!-- Child theme template part for the university breadcrumbs bar -->
 <div id="university-breadcrumbs-bar">
     <div class="left-side">
         <!--University breadcrumbs-->

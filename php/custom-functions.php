@@ -1,5 +1,26 @@
 <?php
 
+/**
+ * Returns a file to use for the site header background image
+ *
+ * The file indicated in the background-image field from theme customizer is used if it exists. A default image is used if not.
+ */
+function gmuj_get_site_header_background_image() {
+
+  // Get URL of site header background image
+  // Do we have an image specified?
+  if (get_theme_mod('default_header_image')) {
+    // If so, use it
+    $site_header_background_image_url=get_theme_mod('default_header_image');
+  } else {
+    // If not, use the default image
+    $site_header_background_image_url='/wp-content/themes/gmuj-mason-wordpress-theme-twentytwenty-child/images/header-image-default-1900x1200.jpg';
+  }
+
+  return $site_header_background_image_url;
+
+}
+
 function gmuj_generate_css_rule($selector, $style_attribute, $attribute_value, $prefix='', $postfix='', $echo=true) {
   // Generates a CSS rule having an attribute value set based on the $mod_name (theme mod/theme customizer setting) provided
   $return = '';

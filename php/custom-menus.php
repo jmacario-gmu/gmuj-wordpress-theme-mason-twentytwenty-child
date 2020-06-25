@@ -22,30 +22,22 @@ function gmuj_register_menus(){
 
 }
 
-// Provide fallback menu content, in the event a custom menu is not specified.
+/**
+ * Summary: Provides default HTML content for the university links bar menu
+ */
+function menu_university_links_bar_fallback() {
 
-	/**
-	 * Summary: Provides default HTML content for the university menu
-	 * Description: 
-	 * Last modified: 2020-06-09
-	 * Modified by: Jan Macario
-	 */
-	function menu_university_fallback() {
+	//Include HTML content from content file
+	include(get_stylesheet_directory(). '/content/menu-university-links-bar-default.html');
 
-		//Include HTML content from content file
-		include(get_stylesheet_directory(). '/content/menu-university-default.html');
+}
 
-	}
+/**
+ * Summary: Provides default HTML content for the footer menu
+ */
+function menu_footer_fallback() {
 
-	/**
-	 * Summary: Provides default HTML content for the footer menu
-	 * Description: 
-	 * Last modified: 2020-06-09
-	 * Modified by: Jan Macario
-	 */
-	function menu_footer_fallback() {
+	//Include HTML content from content file
+	include(get_stylesheet_directory(). '/content/menu-footer-default.html');
 
-		//Include HTML content from content file
-		include(get_stylesheet_directory(). '/content/menu-footer-default.html');
-
-	}
+}
