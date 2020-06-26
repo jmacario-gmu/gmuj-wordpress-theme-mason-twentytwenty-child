@@ -1,0 +1,10 @@
+/* Homepage widget styles */
+
+/* 700+ pixels */
+
+
+/* Style banner homepage widget item titles */
+ul#sidebar-homepage-banner > li h3.widget-title {
+    font-size:3.5rem;
+    margin-bottom:2.5rem;
+}
