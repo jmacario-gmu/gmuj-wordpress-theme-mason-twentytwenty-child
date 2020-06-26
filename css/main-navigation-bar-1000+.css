@@ -2,6 +2,10 @@
 
 /* 1,000+ pixels */
 
+ul.primary-menu {
+    font-size: 1.7rem;
+}
+
 ul.primary-menu .icon {
     color:white !important;
 }
@@ -23,7 +27,7 @@ ul.primary-menu li.current-menu-item > a::after {
     position: absolute;
     left: 0;
     right: 0;
-    bottom: -1em;
+    bottom: -1.1em;
     height: 4px;
     transform: skew(-30deg);
     /* Note: color is set in color scheme stylesheets */
@@ -87,7 +91,7 @@ ul.primary-menu > li > a:hover::after {
     position: absolute;
     left: 0;
     right: 0;
-    bottom: -1em;
+    bottom: -1.1em;
     height: 4px;
     transform: skew(-30deg);
     /*background-color: #febe10; - link hover underline color for top level of main navigation bar - set in custom color schemes css files */

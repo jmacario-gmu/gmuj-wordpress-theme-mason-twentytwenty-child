@@ -8,6 +8,11 @@ body {
 	background-color:transparent;
 }
 
+/* Fix font sizes */
+main#site-content, .entry-content, .sidebar {
+	font-size:0.9em;
+}
+
 /* Modify default link colors */
 a {
 	color:#006633;
