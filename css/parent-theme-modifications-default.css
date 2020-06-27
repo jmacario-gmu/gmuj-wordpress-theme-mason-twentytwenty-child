@@ -199,6 +199,11 @@ div.entry-content li.widget h3.widget-title {
     color:#006633;
 }
 
+/* Style content footer widget area */
+.footer-widgets-outer-wrapper {
+    border-bottom: none;
+}
+
 /* Homepage customizations */
 /* Hide page title for home page */
 body.home header.entry-header {
