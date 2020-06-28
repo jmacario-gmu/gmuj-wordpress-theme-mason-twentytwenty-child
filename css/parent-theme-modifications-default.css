@@ -139,6 +139,8 @@ div.site-description {
 
 /* Style main content area */
 main#site-content {
+	position:relative; /* so that we can set a z index */
+	z-index:2; /* so that it will overlap the shadow from the site header */
 	background-color: white;
 }
 
@@ -209,3 +211,4 @@ div.entry-content li.widget h3.widget-title {
 body.home header.entry-header {
 	display:none;
 }
+
