@@ -1,13 +1,10 @@
 <?php
 /**
- * PHP file which handles custom menus specific to this child theme.
+ * php file which handles custom menus specific to this child theme.
  */
 
 /**
- * Summary: Registers child theme custom menus
- * Description: 
- * Last modified: 2020-06-09
- * Modified by: Jan Macario
+ * Registers child theme custom menus
  */
 add_action('after_setup_theme', 'gmuj_register_menus');
 function gmuj_register_menus(){
@@ -16,7 +13,6 @@ function gmuj_register_menus(){
     register_nav_menus(array(
         'university' => 'University Menu',
         'prominent' => 'Prominent Links Menu',
-        'calls-to-action' => 'Calls-to-Action Menu',
         'footer' => 'Footer Menu'
     ));
 
