@@ -22,7 +22,7 @@ ul.primary-menu li.current-menu-item > a {
 }
 
 /* Style currently-active top menu item 'after' pseudoelement - used to indicate current page */
-ul.primary-menu li.current-menu-item > a::after {
+ul.primary-menu > li.current-menu-item > a::after {
     content: "";
     position: absolute;
     left: 0;

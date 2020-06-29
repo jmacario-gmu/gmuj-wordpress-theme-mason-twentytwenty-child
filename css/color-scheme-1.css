@@ -35,8 +35,8 @@
 	    border-left-color: #22a5af !important;
 	}
 
-	/* Set link hover color for main navigation sub-menus */
-	ul.primary-menu ul li a:hover {
+	/* Set link hover color and active menu item color for main navigation sub-menus */
+	ul.primary-menu ul li a:hover, ul.primary-menu ul li.current-menu-item a {
 	    background-color: #44c7cf;
 	}
 
