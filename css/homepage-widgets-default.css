@@ -18,6 +18,8 @@ ul.sidebar-homepage > li {
 
 /* Style homepage banner widget area */
 ul#sidebar-homepage-banner {
+    position: relative; /* so we can set a z-index */
+    z-index: 1; /* so it overlaps the semi-transparent background shadow */
 	color:white; /* as this content will go over the background-image, we want the text to be visible */
 }
 

@@ -3,6 +3,10 @@
 /* 1,000+ pixels */
 
 
+header#site-header:before {
+	background:linear-gradient(145deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5) 30%, rgba(0,0,0,0));
+	z-index:-1;
+}
 
 /* Fix header icons for larger screens */
 .header-inner .toggle {
@@ -13,8 +17,6 @@
 /* Style site title area */
 .header-titles-wrapper {
     padding: 1em 1em 0;
-	background-color: rgba(0,0,0,0.5); /* Add semi-transparent background to help white text stand out more */
-	box-shadow: 0px 0px 400px 450px rgba(0, 0, 0, 0.5); /* Add semi-transparent shadow to the bottom and right to fade out the semi-transparent background */
 }
 
 .header-titles {
