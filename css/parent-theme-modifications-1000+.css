@@ -3,6 +3,12 @@
 /* 1,000+ pixels */
 
 
+/* Style site header */
+header#site-header {
+	overflow-x: hidden; /* Because the navigation menu wrapper div skews to the right, it may make the page appear a bit too wide and allow for horizontal scrolling. To avoid this, we will clip any extra content appearing outside the site header div area. */
+}
+
+/* Add semi-transparent background gradient to the site header by using a pseudo-element */
 header#site-header:before {
 	background:linear-gradient(145deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5) 30%, rgba(0,0,0,0));
 	z-index:-1;
