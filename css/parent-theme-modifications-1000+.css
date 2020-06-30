@@ -5,7 +5,7 @@
 
 /* Style site header */
 header#site-header {
-	overflow-x: hidden; /* Because the navigation menu wrapper div skews to the right, it may make the page appear a bit too wide and allow for horizontal scrolling. To avoid this, we will clip any extra content appearing outside the site header div area. */
+	/*overflow-x: hidden; *//* Because the navigation menu wrapper div skews to the right, it may make the page appear a bit too wide and allow for horizontal scrolling (Chrome). To avoid this, we will clip any extra content appearing outside the site header div area. Edit: I have turned this off as it is causing a display issue in Chrome. */
 }
 
 /* Add semi-transparent background gradient to the site header by using a pseudo-element */
