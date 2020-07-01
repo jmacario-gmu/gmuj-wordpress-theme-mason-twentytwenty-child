@@ -1,5 +1,33 @@
 <?php
 
+
+/**
+ * Function to return a boolean indicating whether or not a plugin is installed
+ */
+function gmuj_is_plugin_active($plugin_slug) {
+
+  // Determine whether the plugin file in question (based on the slug) is in the list (array) of active plugins. The first in_array parameter is the relative path within the plugins folder to the main theme php file.
+  if (
+    in_array(
+      $plugin_slug,
+      apply_filters(
+        'active_plugins',
+        get_option('active_plugins')
+      )
+    )
+  ) {
+    // The plugin is active
+    $is_plugin_active=true;
+  } else {
+    // The plugin is inactive
+    $is_plugin_active=false;
+  }
+
+  // Return value
+  return $is_plugin_active;
+
+}
+
 /**
  * Function to return an array of default header images
  */

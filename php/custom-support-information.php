@@ -55,7 +55,7 @@ function gmuj_custom_dashboard_meta_box_mason_resources() {
 function gmuj_custom_dashboard_meta_box_recommended_plugins() {
 
   //Include HTML content from file
-  include(get_stylesheet_directory() . '/content/support-information/recommended_plugins.html');
+  include(get_stylesheet_directory() . '/content/support-information/recommended_plugins.php');
 
 }
 
