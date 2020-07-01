@@ -33,6 +33,12 @@ ul.primary-menu > li.current-menu-item > a::after {
     /* Note: color is set in color scheme stylesheets */
 }
 
+/* Style ancestor items of currently-active menu item */
+.primary-menu .current_page_ancestor {
+    text-decoration: none;
+}
+
+
 div.header-inner {
     padding-top:0;
     align-items: flex-start;
