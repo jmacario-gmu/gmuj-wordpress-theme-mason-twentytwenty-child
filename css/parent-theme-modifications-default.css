@@ -182,11 +182,6 @@ h1.entry-title {
     margin-top:3em;
 }
 
-/* Style entry content size */
-.home .entry-content > :not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide) {
-    max-width: 100rem;
-}
-
 /* Basic widget styling */
 li.widget {
 	list-style-type: none;
