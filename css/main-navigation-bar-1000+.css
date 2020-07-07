@@ -2,6 +2,7 @@
 
 /* 1,000+ pixels */
 
+
 ul.primary-menu {
     font-size: 1.7rem;
 }
@@ -38,13 +39,12 @@ ul.primary-menu > li.current-menu-item > a::after {
     text-decoration: none;
 }
 
-
 div.header-inner {
     padding-top:0;
     align-items: flex-start;
-    width:100%;
 }
 
+/* Style main navigation menu wrapper */
 div.header-navigation-wrapper {
     /*background-color: #00838f; - background color of main navigation bar - set in custom color schemes css files */
     position: absolute;
@@ -52,19 +52,25 @@ div.header-navigation-wrapper {
     z-index:1;
     padding-left:1.5em;
     align-items: flex-start;
-    margin-right: -1.5em;
     padding-right: 4em;
-    transform: skew(-30deg);
     padding-top:1em;
     padding-bottom:0.35em;
 }
 
-nav.primary-menu-wrapper {
-    transform: skew(30deg);
+/* Use a pseudo element to create the main navigation menu skew detail */
+div.header-navigation-wrapper:before {
+    /*background-color:#00838f; - background color of main navigation bar - set in custom color schemes css files */
+    content:'';
+    width:3em;
+    display:block;
+    position:absolute;
+    left:-1em;
+    top:0;
+    bottom:0;
+    transform: skew(-30deg);
 }
 
 div.header-toggles {
-    transform: skew(30deg);
     margin-left: 2rem !important;
 }
 

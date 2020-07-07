@@ -11,6 +11,11 @@
 	    background-color: #d47137;
 	}
 
+	/* Set background-color of navigation bar skew detail */
+	div.header-navigation-wrapper:before {
+	    background-color:#d47137;
+	}
+
 	/* Set link hover underline color for top level of main navigation bar */
 	ul.primary-menu > li > a:hover::after {
 	    background-color: #febe10;
