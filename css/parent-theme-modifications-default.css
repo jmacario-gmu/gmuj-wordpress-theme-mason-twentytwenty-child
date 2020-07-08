@@ -210,6 +210,11 @@ div.entry-content li.widget h3.widget-title {
     border-bottom: none;
 }
 
+/* Style search menu icons */
+.social-icons a {
+	background-color: #006633;
+}
+
 /* Homepage customizations */
 /* Hide page title for home page */
 body.home header.entry-header {
