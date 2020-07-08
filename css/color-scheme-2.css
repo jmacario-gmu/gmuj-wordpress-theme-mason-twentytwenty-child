@@ -45,5 +45,9 @@
 	    background-color: #f8b57b;
 	}
 
+	/* Set color for social media menu icons */
+	.social-icons a {
+		background-color: #f69359 !important;
+	}
 
 }

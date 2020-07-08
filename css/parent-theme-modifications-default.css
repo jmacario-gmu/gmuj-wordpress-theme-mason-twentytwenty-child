@@ -212,7 +212,7 @@ div.entry-content li.widget h3.widget-title {
 
 /* Style search menu icons */
 .social-icons a {
-	background-color: #006633;
+	/* background-color: #006633; - background color set in custom color schemes css files */
 }
 
 /* Homepage customizations */
