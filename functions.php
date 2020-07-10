@@ -22,6 +22,9 @@ require(get_stylesheet_directory(). '/php/custom-color.php');
 //Include theme customizer customizations
 require(get_stylesheet_directory(). '/php/custom-customizer.php');
 
+// Include customizations related to theme templates
+require(get_stylesheet_directory(). '/php/custom-templates.php');
+
 //Include theme support information feature
 require(get_stylesheet_directory(). '/php/custom-support-information.php');
 
