@@ -51,3 +51,8 @@ div.site-name {
 div.site-name a {
 	font-size:1.1em;
 }
+
+/* Style page title for full width template */
+body.page-template-template-full-width div.entry-header-inner {
+	margin-left: 2em;
+}
