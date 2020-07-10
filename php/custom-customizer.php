@@ -12,7 +12,10 @@ function gmuj_theme_customizer_register($wp_customize) {
   // Section: Site Identity 
 
   // Remove site tagline control
-    //$wp_customize->remove_control('blogdescription');
+    $wp_customize->remove_control('blogdescription');
+
+  // Remove retina logo control
+    $wp_customize->remove_control('retina_logo');
 
   // Field: gmuj_mason_unit
       $wp_customize->add_setting('gmuj_mason_unit');
@@ -124,7 +127,7 @@ function gmuj_theme_customizer_register($wp_customize) {
           array(
             'type'       => 'radio',
             'label'      => 'Show University Links Bar?:',
-            'description' => '<p>The university links bar is intended for the display of links to other top-level university websites to aid in university navigation. It corresponds to the yellow menu bar at the top of the Mason core website (www2.gmu.edu). The links in this menu should correspond to the links on the Mason core website to ensure ease of navigation.</p>',
+            'description' => '<p>The university links bar is intended for the display of links to top-level university websites to aid in university navigation.</p>',
             'section'    => 'header_area',
             'choices' => array(
               '1' => 'Yes',
