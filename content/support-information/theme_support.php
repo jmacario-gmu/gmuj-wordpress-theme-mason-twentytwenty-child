@@ -22,7 +22,7 @@ if (gmuj_is_plugin_active('gmuj-wordpress-plugin-mason-meta-information/gmuj-wor
 <p>
 	<strong>Recommended Banner Image Size:</strong> 1900x1200 pixels (examples: 
 	<?php
-	for ($i=1; $i<=4; $i++) {
+	for ($i=1; $i<=5; $i++) {
 	echo '<a href="' . get_stylesheet_directory_uri().'/images/header-image-default-0'.$i.'-1900x1200.jpg'.'" target="_blank">'.$i.'</a> ';
 	}
 	?>
