@@ -8,6 +8,10 @@ header#site-header {
 	background-size: cover;
 }
 
+/* Style the toggle-inner container (contains the search and menu icons) */
+.toggle-inner{
+	top: 2rem;
+}
 /* Style entry header area */
 header.entry-header {
 	padding-bottom:4rem !important;
