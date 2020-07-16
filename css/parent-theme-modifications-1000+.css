@@ -25,6 +25,11 @@ header#site-header:before {
 	padding: 0 2rem;
 }
 
+/* Style the toggle-inner container (contains the search icon) */
+.toggle-inner{
+	position: static;
+}
+
 /* Style site title area */
 .header-titles-wrapper {
     padding: 1em 1em 0;

@@ -118,12 +118,14 @@ header#site-header:before {
 	align-items: flex-start;
 	padding: 2rem;
 }
-@media only screen and (max-width: 999px) {
-	.toggle-inner{
-		position: absolute;
-		top: 1rem;
-	}
+
+/* Style the toggle-inner container (contains the search and menu icons) */
+.toggle-inner{
+	position: absolute; /* For small screens, force the toggle-inner container to be at the top (This is a fix for iOS (both Safari and Chrome) and arguably shouldn't be necessary.) */
+	top: 1rem;
 }
+
+/* Ensure modal menu and search are always on top */
 .menu-modal, .search-modal{
 	z-index: 9999;
 }
