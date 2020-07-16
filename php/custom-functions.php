@@ -38,7 +38,6 @@ function gmuj_default_header_images() {
   $default_header_images[1] = "header-image-default-02-1900x1200.jpg";
   $default_header_images[2] = "header-image-default-03-1900x1200.jpg";
   $default_header_images[3] = "header-image-default-04-1900x1200.jpg";
-  $default_header_images[4] = "header-image-default-05-1900x1200.jpg";
 
   // Return value
   return $default_header_images;

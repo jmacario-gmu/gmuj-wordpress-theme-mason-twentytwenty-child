@@ -20,13 +20,13 @@ if (gmuj_is_plugin_active('gmuj-wordpress-plugin-mason-meta-information/gmuj-wor
 
 <h3><strong>Image Information</strong></h3>
 <p>
-	<strong>Recommended Banner Image Size:</strong> 1900x1200 pixels (examples: 
+	<strong>Recommended Banner Image Size:</strong> 1900x1200 pixels<br />
+	Default banner images: 
 	<?php
-	for ($i=1; $i<=5; $i++) {
+	for ($i=1; $i<=4; $i++) {
 	echo '<a href="' . get_stylesheet_directory_uri().'/images/header-image-default-0'.$i.'-1900x1200.jpg'.'" target="_blank">'.$i.'</a> ';
 	}
 	?>
-	)
 	<br />
 	<a href="<?php echo get_stylesheet_directory_uri() ?>/images/logo-Mason-M-white-170x200.png" target="_blank">Default site logo</a>
 </p>
