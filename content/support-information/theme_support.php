@@ -5,6 +5,7 @@
 	For general inquiries, contact the Mason webmaster team at <a href="mailto:webmaster@gmu.edu">webmaster@gmu.edu</a>.<br />
 	For more in-depth questions or requests, please <a href="https://gmu.teamdynamix.com/TDClient/33/Portal/Requests/TicketRequests/NewForm?ID=HyCYnjyvSqI_" target="_blank">submit a ticket to the webmaster team</a>.
 </p>
+<p>For more information about this theme, please visit the <a href="https://gmuwptheme.wpengine.com" target="_blank">Mason 2020 theme website</a>.</p>
 
 <h3><strong>Customize Your Site<strong></h3>
 <ul>
