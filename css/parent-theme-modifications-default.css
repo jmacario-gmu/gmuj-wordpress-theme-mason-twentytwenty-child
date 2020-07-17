@@ -28,6 +28,11 @@ a {
 	color: #006633 !important;
 }
 
+/* Style blockquotes */
+blockquote {
+	border-color:#006633;
+}
+
 /* Fix colors, generally */
 /* Only apply this to the main content area, to avoid affecting header and footer, which have differently-colored backgrounds */
 main#site-content .color-accent,
