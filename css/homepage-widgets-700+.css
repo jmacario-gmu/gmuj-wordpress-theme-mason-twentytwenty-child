@@ -8,3 +8,8 @@ ul#sidebar-homepage-banner > li h3.widget-title {
     font-size:3.5rem;
     margin-bottom:2.5rem;
 }
+
+/* Style homepage top and bottom widget areas */
+ul#sidebar-homepage-top, ul#sidebar-homepage-bottom {
+    width: calc(100% - 8rem);
+}

@@ -51,6 +51,20 @@ ul.sidebar-homepage:not(#sidebar-homepage-banner) > li div.textwidget {
     margin-right: auto;
 }
 
+/* Style homepage top and bottom widget areas */
+ul#sidebar-homepage-top, ul#sidebar-homepage-bottom {
+    width: calc(100% - 4rem);
+    margin-left: auto;
+    margin-right: auto;
+    max-width:120rem;
+}
+
+/* Style homepage top and bottom widget areas list items*/
+ul#sidebar-homepage-top li, ul#sidebar-homepage-bottom li {
+    padding-left:0;
+    padding-right:0;
+}
+
 /* Style homepage top widget area */
 ul#sidebar-homepage-top {
     position: relative; /* so that we can set a z index */
