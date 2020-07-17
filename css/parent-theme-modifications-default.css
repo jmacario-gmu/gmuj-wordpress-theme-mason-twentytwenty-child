@@ -9,7 +9,7 @@ body {
 }
 
 /* Fix font sizes */
-main#site-content, .entry-content, .sidebar {
+main#site-content, .entry-content {
 	font-size:0.9em;
 }
 
