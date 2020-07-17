@@ -2,6 +2,15 @@
  * Summary: css file to implement custom color scheme 2
  */
 
+
+/* Default and small screens */
+
+/* Set background-color for social media menu icons */
+.social-icons a {
+	background-color: #d47137 !important;
+}
+
+
 /* 1,000+ pixels */
 
 @media screen and (min-width: 1000px) {
@@ -43,11 +52,6 @@
 	/* Set link hover color and active menu item color for main navigation sub-menus */
 	ul.primary-menu ul li a:hover, ul.primary-menu ul li.current-menu-item a {
 	    background-color: #f8b57b;
-	}
-
-	/* Set color for social media menu icons */
-	.social-icons a {
-		background-color: #f69359 !important;
 	}
 
 }
