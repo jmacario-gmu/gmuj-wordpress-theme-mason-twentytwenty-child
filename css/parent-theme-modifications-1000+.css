@@ -37,6 +37,7 @@ header#site-header:before {
 
 .header-titles {
 	align-items: flex-end !important; /* Ensure that the logo and text sit at about the same baseline */
+    margin-top:0.5em;
     margin-left:0;
     background-color: transparent; /* Turn-off semi-transparent background from default stylesheet */
 	box-shadow: none; /* Turn-off semi-transparent shadow  from default stylesheet */
