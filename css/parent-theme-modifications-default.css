@@ -231,6 +231,11 @@ div.entry-content li.widget h3.widget-title {
 	/* background-color: #006633; - background color set in custom color schemes css files */
 }
 
+/* Style WordPress cover block */
+.wp-block-cover.has-background-dim:not(.has-background-gradient):before {
+	display:none; /* The parent theme has a full page overlay which doesn't work for our child theme, so we hide it. */
+}
+
 /* Homepage customizations */
 /* Hide page title for home page */
 body.home header.entry-header {
