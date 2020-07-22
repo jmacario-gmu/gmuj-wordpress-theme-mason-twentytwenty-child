@@ -17,6 +17,16 @@ function gmuj_theme_customizer_register($wp_customize) {
   // Remove retina logo control
     $wp_customize->remove_control('retina_logo');
 
+  // Section: organizational information
+
+  // Add section: org_info
+    $wp_customize->add_section('org_info',
+       array(
+          'title'       => 'Organizational Information',
+          'priority'    => 30
+       )
+    );
+
   // Field: gmuj_mason_unit
       $wp_customize->add_setting('gmuj_mason_unit');
       $wp_customize->add_control('gmuj_mason_unit',
@@ -24,7 +34,7 @@ function gmuj_theme_customizer_register($wp_customize) {
           'type'        => 'text',
           'label'       => 'Mason Unit',
           'description' => 'University-level organizational unit responsible for this website',
-          'section'     => 'title_tagline',
+          'section'     => 'org_info',
         )
       );
 
@@ -35,7 +45,7 @@ function gmuj_theme_customizer_register($wp_customize) {
           'type'        => 'url',
           'label'       => 'Mason Unit URL',
           'description' => 'URL of related organizational unit website',
-          'section'     => 'title_tagline',
+          'section'     => 'org_info',
         )
       );
 
@@ -45,7 +55,7 @@ function gmuj_theme_customizer_register($wp_customize) {
         array(
           'type'        => 'text',
           'label'      => 'Mason Department',
-          'section'    => 'title_tagline',
+          'section'    => 'org_info',
         )
       );
 
@@ -57,10 +67,10 @@ function gmuj_theme_customizer_register($wp_customize) {
         array(
           'type'       => 'url',
           'label'      => 'Mason Department URL',
-          'section'    => 'title_tagline',
+          'section'    => 'org_info',
         )
       );
-      
+
   // Section: 'Colors'
 
   // Remove controls added by parent theme
