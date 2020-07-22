@@ -23,6 +23,7 @@ function gmuj_theme_customizer_register($wp_customize) {
     $wp_customize->add_section('org_info',
        array(
           'title'       => 'Organizational Information',
+          'description' => '<p>This information used to generate the links for the university breadcrumbs bar, which is the green bar in the header which helps to orient users as to where this website fits in the university\'s organizational structure.</p>',
           'priority'    => 30
        )
     );
