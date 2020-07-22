@@ -231,6 +231,11 @@ div.entry-content li.widget h3.widget-title {
     border-bottom: none;
 }
 
+/* Style social media menu */
+ul.social-menu {
+	justify-content: center;
+}
+
 /* Style search menu icons */
 .social-icons a {
 	/* background-color: #006633; - background color set in custom color schemes css files */
