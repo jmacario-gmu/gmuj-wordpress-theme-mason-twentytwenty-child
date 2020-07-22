@@ -21,7 +21,24 @@
 						<p class="footer-slogan-address-copyright-contact">
 							<span class="site-slogan">Patriots Brave &amp; Bold</span><br />
 							4400 University Drive, Fairfax, Virginia 22030<br />
-							&copy; 2020 George Mason University – Call: +1 (703) 993-1000
+
+							<!--Contact email address from theme customizer-->
+							<?php if (get_theme_mod('gmuj_contact_email')) {
+								echo 'Email: ';
+								echo '<a href="mailto:'.get_theme_mod('gmuj_contact_email').'">'.get_theme_mod('gmuj_contact_email').'</a>';
+								echo '<br />';
+							}
+							?>
+
+							<!--Contact phone number from theme customizer-->
+							<?php if (get_theme_mod('gmuj_contact_phone')) {
+								echo 'Call: ';
+								echo get_theme_mod('gmuj_contact_phone');
+								echo '<br />';
+							}
+							?>
+
+							<!--&copy; 2020 George Mason University<br />-->
 						</p>
 
 						<p class="footer-copyright">&copy;

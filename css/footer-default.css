@@ -33,6 +33,12 @@ footer#site-footer div.section-inner {
 	    display:none;
 	}
 
+/* Style footer links */
+footer#site-footer a {
+	color:white;
+	text-decoration:none;
+}
+
 /* Style mason logo */
 footer#site-footer p.footer-logo img {
     max-width:200px;

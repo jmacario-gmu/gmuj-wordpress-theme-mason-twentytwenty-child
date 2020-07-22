@@ -71,6 +71,44 @@ function gmuj_theme_customizer_register($wp_customize) {
         )
       );
 
+  // Section: contact information
+
+  // Add section: contact_info
+    $wp_customize->add_section('contact_info',
+       array(
+          'title'       => 'Contact Information',
+          'description' => '<p>This information is displayed publicly on the website, notably in the footer contact information section.</p>',
+          'priority'    => 35
+       )
+    );
+
+  // Field: gmuj_contact_email
+      $wp_customize->add_setting('gmuj_contact_email',
+        array(
+          'sanitize_callback' => 'sanitize_email'
+          //'validate_callback' => 'is_email'
+        )
+      );
+      $wp_customize->add_control('gmuj_contact_email',
+        array(
+          'type'       => 'email',
+          'label'      => 'Contact Email Address',
+          'description' => '<p>Included in the footer contact block. Leave blank to hide.</p>',
+          'section'    => 'contact_info'
+        )
+      );
+
+  // Field: gmuj_contact_phone
+      $wp_customize->add_setting('gmuj_contact_phone');
+      $wp_customize->add_control('gmuj_contact_phone',
+        array(
+          'type'       => 'text',
+          'label'      => 'Contact Phone Number',
+          'description' => '<p>Included in the footer contact block. Leave blank to hide.</p>',
+          'section'    => 'contact_info'
+        )
+      );
+
   // Section: 'Colors'
 
   // Remove controls added by parent theme
