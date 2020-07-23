@@ -4,7 +4,7 @@
 		<tr>
 			<th style="text-align:left;">Name</th>
 			<th style="text-align:left;">Description</th>
-			<th style="text-align:left;">Status</th>
+			<th style="text-align:left;">Active</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -24,7 +24,7 @@
 		</tr>
 		<tr>
 			<td>Mason Custom Widgets</td>
-			<td>Custom <a href="widgets.php">widgets</a> designed for this theme</td>
+			<td>Custom widgets designed for this theme</td>
 			<td>
 				<?php 
 				// Indicate whether this plugin is active
@@ -38,7 +38,7 @@
 		</tr>
 		<tr>
 			<td><a href="https://wordpress.org/plugins/amr-shortcode-any-widget/" target="_blank">amr shortcode any widget</a></td>
-			<td>Use <a href="widgets.php">widgets</a> on any page</td>
+			<td>Use widgets on any page</td>
 			<td>
 				<?php 
 				// Indicate whether this plugin is active
