@@ -19,3 +19,16 @@ function gmuj_remove_parent_theme_templates($templates) {
     return $templates;
     
 }
+
+/**
+ * Rename default template
+ *
+ * The parent theme's default template is quite narrow. We rename it in the WordPress admin section so that the template name is more descriptive.
+ */
+add_filter('default_page_template_title','gmuj_rename_default_template',10,2);
+function gmuj_rename_default_template($label, $context) {
+
+	// Rename default template to narrow template for clarity
+	return 'Narrow Template';
+
+}
