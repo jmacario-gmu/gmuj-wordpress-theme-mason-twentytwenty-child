@@ -20,9 +20,13 @@ header.entry-header {
 
 /* Style entry title */
 h1.entry-title {
-	text-align:left;
 	font-size:4.5rem;
 	color: #42413f;
+}
+
+/* Style entry title for pages only */
+article.page h1.entry-title {
+	text-align:left;
 }
 
 /* Fix main content area font-size */
