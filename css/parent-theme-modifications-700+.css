@@ -33,3 +33,8 @@ article.page h1.entry-title {
 .entry-content {
 	font-size:18px;
 }
+
+/* Remove extra space above the first article on archive pages */
+body:not(.singular) main > article:first-of-type {
+    padding-top:0;
+}
