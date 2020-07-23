@@ -30,4 +30,6 @@ if (gmuj_is_plugin_active('gmuj-wordpress-plugin-mason-meta-information/gmuj-wor
 	?>
 	<br />
 	<a href="<?php echo get_stylesheet_directory_uri() ?>/images/logo-Mason-M-white-170x200.png" target="_blank">Default site logo</a>
+	<br />
+	<a href="<?php echo get_stylesheet_directory_uri() ?>/images/icon-MasonM-512x512.png" target="_blank">Default site icon</a>
 </p>
