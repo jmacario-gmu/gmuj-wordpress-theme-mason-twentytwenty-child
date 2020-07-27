@@ -5,12 +5,59 @@
         <ul id="university-breadcrumbs" class="links">
             <li id="university">
                 <a href="https://www2.gmu.edu"><span class="fa fa-chevron-circle-left"></span> George Mason University</a></li>
-            <li id="unit">
-                <a href="<?php echo get_theme_mod('gmuj_mason_unit_url')?>"><span class="fa fa-chevron-circle-left"></span> <?php echo get_theme_mod('gmuj_mason_unit')?></a>
-            </li>
-            <li id="department">
-                <a href="<?php echo get_theme_mod('gmuj_mason_department_url')?>"><?php echo get_theme_mod('gmuj_mason_department')?></a>
-            </li>
+
+            <?php
+            // If a unit has been specified in the theme customizer, display it
+            if (get_theme_mod('gmuj_mason_unit')) {
+                // Start li tag
+                echo '<li id="unit">';
+                // If we have a URL, display as a link
+                if (get_theme_mod('gmuj_mason_unit_url')) {
+                    // Start link tag
+                    echo '<a href="'.get_theme_mod('gmuj_mason_unit_url').'">';
+                    // Output 'back' icon
+                    echo '<span class="fa fa-chevron-circle-left"></span> ';
+                    // Output unit name
+                    echo get_theme_mod('gmuj_mason_unit');
+                    //Finish link tag
+                    echo '</a>';
+                } else { // No URL - just display text
+                    // Start link tag
+                    echo '<a>';
+                    // Output unit name
+                    echo get_theme_mod('gmuj_mason_unit');
+                    //Finish link tag
+                    echo '</a>';
+                }
+                // Finish li tag
+                echo '</li>';
+            }
+            // If a department has been specified in the theme customizer, display it
+            if (get_theme_mod('gmuj_mason_department')) {
+                // Start li tag
+                echo '<li id="department">';
+                // If we have a URL, display as a link
+                if (get_theme_mod('gmuj_mason_department_url')) {
+                    // Start link tag
+                    echo '<a href="'.get_theme_mod('gmuj_mason_department_url').'">';
+                    // Output 'back' icon
+                    echo '<span class="fa fa-chevron-circle-left"></span> ';
+                    // Output department name
+                    echo get_theme_mod('gmuj_mason_department');
+                    //Finish link tag
+                    echo '</a>';
+                } else { // No URL - just display text
+                    // Start link tag
+                    echo '<a>';
+                    // Output department name
+                    echo get_theme_mod('gmuj_mason_department');
+                    //Finish link tag
+                    echo '</a>';
+                }
+                // Finish li tag
+                echo '</li>';
+            }
+            ?>
         </ul><!--/.university-breadcrumbs-->
     </div>
     <div class="right-side">
