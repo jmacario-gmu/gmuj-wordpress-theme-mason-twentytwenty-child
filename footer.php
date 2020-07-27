@@ -46,7 +46,8 @@
 							}
 							?>
 
-							<!--&copy; 2020 George Mason University<br />-->
+							<!--Copyright notice-->
+							&copy; <span style="font-weight:normal;"><?php echo date("Y"); ?> George Mason University</span>
 						</p>
 
 						<p class="footer-copyright">&copy;
