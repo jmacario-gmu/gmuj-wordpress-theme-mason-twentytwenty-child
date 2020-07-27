@@ -4,7 +4,7 @@
         <!--University breadcrumbs-->
         <ul id="university-breadcrumbs" class="links">
             <li id="university">
-                <a href="https://www2.gmu.edu"><span class="fa fa-chevron-circle-left"></span> George Mason University</a></li>
+                <a href="https://www.gmu.edu"><span class="fa fa-chevron-circle-left"></span> George Mason University</a></li>
 
             <?php
             // If a unit has been specified in the theme customizer, display it

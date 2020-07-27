@@ -15,7 +15,9 @@
 					<div class="footer-credits">
 
 						<p class="footer-logo">
-							<img src="<?php echo get_stylesheet_directory_uri() . '/images/logo-Mason-2-color-with-shadow-259x181.png' ?>" />
+							<a href="https://www.gmu.edu">
+								<img src="<?php echo get_stylesheet_directory_uri() . '/images/logo-Mason-2-color-with-shadow-259x181.png' ?>" />
+							</a>
 						</p>
 
 						<p class="footer-slogan-address-copyright-contact">
