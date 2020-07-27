@@ -19,7 +19,15 @@
 						</p>
 
 						<p class="footer-slogan-address-copyright-contact">
-							<span class="site-slogan">Patriots Brave &amp; Bold</span><br />
+
+							<?php
+							// Display site tagline if provided in theme customizer
+							if (get_theme_mod('gmuj_site_tagline')) {
+								echo '<!--site tagline-->';
+								echo '<span class="site-slogan">'.get_theme_mod('gmuj_site_tagline').'</span>';
+								echo '<br />';
+							}
+							?>
 							4400 University Drive, Fairfax, Virginia 22030<br />
 
 							<!--Contact email address from theme customizer-->

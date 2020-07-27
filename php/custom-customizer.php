@@ -18,6 +18,17 @@ function gmuj_theme_customizer_register($wp_customize) {
   // Remove retina logo control
     $wp_customize->remove_control('retina_logo');
 
+  // Field: gmuj_site_tagline
+      $wp_customize->add_setting('gmuj_site_tagline');
+      $wp_customize->add_control('gmuj_site_tagline',
+        array(
+          'type'        => 'text',
+          'label'       => 'Site Tagline',
+          'description' => 'Appears in the website footer. Leave blank for none.',
+          'section'     => 'title_tagline'
+        )
+      );
+
   // Section: organizational information
 
   // Add section: org_info
