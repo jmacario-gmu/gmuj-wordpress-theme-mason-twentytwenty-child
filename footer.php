@@ -48,6 +48,14 @@
 							}
 							?>
 
+							<!--Contact fax number from theme customizer-->
+							<?php if (get_theme_mod('gmuj_contact_fax')) {
+								echo 'Fax: ';
+								echo get_theme_mod('gmuj_contact_fax');
+								echo '<br />';
+							}
+							?>
+
 							<!--Copyright notice-->
 							&copy; <span style="font-weight:normal;"><?php echo date("Y"); ?> George Mason University</span>
 						</p>
