@@ -1,11 +1,12 @@
 <?php
 
 /**
- * Summary: Configure the theme customizer
- * Description: We use a priority of 100 to ensure that this function runs after the parent theme customizer modifications
- * Last modified: 2020-06-08
- * Modified by: Jan Macario
+ * php file to configure the theme customizer
+ *
+ * We use a priority of 1000 to ensure that this function runs after the parent theme's customizer modifications
  */
+
+
 add_action('customize_register','gmuj_theme_customizer_register',1000);
 function gmuj_theme_customizer_register($wp_customize) {
 
