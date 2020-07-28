@@ -13,6 +13,14 @@ main#site-content, .entry-content {
 	font-size:0.9em;
 }
 
+/* Fix word breaking and wrapping rules */
+*,
+*::before,
+*::after {
+	word-break: normal;
+	word-wrap: normal;
+}
+
 /* Modify default link colors */
 a {
 	color:#006633;
