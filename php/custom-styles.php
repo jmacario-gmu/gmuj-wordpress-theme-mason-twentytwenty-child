@@ -27,3 +27,19 @@ function gmuj_enqueue_styles() {
     );
 
 }
+
+/**
+ * Dequeue some parent theme styles
+ *
+ * Hooked to the admin_enqueue_scripts action, with a late priority (100),
+ * so that it runs after the parent style was enqueued.
+ */
+function gmuj_dequeue_parent_theme_styles() {
+
+    // Dequeue the stylesheet
+    wp_dequeue_style('twentytwenty-block-editor-styles');
+    // Deregister the stylesheet
+    wp_deregister_style('twentytwenty-block-editor-styles');
+
+}
+add_action('admin_enqueue_scripts','gmuj_dequeue_parent_theme_styles', 100);
