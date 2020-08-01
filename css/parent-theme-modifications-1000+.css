@@ -60,5 +60,5 @@ div.site-name a {
 
 /* Style page title for full width template */
 body.page-template-template-full-width div.entry-header-inner {
-	margin-left: 2em;
+	max-width:120rem;
 }
