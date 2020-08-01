@@ -15,18 +15,11 @@ header#site-header {
 /* Style entry header area */
 header.entry-header {
 	padding-bottom:4rem !important;
-	background-color:#eff0e7 !important;
 }
 
 /* Style entry title */
 h1.entry-title, h2.entry-title {
 	font-size:4.5rem;
-	color: #42413f;
-}
-
-/* Style entry title for pages only */
-article.page h1.entry-title {
-	text-align:left;
 }
 
 /* Fix main content area font-size */

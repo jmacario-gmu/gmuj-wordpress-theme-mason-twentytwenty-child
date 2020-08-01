@@ -46,6 +46,11 @@ blockquote {
 	color:#006633;
 }
 
+/* Set default color for main content area */
+main#site-content {
+	color: #73726f;
+}
+
 /* Fix colors, generally */
 /* Only apply this to the main content area, to avoid affecting header and footer, which have differently-colored backgrounds */
 main#site-content .color-accent,
@@ -195,20 +200,46 @@ article, .entry-content, .sidebar {
 /* Style entry header area */
 header.entry-header {
 	padding-top: 2rem !important;
-	padding-bottom:1rem !important;
+	padding-bottom:3rem !important;
 	margin-bottom: 2em;
+	background-color:#eff0e7 !important;
 }
 
-/* Style entry title */
+/* Style all entry titles */
 h1.entry-title {
 	margin-top:0.25em;
 	font-family: 'Roboto Slab', Palatino Linotype, Palatino, serif;
 	letter-spacing: 0.025em;
 }
+/* Style entry title color for titles for single post pages and multiple post pages */
+h1.entry-title, h2.entry-title {
+	color: #42413f;
+}
+/* Style entry title for pages only */
+article.page h1.entry-title {
+	text-align:left;
+}
 
 /* Style entry content */
 .entry-content {
     margin-top:3em;
+}
+
+/* Style entry content headers */
+/* h2 */
+.entry-content h2 {
+	color: #006940;
+	font-size:4rem;
+}
+/* h3 */
+.entry-content h3 {
+	color: #004c2e;
+	font-size:3.5rem;
+}
+/* h4 */
+.entry-content h4 {
+	color: #004c2e;
+	font-size:3rem;
 }
 
 /* Basic widget styling */
