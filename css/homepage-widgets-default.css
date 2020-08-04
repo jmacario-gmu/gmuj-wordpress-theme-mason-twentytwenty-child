@@ -69,6 +69,6 @@ ul#sidebar-homepage-top li, ul#sidebar-homepage-bottom li {
 /* Style homepage top widget area */
 ul#sidebar-homepage-top {
     position: relative; /* so that we can set a z index */
-    z-index: 2; /* so that it will overlap the shadow from the site header */
+    z-index: 1; /* so that it will overlap the shadow from the site header */
     background-color:white;
 }
