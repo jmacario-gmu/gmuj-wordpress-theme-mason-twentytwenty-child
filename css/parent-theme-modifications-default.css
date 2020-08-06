@@ -46,6 +46,17 @@ blockquote {
 	color:#006633;
 }
 
+/* Style captions */
+.entry-content figcaption {
+    background-color: #232525;
+    color: white;
+    margin-top: 0;
+    padding: 1.25em;
+}
+.entry-content figcaption, .wp-caption-text {
+    font-size: 1.4rem;
+}
+
 /* Set default color for main content area */
 main#site-content {
 	color: #73726f;
