@@ -45,3 +45,7 @@
     -o-transform: skewX(30deg);
     transform: skewX(30deg);
 }
+
+ul#prominent-links {
+    margin-right:0.5em;
+}
