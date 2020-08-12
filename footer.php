@@ -29,8 +29,27 @@
 								echo '<span class="site-slogan">'.get_theme_mod('gmuj_site_tagline').'</span>';
 								echo '<br />';
 							}
+
+							// If a custom address was *not* provided in theme customizer, use default address
+							if (!get_theme_mod('gmuj_contact_address_line_1') && !get_theme_mod('gmuj_contact_address_line_2')) {
+								echo '4400 University Drive, Fairfax, Virginia 22030<br />';
+
+							}
 							?>
-							4400 University Drive, Fairfax, Virginia 22030<br />
+
+							<!--Address line 1 from theme customizer-->
+							<?php if (get_theme_mod('gmuj_contact_address_line_1')) {
+								echo get_theme_mod('gmuj_contact_address_line_1');
+								echo '<br />';
+							}
+							?>
+
+							<!--Address line 2 from theme customizer-->
+							<?php if (get_theme_mod('gmuj_contact_address_line_2')) {
+								echo get_theme_mod('gmuj_contact_address_line_2');
+								echo '<br />';
+							}
+							?>
 
 							<!--Contact email address from theme customizer-->
 							<?php if (get_theme_mod('gmuj_contact_email')) {
