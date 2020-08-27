@@ -186,6 +186,11 @@ function gmuj_theme_customizer_register($wp_customize) {
         )
       );
 
+  // Section: 'Theme Options'
+
+  // Remove controls added by parent theme
+    // Remove 'show search in header' option
+      $wp_customize->remove_control('enable_header_search');
 
   // Section: 'Background Image'
 
