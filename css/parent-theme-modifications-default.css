@@ -31,6 +31,11 @@ a {
 	color:#006633;
 }
 
+/* Fix color of links in footer widget areas */
+.footer-widgets a {
+	color:#006633;
+}
+
 /* Fix color of links in entry headers */
 .entry-header a {
 	color: #006633 !important;
@@ -104,6 +109,18 @@ main#site-content input[type="submit"] {
 .sidebar input[type="button"],
 .sidebar input[type="reset"],
 .sidebar input[type="submit"] {
+	background-color:#006633;
+	color:white;
+}
+/* And to the parent theme footer widget areas */
+.footer-widgets-wrapper button,
+.footer-widgets-wrapper .button,
+.footer-widgets-wrapper .faux-button,
+.footer-widgets-wrapper .wp-block-button__link,
+.footer-widgets-wrapper .wp-block-file .wp-block-file__button,
+.footer-widgets-wrapper input[type="button"],
+.footer-widgets-wrapper input[type="reset"],
+.footer-widgets-wrapper input[type="submit"] {
 	background-color:#006633;
 	color:white;
 }
