@@ -117,6 +117,17 @@ function gmuj_theme_customizer_register($wp_customize) {
         )
       );
 
+  // Field: gmuj_contact_address_line_3
+      $wp_customize->add_setting('gmuj_contact_address_line_3');
+      $wp_customize->add_control('gmuj_contact_address_line_3',
+        array(
+          'type'       => 'text',
+          'label'      => 'Address Line 3',
+          'description' => '<p>Included in the footer contact block. Leave blank to hide.</p>',
+          'section'    => 'contact_info'
+        )
+      );
+
   // Field: gmuj_contact_email
       $wp_customize->add_setting('gmuj_contact_email',
         array(

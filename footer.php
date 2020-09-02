@@ -31,7 +31,7 @@
 							}
 
 							// If a custom address was *not* provided in theme customizer, use default address
-							if (!get_theme_mod('gmuj_contact_address_line_1') && !get_theme_mod('gmuj_contact_address_line_2')) {
+							if (!get_theme_mod('gmuj_contact_address_line_1') && !get_theme_mod('gmuj_contact_address_line_2') && !get_theme_mod('gmuj_contact_address_line_3')) {
 								echo '4400 University Drive, Fairfax, Virginia 22030<br />';
 
 							}
@@ -47,6 +47,13 @@
 							<!--Address line 2 from theme customizer-->
 							<?php if (get_theme_mod('gmuj_contact_address_line_2')) {
 								echo get_theme_mod('gmuj_contact_address_line_2');
+								echo '<br />';
+							}
+							?>
+
+							<!--Address line 3 from theme customizer-->
+							<?php if (get_theme_mod('gmuj_contact_address_line_3')) {
+								echo get_theme_mod('gmuj_contact_address_line_3');
 								echo '<br />';
 							}
 							?>
