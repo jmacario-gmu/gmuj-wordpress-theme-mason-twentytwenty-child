@@ -315,7 +315,7 @@ ul.social-menu {
 
 /* Homepage customizations */
 /* Hide page title for home page */
-body.home header.entry-header {
+body.home.singular header.entry-header {
 	display:none;
 }
 
