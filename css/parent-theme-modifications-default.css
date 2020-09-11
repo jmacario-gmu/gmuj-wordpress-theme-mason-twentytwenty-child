@@ -319,3 +319,7 @@ body.home.singular header.entry-header {
 	display:none;
 }
 
+/* Hide post separators on homepage */
+body.home .post-separator {
+	display:none;
+}
