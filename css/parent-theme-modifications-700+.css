@@ -14,7 +14,7 @@ header#site-header {
 }
 /* Style entry header area */
 header.entry-header {
-	padding-bottom:4rem !important;
+	padding-bottom: 2rem !important;
 }
 
 /* Style entry title */

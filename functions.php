@@ -36,3 +36,6 @@ require(get_stylesheet_directory(). '/php/custom-styles.php');
 
 //Include customizations related to the 'read more' link
 require(get_stylesheet_directory(). '/php/custom-read-more.php');
+
+//Include customizations related to the website 'breadcrumbs'
+require(get_stylesheet_directory(). '/php/custom-breadcrumbs.php');

@@ -30,3 +30,6 @@ Version: 0.0.9
 
 /* Collapse-O-Matic styles */
 	@import 'css/collapse-o-matic.css';
+
+/* Breadcrumbs styles */
+	@import 'css/breadcrumbs.css';

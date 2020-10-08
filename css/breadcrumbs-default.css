@@ -1,0 +1,45 @@
+/* breadcrumbs styling */
+
+/* Default and small screens */
+
+#breadcrumbs-wrapper {
+	font-size:0.8em;
+	margin-top:1em;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+.page #breadcrumbs-wrapper {
+	text-align:left;
+}
+
+#breadcrumbs{
+    list-style:none;
+    margin:10px 0;
+    overflow:hidden;
+}
+  
+#breadcrumbs li{
+	margin-left:0;
+	margin-right:1em;
+    display:inline-block;
+    vertical-align:middle;
+}
+
+#breadcrumbs li {
+	color: #87908f !important;
+}
+
+#breadcrumbs li a {
+	color: #87908f !important;
+}
+
+#breadcrumbs li a:hover {
+	color: #006633 !important;
+	text-decoration:underline;
+}
+
+#breadcrumbs .separator{
+    font-weight:100;
+    color: #87908f;
+}
