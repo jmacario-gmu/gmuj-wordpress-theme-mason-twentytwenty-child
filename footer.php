@@ -16,7 +16,7 @@
 
 						<p class="footer-logo">
 							<a href="https://www.gmu.edu">
-								<img src="<?php echo get_stylesheet_directory_uri() . '/images/logo-Mason-2-color-with-shadow-259x181.png' ?>" />
+								<img src="<?php echo get_stylesheet_directory_uri() . '/images/logo-Mason-2-color-with-shadow-259x181.png' ?>" alt="George Mason University logo" />
 							</a>
 						</p>
 
