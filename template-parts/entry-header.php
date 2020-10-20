@@ -50,7 +50,7 @@ if ( is_singular() ) {
 
 		// Child theme customization: breadcrumbs
 
-		echo '<div id="breadcrumbs-wrapper">';
+		echo '<div class="breadcrumbs-wrapper">';
 		gmuj_display_breadcrumbs();
 		echo '</div>';
 

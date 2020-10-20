@@ -13,8 +13,7 @@ function gmuj_display_breadcrumbs(){
 
   // Set basic settings
   $separator          = '/';
-  $breadcrums_id      = 'breadcrumbs';
-  $breadcrums_class   = 'breadcrumbs';
+  $breadcrumbs_class   = 'breadcrumbs';
   $home_title         = 'Home';
 
   // If this post/page is not the homepage...
@@ -24,7 +23,7 @@ function gmuj_display_breadcrumbs(){
     if (is_page()) {
 
       // Start breadcrumbs output
-      echo '<ul id="' . $breadcrums_id . '" class="' . $breadcrums_class . '">';
+      echo '<ul class="' . $breadcrumbs_class . '">';
 
       // Display home page link
       echo '<li class="item-home">';
