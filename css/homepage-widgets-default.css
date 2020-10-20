@@ -30,7 +30,6 @@ ul.sidebar-homepage:not(#sidebar-homepage-banner) > li h3.widget-title {
     text-align: center;
     letter-spacing: 0.025em;
     padding: 20px 0px;
-    font-family: 'Roboto Slab', serif;
     font-weight:bold;
     color:#006633;
 }
