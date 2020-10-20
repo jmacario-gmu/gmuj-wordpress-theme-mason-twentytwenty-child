@@ -27,11 +27,11 @@
 }
 
 #breadcrumbs li {
-	color: #87908f !important;
+	color: #666f6e !important;
 }
 
 #breadcrumbs li a {
-	color: #87908f !important;
+	color: #666f6e !important;
 }
 
 #breadcrumbs li a:hover {
@@ -41,5 +41,5 @@
 
 #breadcrumbs .separator{
     font-weight:100;
-    color: #87908f;
+    color: #666f6e;
 }
