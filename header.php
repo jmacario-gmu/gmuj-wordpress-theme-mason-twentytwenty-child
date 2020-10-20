@@ -54,7 +54,7 @@
 
 						?>
 
-						<button class="toggle search-toggle mobile-search-toggle" data-toggle-target=".search-modal" data-toggle-body-class="showing-search-modal" data-set-focus=".search-modal .search-field" aria-expanded="false">
+						<button class="toggle search-toggle mobile-search-toggle" data-toggle-target=".search-modal" data-toggle-body-class="showing-search-modal" data-set-focus=".search-modal .search-field" aria-expanded="false" aria-label="search">
 							<span class="toggle-inner">
 								<span class="toggle-icon">
 									<?php twentytwenty_the_theme_svg( 'search' ); ?>
@@ -163,7 +163,7 @@
 
 							<div class="toggle-wrapper search-toggle-wrapper">
 
-								<button class="toggle search-toggle desktop-search-toggle" data-toggle-target=".search-modal" data-toggle-body-class="showing-search-modal" data-set-focus=".search-modal .search-field" aria-expanded="false">
+								<button class="toggle search-toggle desktop-search-toggle" data-toggle-target=".search-modal" data-toggle-body-class="showing-search-modal" data-set-focus=".search-modal .search-field" aria-expanded="false" aria-label="search">
 									<span class="toggle-inner">
 										<?php twentytwenty_the_theme_svg( 'search' ); ?>
 										<span class="toggle-text"><?php _e( 'Search', 'twentytwenty' ); ?></span>
