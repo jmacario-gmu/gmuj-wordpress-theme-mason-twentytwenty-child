@@ -62,6 +62,11 @@ blockquote {
     font-size: 1.4rem;
 }
 
+/* Style code */
+code {
+	color:#595855;
+}
+
 /* Set default color for main content area */
 main#site-content {
 	color: #73726f;
