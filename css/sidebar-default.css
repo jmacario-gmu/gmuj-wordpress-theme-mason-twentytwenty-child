@@ -1,0 +1,40 @@
+/* sidebar styling */
+
+/* Default and small screens */
+
+/* Style sidebar wrapper, which contains two elements: the actual sidebar div, and the original regular content div */
+.gmuj-sidebar-wrapper {
+
+}
+
+/* Style sidebar div - by default, don't display it */
+.gmuj-sidebar {
+	display:none;
+}
+
+/* Show the sidebar if we are on a 'singular' type page/post */
+body.singular .gmuj-sidebar {
+	display:block;
+	padding: 1em;
+	padding-top:1.5em;
+    margin: -2em 0 1em;
+    background-color: #f6f7f2;
+    border-top: 1px solid #888f7f;
+    border-bottom: 1px solid #888f7f;
+}
+
+/* Style the major components of the sidebar area: the initial widget li tags, and the post meta content area */
+.gmuj-sidebar > li, .gmuj-sidebar-post-meta {
+	margin:2em;
+	font-size:0.9em;
+}
+
+/* Style the widget titles in the sidebar */
+.gmuj-sidebar h3.widget-title {
+	font-size: 1.5rem;
+}
+
+/* Style the post meta content area */
+.gmuj-sidebar-post-meta {
+	margin-bottom:1em;
+}

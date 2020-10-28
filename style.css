@@ -33,3 +33,6 @@ Version: 0.0.9
 
 /* Breadcrumbs styles */
 	@import 'css/breadcrumbs.css';
+
+/* Sidebar styles */
+	@import 'css/sidebar.css';

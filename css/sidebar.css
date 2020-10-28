@@ -1,0 +1,8 @@
+/* sidebar styling */
+
+/* Default and small screens */
+@import 'sidebar-default.css';
+
+/* 800+ pixels */
+@import 'sidebar-800+.css' screen and (min-width: 800px);
+
