@@ -2,14 +2,21 @@
 
 /* 800+ pixels */
 
-/* Style sidebar wrapper, which contains two elements: the actual sidebar div, and the original regular content div */
-body.singular .gmuj-sidebar-wrapper {
+
+/* Hide the sidebar on the narrow (default) template */
+body.singular .gmuj-sidebar {
+	display:none;
+}
+
+/* On only singular pages using the full-width template, Style sidebar wrapper, which contains two elements: the actual sidebar div, and the original regular content div */
+body.singular.page-template-template-full-width .gmuj-sidebar-wrapper {
 	display:flex;
 	justify-content: flex-start;
 }
 
-/* Style sidebar div */
-body.singular .gmuj-sidebar {
+/* On only singular pages using the full-width template, style sidebar div */
+body.singular.page-template-template-full-width .gmuj-sidebar {
+	display:block;
 	min-width:10em;
 	max-width:20em;
 	padding:0;
