@@ -30,12 +30,19 @@ body.singular.page-template-template-full-width .gmuj-sidebar {
 /* Style the major components of the sidebar area: the initial widget li tags, and the post meta content area */
 .gmuj-sidebar > li, .gmuj-sidebar-post-meta {
 	background-color:#f6f7f2;
-	padding:1em 0.5em;
-	margin-top:0;
-	margin-bottom:4px;
+	padding:0.5em;
+	padding-top:1em;
+	padding-right:1em;
+	margin-top:4px;
+	margin-bottom:0;
 	margin-left:0;
 	margin-right:0;
 	font-size:1em;
+}
+
+/* Ensure that we also get top border on first widget in the sidebar area (this is required to override a rule from the parent theme) */
+.gmuj-sidebar .widget:first-child {
+	margin-top:4px;
 }
 
 /* Style the widget titles in the sidebar */
