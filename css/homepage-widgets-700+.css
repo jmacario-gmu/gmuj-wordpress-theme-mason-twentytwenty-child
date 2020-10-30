@@ -9,6 +9,11 @@ ul#sidebar-homepage-banner > li h3.widget-title {
     margin-bottom:2.5rem;
 }
 
+/* Style homepage top and bottom widget item subtitles */
+ul#sidebar-homepage-top p.widget-title-sub, ul#sidebar-homepage-bottom p.widget-title-sub {
+    text-align:center;
+}
+
 /* Style homepage top and bottom widget areas */
 ul#sidebar-homepage-top, ul#sidebar-homepage-bottom {
     width: calc(100% - 8rem);
