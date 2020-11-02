@@ -48,5 +48,22 @@ body.singular.page-template-template-full-width .gmuj-sidebar {
 /* Style the widget titles in the sidebar */
 .gmuj-sidebar h3.widget-title {
 	font-size: 2rem;
-	margin-bottom:1rem;
+	margin-bottom:1.5rem;
+}
+
+/* Style lists in the sidebar */
+.gmuj-sidebar ul {
+	list-style-type: none;
+	margin-left:0;
+	margin-bottom:1em;
+}
+
+/* Style list items in the sidebar */
+.gmuj-sidebar ul li {
+	margin-top:0.75em;
+}
+
+/* Style list items in the sidebar */
+.gmuj-sidebar a {
+	text-decoration:none;
 }
