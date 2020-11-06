@@ -48,9 +48,17 @@ header#site-header:before {
 	margin: 1rem 0 0 0;
 }
 
+/* Allow for larger logo */
+.site-logo img {
+	max-height: 13rem;
+}
+
 /* Style site name */
 div.site-name {
-	margin-bottom:5px;
+	margin-bottom: 0.5em;
+    margin-left: -0.5em;
+    font-weight: normal;
+    text-shadow: 3px 3px 4px black;
 }
 
 /* Style site name link */
