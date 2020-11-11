@@ -34,6 +34,12 @@ body.singular .gmuj-sidebar {
 	font-size: 1.5rem;
 }
 
+/* Style list items in the sidebar */
+.gmuj-sidebar .widget li li {
+    margin-left: 1em;
+    margin-top: 0.75em;
+}
+
 /* Style the post meta content area */
 .gmuj-sidebar-post-meta {
 	margin-bottom:1em;
