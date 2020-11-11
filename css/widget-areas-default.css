@@ -1,0 +1,73 @@
+/* Widget area styles */
+
+/* Default and small screens */
+
+
+/* Style widget areas */
+ul.sidebar-homepage, ul.sidebar-internal-page {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+    color: #73726f;
+}
+
+/* Style widget area top-level list items */
+ul.sidebar-homepage > li, ul.sidebar-internal-page > li {
+	margin:0;
+	padding:1em;
+}
+
+/* Style banner widget area */
+ul#sidebar-homepage-banner, ul#sidebar-internal-page-banner {
+    position: relative; /* so we can set a z-index */
+    z-index: 1; /* so it overlaps the semi-transparent background shadow */
+	color:white; /* as this content will go over the background-image, we want the text to be visible */
+}
+
+/* Style regular (not banner) homepage widget item titles */
+ul.sidebar-homepage:not(#sidebar-homepage-banner) > li h3.widget-title {
+    margin:0 1em 0.5em;
+    text-align: center;
+    letter-spacing: 0.025em;
+    padding: 20px 0px;
+    font-weight:bold;
+    color:#006633;
+}
+
+/* Style custom HTML widgets used on widget areas (not homepage banner) */
+ul.sidebar-homepage:not(#sidebar-homepage-banner) > li div.textwidget, ul.sidebar-internal-page:not(#sidebar-internal-page-banner) > li div.textwidget {
+    max-width: 100rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Style top and bottom widget areas */
+ul#sidebar-homepage-top, ul#sidebar-homepage-bottom, ul#sidebar-internal-page-top, ul#sidebar-internal-page-bottom {
+    width: calc(100% - 4rem);
+    margin-left: auto;
+    margin-right: auto;
+    max-width:120rem;
+}
+
+/* Style top widget areas */
+ul#sidebar-homepage-top, ul#sidebar-internal-page-top {
+    margin-bottom:3em;
+}
+
+/* Style top and bottom widget areas list items*/
+ul#sidebar-homepage-top li, ul#sidebar-homepage-bottom li, ul#sidebar-internal-page-top li, ul#sidebar-internal-page-bottom li {
+    padding-left:0;
+    padding-right:0;
+}
+
+/* Style internal page top widget items */
+ul#sidebar-internal-page-top > li {
+    padding-top:0;
+}
+
+/* Style homepage top widget area */
+ul#sidebar-homepage-top, ul#sidebar-internal-page-top {
+    position: relative; /* so that we can set a z index */
+    z-index: 1; /* so that it will overlap the shadow from the site header */
+    background-color:white;
+}

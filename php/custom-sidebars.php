@@ -18,6 +18,12 @@ function gmuj_register_custom_widget_areas(){
     gmuj_widget_area_registration('Homepage - Top', 'sidebar-homepage-top', 'Widgets in this area will appear on the homepage above the regular page content.', '<li id="%1$s" class="widget %2$s">', '</li>', '<h3 class="widget-title">', '</h3>');
     //Register homepage bottom widget area
     gmuj_widget_area_registration('Homepage - Bottom', 'sidebar-homepage-bottom', 'Widgets in this area will appear on the homepage below the regular page content.', '<li id="%1$s" class="widget %2$s">', '</li>', '<h3 class="widget-title">', '</h3>');
+    //Register internal page banner widget area
+    gmuj_widget_area_registration('Internal Page - Banner', 'sidebar-internal-page-banner', 'Widgets in this area will appear on internal pages within the website banner area.', '<li id="%1$s" class="widget %2$s">', '</li>', '<h3 class="widget-title">', '</h3>');
+    //Register internal page top widget area
+    gmuj_widget_area_registration('Internal Page - Top', 'sidebar-internal-page-top', 'Widgets in this area will appear on internal pages above the regular page content.', '<li id="%1$s" class="widget %2$s">', '</li>', '<h3 class="widget-title">', '</h3>');
+    //Register internal page bottom widget area
+    gmuj_widget_area_registration('Internal Page - Bottom', 'sidebar-internal-page-bottom', 'Widgets in this area will appear on internal pages below the regular page content.', '<li id="%1$s" class="widget %2$s">', '</li>', '<h3 class="widget-title">', '</h3>');
     //Register sidebar widget area
     gmuj_widget_area_registration('Sidebar', 'gmuj-sidebar-widget-area', 'Widgets in this area will appear in the sidebar to the left of the regular page content.', '<li id="%1$s" class="widget %2$s">', '</li>', '<h3 class="widget-title">', '</h3>');
 

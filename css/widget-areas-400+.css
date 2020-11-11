@@ -1,0 +1,10 @@
+/* Widget area styles */
+
+/* 400+ pixels */
+
+
+/* Style regular (not banner) widget item titles */
+ul.sidebar-homepage:not(#sidebar-homepage-banner) > li h3.widget-title, ul.sidebar-internal-page:not(#sidebar-internal-page-banner) > li h3.widget-title {
+    position: relative;
+    z-index: 1;
+}

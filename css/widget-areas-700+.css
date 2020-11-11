@@ -1,0 +1,20 @@
+/* Widget area styles */
+
+/* 700+ pixels */
+
+
+/* Style banner widget item titles */
+ul#sidebar-homepage-banner > li h3.widget-title, ul#sidebar-internal-page-banner > li h3.widget-title {
+    font-size:3.5rem;
+    margin-bottom:2.5rem;
+}
+
+/* Style top and bottom widget item subtitles */
+ul#sidebar-homepage-top p.widget-title-sub, ul#sidebar-homepage-bottom p.widget-title-sub, ul#sidebar-internal-page-top p.widget-title-sub, ul#sidebar-internal-page-bottom p.widget-title-sub {
+    text-align:center;
+}
+
+/* Style top and bottom widget areas */
+ul#sidebar-homepage-top, ul#sidebar-homepage-bottom, ul#sidebar-internal-page-top, ul#sidebar-internal-page-bottom {
+    width: calc(100% - 8rem);
+}

@@ -22,8 +22,8 @@ Version: 0.0.9
 /* Main navigation bar modifications to parent theme */
 	@import 'css/main-navigation-bar.css';
 
-/* Homepage widgets */
-	@import 'css/homepage-widgets.css';
+/* Widget areas */
+	@import 'css/widget-areas.css';
 
 /* Footer modifications to parent theme */
 	@import 'css/footer.css';

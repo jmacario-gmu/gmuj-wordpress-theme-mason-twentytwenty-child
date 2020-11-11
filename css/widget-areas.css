@@ -1,0 +1,13 @@
+/* Widget area styles */
+
+/* Default and small screens */
+@import 'widget-areas-default.css';
+
+/* 400+ pixels */
+@import 'widget-areas-400+.css' screen and (min-width: 400px);
+
+/* 700+ pixels */
+@import 'widget-areas-700+.css' screen and (min-width: 700px);
+
+/* 1,000+ pixels */
+@import 'widget-areas-1000+.css' screen and (min-width: 1000px);

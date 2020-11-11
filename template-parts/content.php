@@ -47,6 +47,10 @@
 			
 			<div class="entry-content">
 
+				<!-- Child theme customization: internal page top widget area -->
+				<?php if (!is_front_page()) { get_template_part('template-parts/widget-area','internal-page-top'); } ?>
+				<!-- /Child theme customization: internal page top widget area -->
+
 				<?php
 				if ( is_search() || ! is_singular() && 'summary' === get_theme_mod( 'blog_content', 'full' ) ) {
 					the_excerpt();
@@ -54,6 +58,10 @@
 					the_content( __( 'Continue reading', 'twentytwenty' ) );
 				}
 				?>
+
+				<!-- Child theme customization: internal page bottom widget area -->
+				<?php if (!is_front_page()) { get_template_part('template-parts/widget-area','internal-page-bottom'); } ?>
+				<!-- /Child theme customization: internal page bottom widget area -->
 
 			</div><!-- .entry-content -->
 
