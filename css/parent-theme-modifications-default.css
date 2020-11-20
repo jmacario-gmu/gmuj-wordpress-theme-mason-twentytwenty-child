@@ -328,3 +328,13 @@ body.home.singular header.entry-header {
 body.home .post-separator {
 	display:none;
 }
+
+/* Blog page customizations */
+/* Add bottom margin to articles */
+body.blog article {
+	margin-bottom:3em;
+}
+/* But not on the last article */
+body.blog article:last-of-type {
+	margin-bottom:0em;
+}

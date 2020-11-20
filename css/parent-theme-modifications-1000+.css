@@ -70,3 +70,9 @@ div.site-name a {
 body.page-template-template-full-width div.entry-header-inner {
 	max-width:120rem;
 }
+
+/* Blog page customizations */
+/* Add bottom margin to articles */
+body.blog article {
+	margin-bottom:8em;
+}
