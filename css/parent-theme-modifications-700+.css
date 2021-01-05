@@ -27,6 +27,11 @@ h1.entry-title, h2.entry-title {
 	font-size:18px;
 }
 
+/* On only singular pages using the full-width template, style entry-content div */
+body.singular.page-template-template-full-width .entry-content {
+	min-width:20em;
+}
+
 /* Remove extra space above the first article on archive pages */
 body:not(.singular) main > article:first-of-type {
     padding-top:0;
