@@ -29,7 +29,7 @@ h1.entry-title, h2.entry-title {
 
 /* On only singular pages using the full-width template, style entry-content div */
 body.singular.page-template-template-full-width .entry-content {
-	min-width:20em;
+	min-width:35em;
 }
 
 /* Remove extra space above the first article on archive pages */
