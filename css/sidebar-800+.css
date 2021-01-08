@@ -16,7 +16,7 @@ body.singular.page-template-template-full-width .gmuj-sidebar-wrapper {
 /* On only singular pages using the full-width template, style sidebar div */
 body.singular.page-template-template-full-width .gmuj-sidebar {
 	display:block;
-	min-width:12em;
+	min-width:2em;
 	max-width:20em;
 	padding:0;
 	margin:0;
