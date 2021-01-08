@@ -21,6 +21,7 @@
 
 /* Add an :after pseudo-element to the trigger for an open/close graphic that changes when the trigger is clicked */
 .collapseomatic::after{
+	font-weight: 900;
 	display: inline-block;
 	font-family: Font Awesome\ 5 Free;
 	content: '\f055';
@@ -31,5 +32,6 @@
 
 /* Switch the trigger graphic when the target element is open */
 .collapseomatic.colomat-close::after{
+	font-weight: 900;
 	content: "\f056";	
 }
