@@ -101,7 +101,7 @@ function gmuj_register_meta_boxes_people() {
 	// Define the meta box and custom fields
 	    $meta_boxes_people = array(
 	        'title' => 'Person Information',
-	        'pages' => array('person'),
+	        'pages' => array('person'), // What post types does this meta box apply to?
 	        'context' => 'normal', // Where the meta box appear: normal (default), advanced, side. Optional.
 	        'priority' => 'high', // Order of meta box: high (default), low. Optional.
 	        'fields' => array(
