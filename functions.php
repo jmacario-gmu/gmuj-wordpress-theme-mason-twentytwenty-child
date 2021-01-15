@@ -42,3 +42,6 @@ require(get_stylesheet_directory(). '/php/custom-breadcrumbs.php');
 
 //Include customizations related to implementation of custom meta boxes
 require(get_stylesheet_directory(). '/php/custom-meta-boxes.php');
+
+//Include customizations related to the custom post type: people
+require(get_stylesheet_directory(). '/php/custom-post-type-people.php');
