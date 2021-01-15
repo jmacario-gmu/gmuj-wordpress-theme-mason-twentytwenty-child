@@ -34,6 +34,23 @@ ul.sidebar-homepage:not(#sidebar-homepage-banner) > li h3.widget-title {
     color:#006633;
 }
 
+/* Style regular (not banner) widget item sub-titles, other than when used on the homepage banner */
+ul.sidebar-homepage:not(#sidebar-homepage-banner) li.widget p.widget-title-sub,
+div.entry-content li.widget p.widget-title-sub {
+    margin-top: -1em;
+    margin-bottom:2em;
+    text-align:center;
+    font-color:#006633 !important;
+    font-size:1.1em;
+}
+
+/* Style widget item sub-titles for the homepage banner */
+ul#sidebar-homepage-banner li.widget p.widget-title-sub {
+    margin-left:1em;
+    margin-bottom:2em;
+    font-size:1.1em;
+}
+
 /* Style custom HTML widgets used on widget areas (not homepage banner) */
 ul.sidebar-homepage:not(#sidebar-homepage-banner) > li div.textwidget, ul.sidebar-internal-page:not(#sidebar-internal-page-banner) > li div.textwidget {
     max-width: 100rem;
