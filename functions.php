@@ -39,3 +39,6 @@ require(get_stylesheet_directory(). '/php/custom-read-more.php');
 
 //Include customizations related to the website 'breadcrumbs'
 require(get_stylesheet_directory(). '/php/custom-breadcrumbs.php');
+
+//Include customizations related to implementation of custom meta boxes
+require(get_stylesheet_directory(). '/php/custom-meta-boxes.php');
