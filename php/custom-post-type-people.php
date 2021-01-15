@@ -55,3 +55,36 @@ function gmuj_register_custom_post_type_people() {
  
     register_post_type('person', $args);
 }
+
+/**
+ * Register a taxonomy for people
+ */
+add_action('init', 'gmuj_create_people_taxonomy');
+function gmuj_create_people_taxonomy() {
+
+	// Register taxonomy
+		register_taxonomy(
+			'groups',
+			'person',
+			array(
+			'hierarchical' => true,
+			'labels' => array(
+				'name' => 'Groups',
+				'singular_name' => 'Group',
+				'search_items' =>  'Search Groups',
+				'all_items' => 'All Groups',
+				'parent_item' => 'Parent Group',
+				'parent_item_colon' => 'Parent Group:',
+				'edit_item' => 'Edit Group',
+				'update_item' => 'Update Group',
+				'add_new_item' => 'Add New Group',
+				'new_item_name' => 'New Group',
+				'menu_name' => 'Groups',
+				),
+			'show_ui' => true,
+			'query_var' => true,
+			'rewrite' => array( 'slug' => 'group' ),
+			)
+		);
+
+}
