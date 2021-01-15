@@ -88,3 +88,69 @@ function gmuj_create_people_taxonomy() {
 		);
 
 }
+
+/**
+ * Register meta boxes and custom fields for the people custom post type
+ */
+add_action('admin_init', 'gmuj_register_meta_boxes_people');
+function gmuj_register_meta_boxes_people() {
+
+    // Set the meta box fields meta-key prefix
+		$prefix = 'gmuj_';
+
+	// Define the meta box and custom fields
+	    $meta_boxes_people = array(
+	        'title' => 'Person Information',
+	        'pages' => array('person'),
+	        'context' => 'normal', // Where the meta box appear: normal (default), advanced, side. Optional.
+	        'priority' => 'high', // Order of meta box: high (default), low. Optional.
+	        'fields' => array(
+	            array(
+	                'name' => 'Last Name', // Field name - Will be used as label
+	                'id' => $prefix . 'name_last', // Field ID, i.e. the meta key
+	                'desc' => 'Used for alphabetizing people', // Field description (optional)
+	                'type'  => 'text', // Field type
+	            ),
+	            array(
+	                'name' => 'E-mail Address', // Field name - Will be used as label
+	                'id' => $prefix . 'contact_email', // Field ID, i.e. the meta key
+	                'type'  => 'text', // Field type
+	            ),
+	            array(
+	                'name' => 'Title/Role', // Field name - Will be used as label
+	                'id' => $prefix . 'person_title', // Field ID, i.e. the meta key
+	                'type'  => 'text', // Field type
+	            ),
+	            array(
+	                'name' => 'Phone Number', // Field name - Will be used as label
+	                'id' => $prefix . 'contact_phone', // Field ID, i.e. the meta key
+	                'desc' => 'Format: 555-123-1234', // Field description (optional)
+	                'type'  => 'text', // Field type
+	            ),
+	            array(
+	                'name' => 'Website', // Field name - Will be used as label
+	                'id' => $prefix . 'website', // Field ID, i.e. the meta key
+	                'desc' => 'Must start with http:// or https://', // Field description (optional)
+	                'type'  => 'text', // Field type
+	            ),
+	        ),
+	        'validation' => array(
+	            'rules' => array(
+	                // make last_name required
+	                $prefix . 'last_name' => array(
+	                    'required' => true,
+	                ),
+	            ),
+	            // override of default jquery.validate messages
+	            'messages' => array(
+	                $prefix . 'last_name' => array(
+	                    'required' => 'Last Name is Required',
+	                ),
+	            )
+	        )
+	    );
+
+    // Register the person information meta box
+        new RW_Meta_Box($meta_boxes_people);
+
+}
