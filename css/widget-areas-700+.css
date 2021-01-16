@@ -3,10 +3,10 @@
 /* 700+ pixels */
 
 
-/* Style widget titles */
-.widget h3.widget-title {
-	font-size:3.5rem;
-	margin-bottom:2.5rem;
+/* Style banner widget item titles */
+ul#sidebar-homepage-banner > li h3.widget-title, ul#sidebar-internal-page-banner > li h3.widget-title {
+    font-size:3.5rem;
+    margin-bottom:2.5rem;
 }
 
 /* Style top and bottom widget areas */

@@ -17,12 +17,6 @@ ul.sidebar-homepage > li, ul.sidebar-internal-page > li {
     padding:1em;
 }
 
-/* Style top and bottom widget item subtitles */
-.widget p.widget-title-sub {
-    font-size:1.3em;
-    margin-bottom:2em;
-}
-
 /* Style banner widget area */
 ul#sidebar-homepage-banner, ul#sidebar-internal-page-banner {
     position: relative; /* so we can set a z-index */
@@ -38,6 +32,20 @@ ul.sidebar-homepage:not(#sidebar-homepage-banner) > li h3.widget-title {
     padding: 20px 0px;
     font-weight:bold;
     color:#006633;
+}
+
+/* Style widget item subtitles */
+li.widget p.widget-title-sub {
+    text-align:center;
+    margin-top:-1em;
+    margin-bottom: 2em;
+    font-size:1.3em;
+}
+
+/* Style banner widget item subtitles */
+ul#sidebar-homepage-banner li.widget p.widget-title-sub, ul#sidebar-internal-page-banner li.widget p.widget-title-sub {
+    text-align:left;
+    margin-top:0;
 }
 
 /* Style custom HTML widgets used on widget areas (not homepage banner) */
@@ -71,14 +79,14 @@ ul#sidebar-internal-page-top > li {
     padding-top:0;
 }
 
-/* Style top and bottom widget item subtitles */
-ul#sidebar-homepage-top p.widget-title-sub, ul#sidebar-homepage-bottom p.widget-title-sub, ul#sidebar-internal-page-top p.widget-title-sub, ul#sidebar-internal-page-bottom p.widget-title-sub {
-    text-align:center;
-}
-
 /* Style homepage top widget area */
 ul#sidebar-homepage-top, ul#sidebar-internal-page-top {
     position: relative; /* so that we can set a z index */
     z-index: 1; /* so that it will overlap the shadow from the site header */
     background-color:white;
+}
+
+/* Style widget items in the main page content */
+div.entry-content li.widget {
+    margin-bottom:3em;
 }
