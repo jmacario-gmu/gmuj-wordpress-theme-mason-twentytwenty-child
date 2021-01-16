@@ -5,23 +5,29 @@
 
 /* Style widget areas */
 ul.sidebar-homepage, ul.sidebar-internal-page {
-	list-style-type:none;
-	margin:0;
-	padding:0;
+    list-style-type:none;
+    margin:0;
+    padding:0;
     color: #73726f;
 }
 
 /* Style widget area top-level list items */
 ul.sidebar-homepage > li, ul.sidebar-internal-page > li {
-	margin:0;
-	padding:1em;
+    margin:0;
+    padding:1em;
+}
+
+/* Style top and bottom widget item subtitles */
+.widget p.widget-title-sub {
+    font-size:1.3em;
+    margin-bottom:2em;
 }
 
 /* Style banner widget area */
 ul#sidebar-homepage-banner, ul#sidebar-internal-page-banner {
     position: relative; /* so we can set a z-index */
     z-index: 1; /* so it overlaps the semi-transparent background shadow */
-	color:white; /* as this content will go over the background-image, we want the text to be visible */
+    color:white; /* as this content will go over the background-image, we want the text to be visible */
 }
 
 /* Style regular (not banner) homepage widget item titles */
@@ -32,23 +38,6 @@ ul.sidebar-homepage:not(#sidebar-homepage-banner) > li h3.widget-title {
     padding: 20px 0px;
     font-weight:bold;
     color:#006633;
-}
-
-/* Style regular (not banner) widget item sub-titles, other than when used on the homepage banner */
-ul.sidebar-homepage:not(#sidebar-homepage-banner) li.widget p.widget-title-sub,
-div.entry-content li.widget p.widget-title-sub {
-    margin-top: -1em;
-    margin-bottom:2em;
-    text-align:center;
-    font-color:#006633 !important;
-    font-size:1.1em;
-}
-
-/* Style widget item sub-titles for the homepage banner */
-ul#sidebar-homepage-banner li.widget p.widget-title-sub {
-    margin-left:1em;
-    margin-bottom:2em;
-    font-size:1.1em;
 }
 
 /* Style custom HTML widgets used on widget areas (not homepage banner) */
@@ -80,6 +69,11 @@ ul#sidebar-homepage-top li, ul#sidebar-homepage-bottom li, ul#sidebar-internal-p
 /* Style internal page top widget items */
 ul#sidebar-internal-page-top > li {
     padding-top:0;
+}
+
+/* Style top and bottom widget item subtitles */
+ul#sidebar-homepage-top p.widget-title-sub, ul#sidebar-homepage-bottom p.widget-title-sub, ul#sidebar-internal-page-top p.widget-title-sub, ul#sidebar-internal-page-bottom p.widget-title-sub {
+    text-align:center;
 }
 
 /* Style homepage top widget area */
