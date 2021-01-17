@@ -26,6 +26,11 @@ body.singular.page-template-template-full-width .gmuj-sidebar {
 	border-bottom:none;
 }
 
+/* On only singular pages using the full-width template, style entry content area */
+body.singular.page-template-template-full-width .entry-content {
+	flex-grow:1; /* ensure that the entry content can grow in width */
+}
+
 /* Style the major components of the sidebar area: the initial widget li tags, and the post meta content area */
 .gmuj-sidebar > li, .gmuj-sidebar-post-meta {
 	background-color:#f6f7f2;
