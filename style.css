@@ -36,3 +36,6 @@ Version: 0.1.0
 
 /* Sidebar styles */
 	@import 'css/sidebar.css';
+
+/* Custom post type: person styles */
+	@import 'css/people.css';
