@@ -54,7 +54,7 @@ $gmuj_website = trim(get_post_meta(get_the_ID(), 'gmuj_website', true));
 					}
 
 				// groups
-					$groups = get_the_term_list($post->ID, 'groups','',', '); 
+					$groups = strip_tags(get_the_term_list($post->ID, 'groups','',', '));
 					if (!empty($groups)) {
 						echo '<p>Groups: '.$groups.'</p>';
 					}
