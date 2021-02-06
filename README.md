@@ -1,13 +1,7 @@
-=== Mason WordPress: Mason Twenty Twenty Theme ===
-Contributors: Jan Macario
-Requires at least: 4.7
-Tested up to: 5.6
-Requires PHP: 7.0
-Stable tag: 1.0
+Mason WordPress: Mason Twenty Twenty Theme
+==========================================
 
-This is a custom Mason-styled WordPress child theme based on the official WordPress Twentytwenty theme.
-
-== Description ==
+A custom Mason-styled WordPress child theme based on the official WordPress Twentytwenty theme.
 
 Features
 --------
