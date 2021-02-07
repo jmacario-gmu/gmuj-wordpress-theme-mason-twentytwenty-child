@@ -50,7 +50,7 @@
 	}
 
 	/* Set link hover color and active menu item color for main navigation sub-menus */
-	ul.primary-menu ul li a:hover, ul.primary-menu ul li.current-menu-item a {
+	ul.primary-menu ul li a:hover, ul.primary-menu ul li.current-menu-item {
 	    background-color: #c67aba;
 	}
 
