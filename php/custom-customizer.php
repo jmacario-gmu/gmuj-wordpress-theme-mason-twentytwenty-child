@@ -29,6 +29,21 @@ function gmuj_theme_customizer_register($wp_customize) {
         )
       );
 
+  // Field: footer logo
+    $wp_customize->add_setting('gmuj_site_footer_logo');
+    $wp_customize->add_control(
+      new WP_Customize_Image_Control(
+        $wp_customize,'gmuj_site_footer_logo',
+        array(
+          'label' => 'Footer Logo',
+          'description' => 'Logo that appears in the footer section.<br /><strong>Leave blank to use the defalt footer logo (recommended).</strong>',
+          'settings'  => 'gmuj_site_footer_logo',
+          'section'   => 'title_tagline',
+          'priority' => 20,
+        )
+      )
+    );
+
   // Section: organizational information
 
   // Add section: org_info
