@@ -52,12 +52,12 @@
 	/* Set link hover color and active menu item color for main navigation sub-menus */
 	ul.primary-menu ul li a:hover::after, ul.primary-menu ul li.current-menu-item a::after {
 	    content: "";
-	    background-color: #fc3;
+	    background-color: #fff;
 	    position: absolute;
 	    left: 1em;
 	    right: 1em;
 	    bottom: -0.1em;
-	    height: 4px;
+	    height: 1px;
 	    transform: skew(-30deg);
 	}
 
