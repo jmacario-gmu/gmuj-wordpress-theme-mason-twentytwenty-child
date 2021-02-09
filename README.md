@@ -1,9 +1,7 @@
-gmuj-mason-wordpress-theme-twentytwenty-child
+Mason WordPress: Mason Twenty Twenty Theme
+==========================================
 
-Mason WordPress Theme
-=====================
-
-This is a custom Mason-styled WordPress child theme based on the official WordPress Twentytwenty theme.
+A custom Mason-styled WordPress child theme based on the official WordPress Twentytwenty theme.
 
 Features
 --------

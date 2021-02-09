@@ -45,3 +45,11 @@ require(get_stylesheet_directory(). '/php/custom-meta-boxes.php');
 
 //Include customizations related to the custom post type: people
 require(get_stylesheet_directory(). '/php/custom-post-type-people.php');
+
+// Set up auto-updates
+  require 'plugin-update-checker/plugin-update-checker.php';
+  $myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
+  'https://github.com/jmacario-gmu/gmuj-mason-wordpress-theme-twentytwenty-child/',
+  __FILE__,
+  'gmuj-mason-wordpress-theme-twentytwenty-child'
+  );
