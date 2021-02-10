@@ -37,16 +37,16 @@
 
 	/* Set background color of main navigation sub-menus */
 	.primary-menu ul {
-	    background: #393769 !important;
+	    background: #302e59 !important;
 	}
 
 	/* Set color of main navigation sub-menu background 'arrow' details */
 	.primary-menu ul::after {
-	    border-bottom-color: #393769 !important;
+	    border-bottom-color: #302e59 !important;
 	}
 	.primary-menu ul ul::after {
 	    border-bottom-color: transparent !important;
-	    border-left-color: #393769 !important;
+	    border-left-color: #302e59 !important;
 	}
 
 	/* Set link hover color and active menu item color for main navigation sub-menus */
