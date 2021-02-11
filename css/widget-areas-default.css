@@ -8,7 +8,7 @@ ul.sidebar-homepage, ul.sidebar-internal-page {
     list-style-type:none;
     margin:0;
     padding:0;
-    color: #73726f;
+    color: #333;
 }
 
 /* Style widget area top-level list items */

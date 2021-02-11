@@ -33,6 +33,21 @@ div#university-links-bar ul#university-links li a {
     letter-spacing: normal;
 }
 
+div#university-links-bar ul#university-links li a {
+    position: relative;
+}
+
 div#university-links-bar ul#university-links li a:hover {
     color:#063;
+}
+
+div#university-links-bar ul#university-links li a:hover::after {
+    content: "";
+    background-color: #063;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -0.1em;
+    height: 4px;
+    transform: skew(-30deg);
 }

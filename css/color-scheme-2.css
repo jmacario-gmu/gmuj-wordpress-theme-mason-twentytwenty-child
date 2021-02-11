@@ -17,12 +17,12 @@
 
 	/* Set background color of navigation bar */
 	div.header-navigation-wrapper {
-	    background-color: #d47137;
+	    background-color: #ad5c2d;
 	}
 
 	/* Set background-color of navigation bar skew detail */
 	div.header-navigation-wrapper:before {
-	    background-color:#d47137;
+	    background-color:#ad5c2d;
 	}
 
 	/* Set link hover underline color for top level of main navigation bar */
@@ -37,21 +37,28 @@
 
 	/* Set background color of main navigation sub-menus */
 	.primary-menu ul {
-	    background: #f69359 !important;
+	    background: #a1552a !important;
 	}
 
 	/* Set color of main navigation sub-menu background 'arrow' details */
 	.primary-menu ul::after {
-	    border-bottom-color: #f69359 !important;
+	    border-bottom-color: #a1552a !important;
 	}
 	.primary-menu ul ul::after {
 	    border-bottom-color: transparent !important;
-	    border-left-color: #f69359 !important;
+	    border-left-color: #a1552a !important;
 	}
 
 	/* Set link hover color and active menu item color for main navigation sub-menus */
-	ul.primary-menu ul li a:hover, ul.primary-menu ul li.current-menu-item {
-	    background-color: #f8b57b;
+	ul.primary-menu ul li a:hover::after, ul.primary-menu ul li.current-menu-item::after {
+	    content: "";
+	    background-color: #fff;
+	    position: absolute;
+	    left: 1em;
+	    right: 1em;
+	    bottom: -0.1em;
+	    height: 2px;
+	    transform: skew(-30deg);
 	}
 
 }
