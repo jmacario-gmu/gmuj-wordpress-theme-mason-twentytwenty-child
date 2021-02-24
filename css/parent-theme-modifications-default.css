@@ -303,9 +303,24 @@ div.entry-content li.widget h3.widget-title {
     border-bottom: none;
 }
 
+/* Hide parent theme footer menu */
+nav.footer-menu-wrapper {
+	display:none;
+}
+
 /* Style social media menu */
 ul.social-menu {
 	justify-content: center;
+}
+
+/* center the social media even if there is a parent theme footer menu (which we've hidden above, as ours appears in the lower site footer area) */
+.has-footer-menu .footer-social {
+    justify-content: center;
+}
+
+/* and ensure we're not adding extra padding even if there's a parent theme footer menu (which we've hidden above, as ours appears in the lower site footer area) */
+.has-footer-menu .footer-social-wrapper {
+	margin-left:1rem !important;
 }
 
 /* Style search menu icons */
