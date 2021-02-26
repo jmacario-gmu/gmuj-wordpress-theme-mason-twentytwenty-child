@@ -21,6 +21,12 @@ main#site-content, .entry-content {
 	word-wrap: normal;
 }
 
+/* Fix left- and right- aligned images on full-page template view to enable them to take up a reasonable amount of space. (The default parent theme 'narrow' template shrinks-down floated images to fit them in the margins). */
+body.page-template-template-full-width .alignleft,
+body.page-template-template-full-width .alignright {
+    max-width: 50% !important;
+}
+
 /* Modify default link colors */
 a {
 	color:#006633;
