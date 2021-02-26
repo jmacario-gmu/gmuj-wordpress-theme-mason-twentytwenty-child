@@ -6,6 +6,7 @@
 /* Style website header area */
 header#site-header {
 	background-size: cover;
+	z-index: 999;
 }
 
 /* Style the toggle-inner container (contains the search and menu icons) */
