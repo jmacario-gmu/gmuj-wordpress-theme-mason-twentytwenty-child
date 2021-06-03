@@ -49,7 +49,7 @@ function gmuj_default_header_images() {
 function gmuj_random_default_header_image() {
 
   // Define path to default images
-  $default_image_path='/wp-content/themes/gmuj-mason-wordpress-theme-twentytwenty-child/images/';
+  $default_image_path='/wp-content/themes/gmuj-wordpress-theme-mason-twentytwenty-child/images/';
 
   // Get default header images array
   $default_images=gmuj_default_header_images();

@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Summary: functions.php file for the gmuj-mason-wordpress-theme-twentytwenty-child
+ * Summary: functions.php file for the gmuj-wordpress-theme-mason-twentytwenty-child theme
  */
 
 // Include custom functions
@@ -49,7 +49,7 @@ require(get_stylesheet_directory(). '/php/custom-post-type-people.php');
 // Set up auto-updates
   require 'plugin-update-checker/plugin-update-checker.php';
   $myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
-  'https://github.com/jmacario-gmu/gmuj-mason-wordpress-theme-twentytwenty-child/',
+  'https://github.com/jmacario-gmu/gmuj-wordpress-theme-mason-twentytwenty-child/',
   __FILE__,
-  'gmuj-mason-wordpress-theme-twentytwenty-child'
+  'gmuj-wordpress-theme-mason-twentytwenty-child'
   );
