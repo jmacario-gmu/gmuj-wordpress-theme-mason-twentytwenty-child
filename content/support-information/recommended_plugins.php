@@ -37,6 +37,34 @@
 			</td>
 		</tr>
 		<tr>
+			<td>Mason Sucuri Integration</td>
+			<td>Integration with our web application firewall</td>
+			<td>
+				<?php
+				// Indicate whether this plugin is active
+				if (gmuj_is_plugin_active('gmuj-wordpress-plugin-mason-sucuri-integration/gmuj-wordpress-plugin-mason-sucuri-integration.php')) {
+					echo '<span style="color:green;" class="dashicons dashicons-yes"></span>';
+				} else {
+					echo '<span style="color:red;" class="dashicons dashicons-no-alt"></span>';
+				}
+				?>
+			</td>
+		</tr>
+		<tr>
+			<td>Mason Site Check-In</td>
+			<td>Check-in with your site to keep content updated</td>
+			<td>
+				<?php
+				// Indicate whether this plugin is active
+				if (gmuj_is_plugin_active('gmuj-wordpress-plugin-mason-site-check-in/gmuj-wordpress-plugin-mason-site-check-in.php')) {
+					echo '<span style="color:green;" class="dashicons dashicons-yes"></span>';
+				} else {
+					echo '<span style="color:red;" class="dashicons dashicons-no-alt"></span>';
+				}
+				?>
+			</td>
+		</tr>
+		<tr>
 			<td><a href="https://wordpress.org/plugins/amr-shortcode-any-widget/" target="_blank">amr shortcode any widget</a></td>
 			<td>Use widgets on any page</td>
 			<td>
@@ -99,6 +127,20 @@
 				<?php 
 				// Indicate whether this plugin is active
 				if (gmuj_is_plugin_active('wp-mail-logging/wp-mail-logging.php')) { 
+					echo '<span style="color:green;" class="dashicons dashicons-yes"></span>';
+				} else {
+					echo '<span style="color:red;" class="dashicons dashicons-no-alt"></span>';
+				}
+				?>
+			</td>
+		</tr>
+		<tr>
+			<td><a href="https://wordpress.org/plugins/classic-widgets/" target="_blank">Classic Widgets</a></td>
+			<td>Restore the classic widgets settings screen</td>
+			<td>
+				<?php
+				// Indicate whether this plugin is active
+				if (gmuj_is_plugin_active('classic-widgets/classic-widgets.php')) {
 					echo '<span style="color:green;" class="dashicons dashicons-yes"></span>';
 				} else {
 					echo '<span style="color:red;" class="dashicons dashicons-no-alt"></span>';
