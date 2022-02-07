@@ -205,6 +205,10 @@
 		<?php if (!is_front_page()) { get_template_part('template-parts/widget-area','internal-page-banner'); } ?>
 		<!-- /Child theme customization: internal page banner widget area -->
 
+        <!-- Child theme customization: slideshow -->
+        <?php if (is_front_page()) { get_template_part('template-parts/slideshow'); } ?>
+        <!-- /Child theme customization: slideshow -->
+
 		</header><!-- #site-header -->
 
 		<!-- Child theme customization: homepage top widget area -->

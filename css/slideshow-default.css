@@ -1,0 +1,88 @@
+/* CSS file to implement custom slideshow */
+
+/* Default and small screens */
+
+#gmuj-slideshow-wrapper {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	overflow: hidden;
+	width: 100%;
+}
+
+.gmuj-slide-content {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	text-align: center;
+	color: white;
+}
+
+.gmuj-slide {
+	height: 22em;
+	background-position: top center;
+	background-repeat: no-repeat;
+	display: none;
+}
+
+.gmuj-slide-active {
+	display: block;
+}
+
+.gmuj-slide-nav {
+	position: absolute;
+	top :30%;
+	width: 100%;
+	z-index: 2;
+}
+
+.gmuj-slide-nav a {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: url(../images/slideshow/arrows.png) no-repeat;
+    text-indent: -9999px;
+    border: 0;
+    opacity: 0.5;
+    transition: all 200ms ease-in-out;
+    margin: 0 1em;
+}
+
+.gmuj-slideshow:hover .gmuj-slide-nav a { opacity: 1 }
+
+.gmuj-slide-nav-previous {
+	float: left;
+}
+.gmuj-slide-nav-next {
+	float: right;
+}
+
+
+.gmuj-slide-nav-next a {
+    background-position: -30px 0;
+}
+
+
+.gmuj-slide-title {
+	margin-top: 5em;
+    font-family: "Roboto Slab",Palatino Linotype,Palatino,serif;
+    font-weight: 700;
+    text-shadow: -1px 2px 1px rgba(0,0,0,0.5),0 0 40px black;
+    letter-spacing: 0.025em;
+}
+
+.gmuj-slide-title a {
+    color:  white;
+    text-decoration: none;
+}
+
+.gmuj-slide-body {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	padding: 0.5em 0.5em 0;
+	font-size: 0.9em;
+}

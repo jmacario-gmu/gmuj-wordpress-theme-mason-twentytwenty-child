@@ -45,3 +45,6 @@ Template: twentytwenty
 
 /* Custom post type: person styles */
 	@import 'css/people.css';
+
+/* GMUJ Slider styles */ 
+	@import 'css/slideshow.css';

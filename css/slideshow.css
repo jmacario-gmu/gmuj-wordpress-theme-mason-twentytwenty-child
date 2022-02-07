@@ -1,0 +1,11 @@
+/* CSS file to implement custom slideshow */
+
+
+/* Default and small screens */
+@import 'slideshow-default.css';
+
+/* 700+ pixels */
+@import 'slideshow-700+.css' screen and (min-width: 700px);
+
+/* 1,000+ pixels */
+@import 'slideshow-1000+.css' screen and (min-width: 1000px);
