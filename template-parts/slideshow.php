@@ -61,7 +61,7 @@ if (count($slides) >= 1) {
 
 					<div id="gmuj-slide-content-<?php the_ID(); ?>" class="gmuj-slide-content">
 				
-						<h2 id="gmuj-slide-title-<?php the_ID(); ?>" class="gmuj-slide-title"><a href="<?php echo $target_link; ?>"><?php the_title(); ?></a></h2>
+						<h2 id="gmuj-slide-title-<?php the_ID(); ?>" class="gmuj-slide-title"><a class="gmuj-slide-link" href="<?php echo $target_link; ?>"><?php the_title(); ?></a></h2>
 						
 						<div id="gmuj-slide-body-<?php the_ID(); ?>" class="gmuj-slide-body">
 							<?php the_content(); ?>

@@ -27,6 +27,11 @@
 	display: none;
 }
 
+.gmuj-slide a.gmuj-slide-link {
+	position: relative;
+	z-index: 2;
+}
+
 .gmuj-slide-active {
 	display: block;
 }
@@ -35,7 +40,6 @@
 	position: absolute;
 	top :30%;
 	width: 100%;
-	z-index: 2;
 }
 
 .gmuj-slide-nav a {
@@ -52,11 +56,17 @@
 
 .gmuj-slideshow:hover .gmuj-slide-nav a { opacity: 1 }
 
+.gmuj-slide-nav-previous, .gmuj-slide-nav-next {
+    position: absolute;
+    top: 50%;
+    z-index: 3;
+}
+
 .gmuj-slide-nav-previous {
-	float: left;
+	left: 1em;
 }
 .gmuj-slide-nav-next {
-	float: right;
+	right: 1em;
 }
 
 
