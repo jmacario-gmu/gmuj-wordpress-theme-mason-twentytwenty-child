@@ -47,7 +47,7 @@ if (count($slides) >= 1) {
 			$slider_img_src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'homepage-slide', false, '' );
 
 			// Get post link
-			$target_link = get_post_meta(get_the_ID(), 'mb_target_link', true);
+			$target_link = get_post_meta(get_the_ID(), 'gmuj_slide_target_url', true);
 
 			// Output slide info (link and image)
 			?>

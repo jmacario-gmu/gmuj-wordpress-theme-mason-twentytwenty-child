@@ -80,11 +80,17 @@ function gmuj_register_meta_boxes_slideshow() {
                     'desc' => 'Show this slide?', // Field description (optional)
                     'type'  => 'checkbox', // Field type
                 ),
+                array(
+                    'name' => 'Link', // Field name - Will be used as label
+                    'id' => $prefix . 'target_url', // Field ID, i.e. the meta key
+                    'desc' => 'Slide links to URL', // Field description (optional)
+                    'type'  => 'text', // Field type
+                ),
             ),
             'validation' => array()
         );
 
-    // Register the person information meta box
+    // Register the slide information meta box
         new RW_Meta_Box($meta_boxes_slideshow);
 
 }
