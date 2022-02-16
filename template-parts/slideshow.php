@@ -6,7 +6,9 @@
 			'post_type' => 'slideshow',
 			'post_status' => 'publish',
 			'showposts' => -1,
-			'ignore_sticky_posts'=> 1
+			'ignore_sticky_posts'=> 1,
+			'meta_key' => 'gmuj_slide_show',
+			'meta_value' => 1,
 		);
 	// Get posts
 		$slides=get_posts($args);
