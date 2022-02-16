@@ -53,8 +53,6 @@ if (count($slides) >= 1) {
 			?>
 			<div id="gmuj-slide-<?php the_ID(); ?>" class="gmuj-slide <?php echo $active_class ?>" style="background-image:url('<?php echo $slider_img_src[0] ?>');">
 
-				<a href="<?php echo $target_link; ?>">
-
 					<!--
 					<img id="gmuj-slide-image-<?php the_ID(); ?>" class="gmuj-slide-image" src="<?php echo $slider_img_src[0] ?>" alt="<?php the_title_attribute(); ?>" />
 					-->
@@ -68,8 +66,6 @@ if (count($slides) >= 1) {
 						</div>
 
 					</div>	
-
-				</a>
 
 			</div>
 
