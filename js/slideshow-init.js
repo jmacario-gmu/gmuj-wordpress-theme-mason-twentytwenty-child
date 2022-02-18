@@ -1,7 +1,4 @@
 jQuery(document).ready(function($) {
-
-	$(function() {
-	    setInterval( "gmuj_slide_forward()", 6000 );
-	});
-	
+	// Begin the slide timer
+		gmuj_set_slide_timer();
 });

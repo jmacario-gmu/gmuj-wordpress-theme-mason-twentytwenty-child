@@ -1,18 +1,38 @@
+// Global variables
+	var gmuj_slide_timer; //variable to set slide timer
+	var gmuj_slide_interval=6000; //slide interval in miliseconds
+
+function gmuj_set_slide_timer() {
+	// Set a timer to activate the next slide function on a predetermined interval based on the gmuj_slide_interval variable
+	gmuj_slide_timer = setInterval( "gmuj_slide_forward()", gmuj_slide_interval );
+};
+
+function gmuj_clear_slide_timer() {
+	// Clear existing timer
+	clearInterval(gmuj_slide_timer);
+};
+
 function gmuj_slide_forward() {
 
-	gmuj_slide_switch();
+	// Move forward one slide
+		gmuj_slide_switch();
+	// Reset the timer
+		gmuj_clear_slide_timer();
+		gmuj_set_slide_timer();
 
 }
 
 function gmuj_slide_back() {
 
-	gmuj_slide_switch('back');
+	// Move backward one slide
+		gmuj_slide_switch('back');
+	// Reset the timer
+		gmuj_clear_slide_timer();
+		gmuj_set_slide_timer();
 
 }
 
 function gmuj_slide_switch(var_direction='forward') {
-
-	//alert('switch slide '+var_direction);
 
 	// Get active slide, next slide, and first slide
 	var $active_slide = jQuery('.gmuj-slide-active');
