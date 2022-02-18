@@ -10,6 +10,13 @@
 	width: 100%;
 }
 
+.gmuj-slide {
+	height: 22em;
+	background-position: top center;
+	background-repeat: no-repeat;
+	display: none;
+}
+
 .gmuj-slide-content {
 	position: absolute;
 	top: 0;
@@ -20,16 +27,49 @@
 	color: white;
 }
 
-.gmuj-slide {
-	height: 22em;
-	background-position: top center;
-	background-repeat: no-repeat;
-	display: none;
+.gmuj-slide-body {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	padding: 0.5em 0.5em 0;
+	font-size: 0.9em;
+}
+
+.gmuj-slide-body-wrapper {
+	display: flex;
+	max-width: 800px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .gmuj-slide a.gmuj-slide-link {
 	position: relative;
 	z-index: 2;
+}
+
+.gmuj-slide .gmuj-slide-body-text {
+	text-align: left;
+}
+
+.gmuj-slide .gmuj-slide-cta {
+	margin: 0.75em;
+	margin-right: 0;
+}
+
+.gmuj-slide .gmuj-slide-cta a {
+	text-transform: uppercase;
+	border: 1px solid #868686;
+	background: rgba(0,0,0,0.25);
+	color: white;
+	padding: 10px;
+	text-decoration: none;
+	white-space: nowrap;
+}
+
+.gmuj-slide .gmuj-slide-cta a:hover {
+	border: 1px solid #006633;
+	background-color: #006633;
 }
 
 .gmuj-slide-active {
@@ -86,13 +126,4 @@
 .gmuj-slide-title a {
     color:  white;
     text-decoration: none;
-}
-
-.gmuj-slide-body {
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-	background: rgba(0, 0, 0, 0.5);
-	padding: 0.5em 0.5em 0;
-	font-size: 0.9em;
 }

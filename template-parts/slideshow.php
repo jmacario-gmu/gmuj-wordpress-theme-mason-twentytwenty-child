@@ -64,7 +64,18 @@ if (count($slides) >= 1) {
 						<h2 id="gmuj-slide-title-<?php the_ID(); ?>" class="gmuj-slide-title"><a class="gmuj-slide-link" href="<?php echo $target_link; ?>"><?php the_title(); ?></a></h2>
 						
 						<div id="gmuj-slide-body-<?php the_ID(); ?>" class="gmuj-slide-body">
-							<?php the_content(); ?>
+
+							<div class="gmuj-slide-body-wrapper">
+
+								<div class="gmuj-slide-body-text">
+									<?php the_content(); ?>
+								</div>
+								<div class="gmuj-slide-cta">
+									<p><a class="gmuj-slide-link" href="<?php echo $target_link; ?>">Read More</a></p>
+								</div>
+
+							</div>
+
 						</div>
 
 					</div>	
