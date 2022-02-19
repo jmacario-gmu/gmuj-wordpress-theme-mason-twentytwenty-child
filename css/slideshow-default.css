@@ -11,7 +11,6 @@
 }
 
 .gmuj-slide {
-	height: 22em;
 	background-position: top center;
 	background-repeat: no-repeat;
 	display: none;
@@ -50,6 +49,7 @@
 
 .gmuj-slide .gmuj-slide-body-text {
 	text-align: left;
+	font-size: 0.9em;
 }
 
 .gmuj-slide .gmuj-slide-cta {

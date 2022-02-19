@@ -18,10 +18,21 @@ if (count($slides) >= 1) {
 ?>
 
 <style>
+	/* remove default website header image */
 	header#site-header {
 		background-image: none !important; 
 		background-color: #006633 !important;
-		min-height: 22em;
+	}
+	/* set the slideshow height */
+	header#site-header, .gmuj-slide {
+		height: 28em;
+	}
+
+	@media screen and (min-width: 400px) {
+		/* set the slideshow height */
+		header#site-header, .gmuj-slide {
+			min-height: 22em;
+		}
 	}
 </style>
 
