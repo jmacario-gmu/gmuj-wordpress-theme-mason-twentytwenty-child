@@ -4,5 +4,8 @@
 
 
 .gmuj-slide-nav {
-	top :50%;
+	top :85%;
+	max-width: 1000px;
+	left: 50%;
+	transform: translate(-50%, 0);
 }
