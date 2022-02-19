@@ -96,8 +96,8 @@ if (count($slides) >= 1) {
 		<?php endwhile; else: endif; wp_reset_query(); ?>
 
 	<div class="gmuj-slide-nav">
-		<div class="gmuj-slide-nav-previous"><a href="#" onclick="gmuj_slide_back();">Previous Slide</a></div>
-		<div class="gmuj-slide-nav-next"><a href="#" onclick="gmuj_slide_forward();">Next Slide</a></div>
+		<div class="gmuj-slide-nav-previous"><a href="#" onclick="gmuj_slide_back(); return false;">Previous Slide</a></div>
+		<div class="gmuj-slide-nav-next"><a href="#" onclick="gmuj_slide_forward(); return false;">Next Slide</a></div>
 	</div>
 
 </div>
