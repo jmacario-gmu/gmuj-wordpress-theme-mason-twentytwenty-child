@@ -14,4 +14,12 @@
 
 .gmuj-slide .gmuj-slide-cta {
 	margin-left: 3em;
+	font-size: 1.1em;
+	font-weight: 500;
+}
+
+.gmuj-slide-cta .gmuj-slide-link-arrow {
+	display: inline-block;
+	margin-left: 0.5em;
+	font-size: 0.9em;
 }

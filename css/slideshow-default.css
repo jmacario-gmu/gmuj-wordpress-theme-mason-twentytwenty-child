@@ -73,6 +73,10 @@
 	background-color: #006633;
 }
 
+.gmuj-slide-cta .gmuj-slide-link-arrow {
+	display: none;
+}
+
 .gmuj-slide-active {
 	display: block;
 }
@@ -90,7 +94,7 @@
     background: url(../images/slideshow/arrows.png) no-repeat;
     text-indent: -9999px;
     border: 0;
-    opacity: 0.5;
+    opacity: 0.75;
     transition: all 200ms ease-in-out;
     margin: 0 1em;
 }

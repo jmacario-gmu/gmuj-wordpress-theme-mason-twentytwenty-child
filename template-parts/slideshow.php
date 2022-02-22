@@ -82,7 +82,7 @@ if (count($slides) >= 1) {
 									<?php the_content(); ?>
 								</div>
 								<div class="gmuj-slide-cta">
-									<p><a class="gmuj-slide-link" href="<?php echo $target_link; ?>">Read More</a></p>
+									<p><a class="gmuj-slide-link" href="<?php echo $target_link; ?>">Read More <span class="gmuj-slide-link-arrow fa fa-arrow-circle-right"></span></a></p>
 								</div>
 
 							</div>
