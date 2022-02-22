@@ -11,6 +11,12 @@
 add_action('wp_enqueue_scripts','gmuj_enqueue_scripts');
 function gmuj_enqueue_scripts() {
 
+  // Enqueue swiping jquery library
+  wp_enqueue_script(
+    'gmuj_script_swipe', //script name
+    get_theme_file_uri('/js/jquery.touchSwipe.js') //path to script
+  );
+
   // Enqueue slideshow javascript
   wp_enqueue_script(
     'gmuj_script_slideshow', //script name
