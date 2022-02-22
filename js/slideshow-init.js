@@ -4,13 +4,14 @@ jQuery(document).ready(function($) {
 
 	// Enable swiping
 		$(".gmuj-slide").swipe( {
-			//Generic swipe handler for all directions
-			swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
-				if (direction=='left') {gmuj_slide_back();}
-				if (direction=='right') {gmuj_slide_forward();}
+			//Set left and right swipe functions
+			swipeLeft:function(event, direction, distance, duration, fingerCount, fingerData) {
+				gmuj_slide_back();
 			},
-			//Default is 75px, set to 0 for demo so any distance triggers swipe
+			swipeRight:function(event, direction, distance, duration, fingerCount, fingerData) {
+				gmuj_slide_forward();
+			},
+			//Default threshold is 75px, set to 0 for demo so any distance triggers swipe
 			threshold:75
 		});
-
 });
