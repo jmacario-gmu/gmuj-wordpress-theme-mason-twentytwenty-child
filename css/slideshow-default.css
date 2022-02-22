@@ -14,6 +14,7 @@
 	background-position: top center;
 	background-repeat: no-repeat;
 	display: none;
+	cursor: grab;
 }
 
 .gmuj-slide-content {
