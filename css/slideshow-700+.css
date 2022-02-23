@@ -18,6 +18,10 @@
 	font-weight: 500;
 }
 
+.gmuj-slide .gmuj-slide-cta a {
+	min-width: 10em;
+}
+
 .gmuj-slide-cta .gmuj-slide-link-arrow {
 	display: inline-block;
 	margin-left: 0.5em;

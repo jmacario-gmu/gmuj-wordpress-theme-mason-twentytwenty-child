@@ -86,7 +86,12 @@ function gmuj_register_meta_boxes_slideshow() {
                     'desc' => 'Slide links to URL', // Field description (optional)
                     'type'  => 'text', // Field type
                 ),
-            ),
+                array(
+                    'name' => 'CTA Text', // Field name - Will be used as label
+                    'id' => $prefix . 'cta_text', // Field ID, i.e. the meta key
+                    'desc' => 'Text to use for CTA link. (Defaults to "Read More" if blank.)', // Field description (optional)
+                    'type'  => 'text', // Field type
+                ),            ),
             'validation' => array()
         );
 

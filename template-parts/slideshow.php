@@ -62,6 +62,13 @@ if (count($slides) >= 1) {
 			// Get post link
 			$target_link = get_post_meta(get_the_ID(), 'gmuj_slide_target_url', true);
 
+			// Get post CTA text
+			$slide_cta_text = get_post_meta(get_the_ID(), 'gmuj_slide_cta_text', true);
+			// If the CTA text is blank, use the default
+			if (!$slide_cta_text) {
+				$slide_cta_text='Read More';
+			}
+
 			// Output slide info (link and image)
 			?>
 			<div id="gmuj-slide-<?php the_ID(); ?>" class="gmuj-slide <?php echo $active_class ?>" style="background:linear-gradient(180deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5) 10%, rgba(0,0,0,0) 30%), url('<?php echo $slider_img_src[0] ?>') top center no-repeat;">
@@ -82,7 +89,12 @@ if (count($slides) >= 1) {
 									<?php the_content(); ?>
 								</div>
 								<div class="gmuj-slide-cta">
-									<p><a class="gmuj-slide-link" href="<?php echo $target_link; ?>">Read More <span class="gmuj-slide-link-arrow fa fa-arrow-circle-right"></span></a></p>
+									<p>
+										<a class="gmuj-slide-link" href="<?php echo $target_link; ?>">
+											<?php echo $slide_cta_text; ?>
+											<span class="gmuj-slide-link-arrow fa fa-arrow-circle-right"></span>
+										</a>
+									</p>
 								</div>
 
 							</div>
