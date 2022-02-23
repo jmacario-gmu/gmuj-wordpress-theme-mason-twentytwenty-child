@@ -8,7 +8,7 @@
 }
 
 .gmuj-slide {
-	background-size: cover;
+	background-size: cover !important;
 }
 
 .gmuj-slide-nav {
