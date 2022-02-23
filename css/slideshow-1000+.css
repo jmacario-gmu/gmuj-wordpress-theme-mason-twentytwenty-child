@@ -3,6 +3,10 @@
 /* 1,000+ pixels */
 
 
+#gmuj-slideshow-wrapper {
+	z-index: 0;
+}
+
 .gmuj-slide {
 	background-size: cover;
 }
