@@ -64,7 +64,7 @@ if (count($slides) >= 1) {
 
 			// Output slide info (link and image)
 			?>
-			<div id="gmuj-slide-<?php the_ID(); ?>" class="gmuj-slide <?php echo $active_class ?>" style="background-image:url('<?php echo $slider_img_src[0] ?>');">
+			<div id="gmuj-slide-<?php the_ID(); ?>" class="gmuj-slide <?php echo $active_class ?>" style="background:linear-gradient(180deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5) 10%, rgba(0,0,0,0) 30%), url('<?php echo $slider_img_src[0] ?>') top center no-repeat;">
 
 					<!--
 					<img id="gmuj-slide-image-<?php the_ID(); ?>" class="gmuj-slide-image" src="<?php echo $slider_img_src[0] ?>" alt="<?php the_title_attribute(); ?>" />

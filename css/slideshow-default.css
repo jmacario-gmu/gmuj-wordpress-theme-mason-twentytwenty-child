@@ -12,8 +12,8 @@
 }
 
 .gmuj-slide {
-	background-position: top center;
-	background-repeat: no-repeat;
+	/*background-position: top center;*/
+	/*background-repeat: no-repeat;*/
 	display: none;
 	cursor: grab;
 }
