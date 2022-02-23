@@ -91,8 +91,8 @@
 
 .gmuj-slide-nav a {
     display: block;
-    width: 20px;
-    height: 30px;
+    width: 24px;
+    height: 34px;
     background: url(../images/slideshow/arrows.png) no-repeat;
     text-indent: -9999px;
     border: 0;
@@ -116,11 +116,9 @@
 	right: 1em;
 }
 
-
 .gmuj-slide-nav-next a {
-    background-position: -20px 0;
+    background-position: -24px 0;
 }
-
 
 .gmuj-slide-title {
 	margin-top: 5em;
