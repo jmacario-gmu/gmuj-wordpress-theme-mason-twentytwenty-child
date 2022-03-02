@@ -25,7 +25,7 @@ function gmuj_register_custom_widget_areas(){
     //Register internal page bottom widget area
     gmuj_widget_area_registration('Internal Page - Bottom', 'sidebar-internal-page-bottom', 'Widgets in this area will appear on internal pages below the regular page content.', '<li id="%1$s" class="widget %2$s">', '</li>', '<h3 class="widget-title">', '</h3>');
     //Register sidebar widget area
-    gmuj_widget_area_registration('Sidebar', 'gmuj-sidebar-widget-area', 'Widgets in this area will appear in the sidebar to the left of the regular page content.', '<li id="%1$s" class="widget %2$s">', '</li>', '<h3 class="widget-title">', '</h3>');
+    gmuj_widget_area_registration('Sidebar', 'gmuj-sidebar-widget-area', 'Widgets in this area will appear in the sidebar to the left of the regular page content.', '<div id="%1$s" class="widget %2$s">', '</div>', '<h3 class="widget-title">', '</h3>');
 
 }
 
