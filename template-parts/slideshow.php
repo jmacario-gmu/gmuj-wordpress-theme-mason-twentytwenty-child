@@ -23,6 +23,12 @@ if (count($slides) >= 1) {
 		background-image: none !important; 
 		background-color: #006633 !important;
 	}
+
+	/* hide homepage banner area */
+	#sidebar-homepage-banner {
+		display: none;
+	}
+
 	/* set the slideshow height */
 	header#site-header, .gmuj-slide {
 		height: 28em;
