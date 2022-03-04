@@ -6,12 +6,12 @@ $mason_configuration_messages = array();
 
 // Check whether search engines can index this website
 if (!get_option('blog_public')) {
-	array_push($mason_configuration_messages,"<p class='notice notice-warning'>Search engines are discouraged from indexing this website!</p>");
+	array_push($mason_configuration_messages,"<p class='notice notice-warning'>Search engines are discouraged from indexing this website.</p>");
 }
 
 // Check what the admin email is set to
 if (get_bloginfo('admin_email')!='gmuweb@gmu.edu' && get_bloginfo('admin_email')!='webmaster@gmu.edu') {
-	array_push($mason_configuration_messages,"<p class='notice notice-error'>The website administrator email is not set to the Mason webmaster email address (webmaster@gmu.edu)!</p>");
+	array_push($mason_configuration_messages,"<p class='notice notice-error'>The website administrator email is not set to the Mason webmaster email address (webmaster@gmu.edu).</p>");
 }
 
 // Display configuration messages
