@@ -34,6 +34,9 @@ require(get_stylesheet_directory(). '/php/custom-login-page-upgrades.php');
 //Include styles
 require(get_stylesheet_directory(). '/php/custom-styles.php');
 
+//Include scripts
+require(get_stylesheet_directory(). '/php/custom-scripts.php');
+
 //Include customizations related to the 'read more' link
 require(get_stylesheet_directory(). '/php/custom-read-more.php');
 
@@ -45,6 +48,9 @@ require(get_stylesheet_directory(). '/php/custom-meta-boxes.php');
 
 //Include customizations related to the custom post type: people
 require(get_stylesheet_directory(). '/php/custom-post-type-people.php');
+
+//Include customizations related to the custom post type: homepage slider
+require(get_stylesheet_directory(). '/php/custom-post-type-slideshow.php');
 
 // Set up auto-updates
   require 'plugin-update-checker/plugin-update-checker.php';

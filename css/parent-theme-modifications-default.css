@@ -171,20 +171,33 @@ header#site-header:before {
 	top:0;
 	right:0;
 	bottom:0;
-	background:linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5) 30%, rgba(0,0,0,0));
-	z-index:0;
+	background:linear-gradient(180deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5) 10%, rgba(0,0,0,0) 30%);
+	z-index:1;
+}
+
+/* remove excess padding from above the site logo, title */
+.header-inner {
+	padding-top: 0.5em;
 }
 
 /* Style header icons for small screens (search and menu) */
 .header-inner .toggle {
 	align-items: flex-start;
 	padding: 2rem;
+	z-index: 3;
 }
 
 /* Style the toggle-inner container (contains the search and menu icons) */
 .toggle-inner{
 	position: absolute; /* For small screens, force the toggle-inner container to be at the top (This is a fix for iOS (both Safari and Chrome) and arguably shouldn't be necessary.) */
 	top: 1rem;
+}
+
+/* Give the search and nav toggle buttons smaller hitboxes */
+.search-toggle, .nav-toggle {
+	bottom: unset;
+	height: 4em;
+	width: 4em;
 }
 
 /* Ensure modal menu and search are always on top */
@@ -208,6 +221,7 @@ div.site-name {
 	font-weight: bold;
 	font-size: 1.5em;
 	font-family: "Open Sans", Verdana, Geneva, sans-serif;
+	text-shadow: 3px 3px 4px black;
 }
 
 /* Style site name link */

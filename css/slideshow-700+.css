@@ -1,0 +1,29 @@
+/* CSS file to implement custom slideshow */
+
+/* 700+ pixels */
+
+
+.gmuj-slide-title {
+	margin-top: 4em;
+}
+
+.gmuj-slide-body {
+	padding: 1em 1em 0;
+	font-size: 1.8rem;
+}
+
+.gmuj-slide .gmuj-slide-cta {
+	margin-left: 3em;
+	font-size: 1.1em;
+	font-weight: 500;
+}
+
+.gmuj-slide .gmuj-slide-cta a {
+	min-width: 10em;
+}
+
+.gmuj-slide-cta .gmuj-slide-link-arrow {
+	display: inline-block;
+	margin-left: 0.5em;
+	font-size: 0.9em;
+}
