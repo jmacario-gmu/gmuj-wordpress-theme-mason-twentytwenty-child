@@ -15,59 +15,11 @@ body.singular.page-template-template-full-width .gmuj-sidebar-wrapper {
 
 /* On only singular pages using the full-width template, style sidebar div */
 body.singular.page-template-template-full-width .gmuj-sidebar {
-	display:block;
-	min-width:2em;
+	display: block;
 	max-width:20em;
-	padding:0;
-	margin:0;
-	margin-top:-2em;
-	background-color:transparent;
-	border-top:none;
-	border-bottom:none;
 }
 
 /* On only singular pages using the full-width template, style entry content area */
 body.singular.page-template-template-full-width .entry-content {
-	flex-grow:1; /* ensure that the entry content can grow in width */
-}
-
-/* Style the major components of the sidebar area: the initial widget li tags, and the post meta content area */
-.gmuj-sidebar > li, .gmuj-sidebar-post-meta {
-	background-color:#f6f7f2;
-	padding:0.5em;
-	padding-top:1em;
-	padding-right:1em;
-	margin-top:4px;
-	margin-bottom:0;
-	margin-left:0;
-	margin-right:0;
-	font-size:1em;
-}
-
-/* Ensure that we also get top border on first widget in the sidebar area (this is required to override a rule from the parent theme) */
-.gmuj-sidebar .widget:first-child {
-	margin-top:4px;
-}
-
-/* Style the widget titles in the sidebar */
-.gmuj-sidebar h3.widget-title {
-	font-size: 2rem;
-	margin-bottom:1.5rem;
-}
-
-/* Style lists in the sidebar */
-.gmuj-sidebar ul {
-	list-style-type: none;
-	margin-left:0;
-	margin-bottom:1em;
-}
-
-/* Style list items in the sidebar */
-.gmuj-sidebar ul li {
-	margin-top:0.75em;
-}
-
-/* Style list items in the sidebar */
-.gmuj-sidebar a {
-	text-decoration:none;
+	flex-grow: 1;
 }

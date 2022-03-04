@@ -27,9 +27,23 @@ h1.entry-title, h2.entry-title {
 	font-size:18px;
 }
 
+body.singular.page-template-template-full-width .entry-content > * {
+	margin-left: unset;
+}
+
+body.singular.page-template-template-full-width .entry-content h1,
+body.singular.page-template-template-full-width .entry-content h2,
+body.singular.page-template-template-full-width .entry-content h3 {
+	margin-left: 0;
+}
+
+body.singular.page-template-template-full-width .entry-content > :not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide) {
+  width: 100%;
+}
+
 /* On only singular pages using the full-width template, style entry-content div */
 body.singular.page-template-template-full-width .entry-content {
-	min-width:35em;
+	min-width: 27em;
 }
 
 /* Remove extra space above the first article on archive pages */

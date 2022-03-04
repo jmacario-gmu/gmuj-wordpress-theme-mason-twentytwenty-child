@@ -10,37 +10,117 @@
 /* Style sidebar div - by default, don't display it */
 .gmuj-sidebar {
 	display:none;
+	margin-bottom: 2em;
 }
 
 /* Show the sidebar if we are on a 'singular' type page/post */
 body.singular .gmuj-sidebar {
 	display:block;
-	padding: 1em;
-	padding-top:1.5em;
-    margin: -2em 0 1em;
-    background-color: #f6f7f2;
-    border-top: 1px solid #888f7f;
-    border-bottom: 1px solid #888f7f;
-}
-
-/* Style the major components of the sidebar area: the initial widget li tags, and the post meta content area */
-.gmuj-sidebar > li, .gmuj-sidebar-post-meta {
-	margin:2em;
-	font-size:0.9em;
-}
-
-/* Style the widget titles in the sidebar */
-.gmuj-sidebar h3.widget-title {
-	font-size: 1.5rem;
-}
-
-/* Style list items in the sidebar */
-.gmuj-sidebar .widget li li {
-    margin-left: 1em;
-    margin-top: 0.75em;
 }
 
 /* Style the post meta content area */
 .gmuj-sidebar-post-meta {
-	margin-bottom:1em;
+	margin-top:1em;
+	margin-botom: 1em;
+}
+/* But no top margin when it's the first item */
+.gmuj-sidebar .gmuj-sidebar-post-meta:first-child {
+	margin-top:0;
+}
+
+/* Sidebar headings (both in widget and in post meta) */
+.gmuj-sidebar .widget h3, .gmuj-sidebar .gmuj-sidebar-post-meta h3 {
+	margin:0.5em 1px;
+	font-size: 1em;
+	font-weight: normal;
+	color: white;
+	background-color: #006940;
+	padding: 1em;
+	min-width: 12em;
+}
+
+/* Sidebar ULs */
+.gmuj-sidebar ul {
+	margin:1px;
+	list-style-type: none;
+}
+
+.gmuj-sidebar li {
+	margin:1px 0;
+	font-size: 1em;
+	font-weight: normal;
+	padding: 1em;
+	border-bottom: 1px solid #cdd5d4;
+}
+
+.gmuj-sidebar li a {
+	display: block;
+	color: #006633;
+}
+
+/* Sidebar As */
+.gmuj-sidebar a {
+	text-decoration:none;
+}
+
+/* Sidebar Ps */
+.gmuj-sidebar p {
+	margin: 1em;
+}
+
+/* Style the nav menus in the sidebar */
+.gmuj-sidebar .widget_nav_menu {
+	font-size: 0.9em;
+}
+
+.gmuj-sidebar .widget_nav_menu li {
+	min-width: 12em;
+	background-color: #e8fff6;
+	border-bottom: none;
+}
+
+/* Nav menu links  */
+.gmuj-sidebar .widget_nav_menu li a {
+	color: #00838f;
+	font-weight: normal;
+}
+
+/* Nav menu current page */
+.gmuj-sidebar .widget_nav_menu li.current_page_item > a {
+	color: #114145;
+	font-weight: bold;
+}
+
+/* Nav menu sub menus */
+.gmuj-sidebar .widget_nav_menu .sub-menu li {
+	margin-left: 0;
+	padding-bottom: 0;
+}
+
+/* Custom widgets */
+/* CTA list */
+.gmuj-sidebar .widget_gmuj_widget_cta_list ul.cta-menu {
+	display: block;
+}
+.gmuj-sidebar .widget_gmuj_widget_cta_list ul.cta-menu li {
+	margin: 0.5em 0 !important;
+}
+.gmuj-sidebar .widget_gmuj_widget_cta_list ul.cta-menu li a {
+	padding: 0.5em 0;
+}
+
+/* CTA menu */
+.gmuj-sidebar .widget_gmuj_widget_call_to_action_menu ul.cta-menu {
+	display: block;
+}
+.gmuj-sidebar .widget_gmuj_widget_call_to_action_menu ul.cta-menu li {
+	margin: 0.5em 0 !important;
+}
+.gmuj-sidebar .widget_gmuj_widget_call_to_action_menu ul.cta-menu li a {
+	padding: 0.5em 0;
+}
+
+/* Widget which use the display grid */
+.gmuj-sidebar .widget_gmuj_widget_display_list_grid_container {
+	margin-right: 1em;
 }

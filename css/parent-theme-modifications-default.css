@@ -278,6 +278,10 @@ article.page h1.entry-title {
 
 }
 
+.entry-content > :not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide) {
+  max-width: 58rem;
+}
+
 /* Style entry content headers */
 /* h2 */
 .entry-content h2 {

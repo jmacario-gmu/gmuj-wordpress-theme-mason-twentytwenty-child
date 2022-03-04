@@ -3,6 +3,9 @@
 /* Default and small screens */
 @import 'sidebar-default.css';
 
+/* 700+ pixels */
+@import 'sidebar-700+.css' screen and (min-width: 700px);
+
 /* 800+ pixels */
 @import 'sidebar-800+.css' screen and (min-width: 800px);
 

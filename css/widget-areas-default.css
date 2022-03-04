@@ -65,7 +65,7 @@ ul#sidebar-homepage-top, ul#sidebar-homepage-bottom, ul#sidebar-internal-page-to
 
 /* Style top widget areas */
 ul#sidebar-homepage-top {
-    margin-bottom:3em;
+    margin-bottom:1em;
 }
 
 /* Style top and bottom widget areas list items*/
@@ -88,5 +88,5 @@ ul#sidebar-homepage-top, ul#sidebar-internal-page-top {
 
 /* Style widget items in the main page content */
 div.entry-content li.widget {
-    margin-bottom:3em;
+    margin-bottom:1em;
 }
