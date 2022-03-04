@@ -27,8 +27,8 @@ function gmuj_custom_dashboard_meta_boxes() {
   /* Add 'Mason resources' meta box */
   add_meta_box("gmuj_custom_dashboard_meta_box_mason_resources", "Mason Resources", "gmuj_custom_dashboard_meta_box_mason_resources", "dashboard","side");
 
-  /* Add 'Mason messages' meta box */
-  add_meta_box("gmuj_custom_dashboard_meta_box_mason_messages", "Mason Messages", "gmuj_custom_dashboard_meta_box_mason_messages", "dashboard","side");
+  /* Add 'Mason configuration messages' meta box */
+  add_meta_box("gmuj_custom_dashboard_meta_box_mason_configuration_messages", "Mason Configuration Messages", "gmuj_custom_dashboard_meta_box_mason_configuration_messages", "dashboard","side");
 
 }
 
@@ -63,12 +63,12 @@ function gmuj_custom_dashboard_meta_box_recommended_plugins() {
 }
 
 /**
- * Provides content for the WordPress 'Mason messages' meta box
+ * Provides content for the WordPress 'Mason configuration messages' meta box
  */
-function gmuj_custom_dashboard_meta_box_mason_messages() {
+function gmuj_custom_dashboard_meta_box_mason_configuration_messages() {
 
   //Include HTML content from file
-  include(get_stylesheet_directory() . '/content/support-information/mason_messages.php');
+  include(get_stylesheet_directory() . '/content/support-information/mason_configuration_messages.php');
 
 }
 
