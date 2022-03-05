@@ -377,3 +377,9 @@ body.blog article {
 body.blog article:last-of-type {
 	margin-bottom:0em;
 }
+
+/* Archive page customizations */
+/* Hide category archive page headings */
+body.category header.archive-header {
+	display:none;
+}
