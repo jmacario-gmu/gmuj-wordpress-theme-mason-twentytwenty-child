@@ -1,4 +1,4 @@
-<!-- Content for the WordPress admin dashboard 'Recommended plugins' content box -->
+<!-- Content for the WordPress admin dashboard 'Mason Recommended plugins' content box -->
 <table>
 	<thead>
 		<tr>
