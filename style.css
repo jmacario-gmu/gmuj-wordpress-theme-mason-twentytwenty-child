@@ -48,3 +48,6 @@ Template: twentytwenty
 
 /* GMUJ Slider styles */ 
 	@import 'css/slideshow.css';
+
+/* RSS Blocks */
+	@import 'css/block-rss.css';
