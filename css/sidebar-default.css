@@ -91,6 +91,19 @@ body.singular .gmuj-sidebar {
 	font-weight: bold;
 }
 
+/* but different first child LI */
+.gmuj-sidebar .widget_nav_menu ul.menu > li:first-child {
+	color: white;
+	background-color: #006940;
+	position: relative;
+}
+.gmuj-sidebar .widget_nav_menu ul.menu > li:first-child a {
+	color: white;
+}
+.gmuj-sidebar .widget_nav_menu ul.menu > li.current_page_item:first-child > a {
+	color: white;
+}
+
 /* Nav menu sub menus */
 .gmuj-sidebar .widget_nav_menu .sub-menu li {
 	margin-left: 0;

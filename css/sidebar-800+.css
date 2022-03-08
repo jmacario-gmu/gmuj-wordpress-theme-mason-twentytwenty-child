@@ -23,3 +23,17 @@ body.singular.page-template-template-full-width .gmuj-sidebar {
 body.singular.page-template-template-full-width .entry-content {
 	flex-grow: 1;
 }
+
+/* Sidebar navigation menus */
+/* extra visual element on navigation menu top links when active */
+.gmuj-sidebar .widget_nav_menu ul.menu > li.current_page_item:first-child > a::after {
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	right: 0;
+	content: '';
+	border: 3px solid #006940;
+	background-color: #006940;
+	transform: rotate(45deg) translate(0, -50%);
+	padding: 3px;
+}
