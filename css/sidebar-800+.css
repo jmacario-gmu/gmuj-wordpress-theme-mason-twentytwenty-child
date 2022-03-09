@@ -25,6 +25,23 @@ body.singular.page-template-template-full-width .entry-content {
 }
 
 /* Sidebar navigation menus */
+
+/* Sidebar headings (both in widget and in post meta) */
+.gmuj-sidebar .widget h3, .gmuj-sidebar .gmuj-sidebar-post-meta h3 {
+	margin:1px 2em 1px 0;
+}
+
+/* Sidebar ULs */
+.gmuj-sidebar ul {
+	margin:1px 2em 1px 0;
+}
+.gmuj-sidebar ul ul {
+	margin-right:0;
+}
+.gmuj-sidebar ul ul ul {
+	margin-right:0;
+}
+
 /* extra visual element on navigation menu top links when active */
 .gmuj-sidebar .widget_nav_menu ul.menu > li.current_page_item:first-child > a::after {
 	display: inline-block;
