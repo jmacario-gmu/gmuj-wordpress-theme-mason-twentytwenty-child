@@ -9,7 +9,7 @@ footer#site-footer {
 		color:#fff;
 		background-color: #31302f;
 	/* Add Mason M graphic element */
-	    background-image: url('/wp-content/themes/gmuj-wordpress-theme-mason-twentytwenty-child/images/logo-mason-m-772x816.png');
+	    background-image: url('../images/logo-mason-m-772x816.png');
 	    background-repeat: no-repeat;
 	    background-position: 120% 50%;
 }
