@@ -99,3 +99,45 @@ function gmuj_register_meta_boxes_slideshow() {
         new RW_Meta_Box($meta_boxes_slideshow);
 
 }
+
+/* Modify the custom post type admin view */
+
+//'show' field
+    // include the field
+        add_filter('manage_slideshow_posts_columns', function($columns) {
+            return array_merge($columns, ['gmuj_slide_show' => 'Show?']);
+        });
+    // render the data in the field
+        add_action('manage_slideshow_posts_custom_column', function($column_name, $post_id) {
+            if ($column_name == 'gmuj_slide_show') {
+                $gmuj_slide_show = get_post_meta($post_id, 'gmuj_slide_show', true);
+                if ($gmuj_slide_show) {
+                    echo '<span style="color:green;">'.'Yes'.'</span>';
+                } else {
+                    echo '<span style="color:red;">'.'No'.'</span>';
+                }
+            }
+        }, 10, 2);
+    // make the column sortable
+        add_filter('manage_edit-slideshow_sortable_columns', function ($columns){
+          $columns['gmuj_slide_show'] = 'gmuj_slide_show';
+          return $columns;
+        });
+
+// order field
+    // include the field
+        add_filter('manage_slideshow_posts_columns', function ($columns) {
+          $columns['menu_order'] = "Order";
+          return $columns;
+        });
+    // render the data in the field
+        add_action('manage_slideshow_posts_custom_column', function ($column_name, $post_id){
+          if ($column_name == 'menu_order') {
+             echo get_post($post_id)->menu_order;
+          }
+        }, 10, 2);
+    // make the column sortable
+        add_filter('manage_edit-slideshow_sortable_columns', function ($columns){
+          $columns['menu_order'] = 'menu_order';
+          return $columns;
+        });
