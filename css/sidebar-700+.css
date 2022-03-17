@@ -4,7 +4,6 @@
 
 
 .gmuj-sidebar-wrapper {
-	/*background-color: red;*/
 	width: calc(100% - 8rem);
 	max-width: 120rem;
 	margin-left: auto;
