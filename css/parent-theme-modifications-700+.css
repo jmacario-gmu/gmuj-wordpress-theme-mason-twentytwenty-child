@@ -51,6 +51,11 @@ body:not(.singular) main > article:first-of-type {
     padding-top:0;
 }
 
+/* Remove extra margin above WP column blocks in the main content area */
+#site-content article .entry-content .wp-block-columns {
+	margin-top:0;
+}
+
 /* Blog page customizations */
 /* Add bottom margin to articles */
 body.blog article {
