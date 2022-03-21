@@ -24,17 +24,26 @@ body.singular.page-template-template-full-width .entry-content {
 	flex-grow: 1;
 }
 
+.gmuj-sidebar > * {
+	margin-right: 2em;
+}
+
 /* Sidebar navigation menus */
 
 /* Sidebar headings (both in widget and in post meta) */
 .gmuj-sidebar .widget h3, .gmuj-sidebar .gmuj-sidebar-post-meta h3 {
-	margin:1px 2em 1px 0;
+	/*margin:1px 2em 1px 0;*/
+	margin-top: 1px;
+	margin-bottom: 1px;
 }
 
 /* Sidebar ULs */
 .gmuj-sidebar ul {
-	margin:1px 2em 1px 0;
+	/*margin:1px 2em 1px 0;*/
+	margin-top: 1px;
+	margin-bottom: 1px;
 }
+
 .gmuj-sidebar ul ul {
 	margin-right:0;
 }
