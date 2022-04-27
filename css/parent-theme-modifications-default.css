@@ -211,6 +211,10 @@ header#site-header:before {
 }
 
 /* Style site title area */
+.header-titles-wrapper {
+	max-width:100%; /* Ensure that site title can take up full width */
+}
+
 .header-titles {
 	z-index:1;
 }
