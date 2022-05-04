@@ -52,6 +52,9 @@ require(get_stylesheet_directory(). '/php/custom-post-type-people.php');
 //Include customizations related to the custom post type: homepage slider
 require(get_stylesheet_directory(). '/php/custom-post-type-slideshow.php');
 
+// Include custom stylesheets for classic and block editors.
+require(get_stylesheet_directory() . '/php/custom-editor-styles.php');
+
 // Set up auto-updates
   require 'plugin-update-checker/plugin-update-checker.php';
   $myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
@@ -59,9 +62,3 @@ require(get_stylesheet_directory(). '/php/custom-post-type-slideshow.php');
   __FILE__,
   'gmuj-wordpress-theme-mason-twentytwenty-child'
   );
-
-// Style TinyMCE to look more like the theme.
-function custom_editor_styles() {
-  add_editor_style( 'css/editor-style-classic.css');
-}
-add_action( 'admin_init', 'custom_editor_styles' );
