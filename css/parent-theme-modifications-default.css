@@ -399,6 +399,9 @@ body.category header.archive-header {
 }
 
 /* Special condition for when image block uses "Full width" alignment style */
+.entry-content .alignfull {
+	width: 100% !important;
+}
 .entry-content .alignfull > figcaption{
 	width: 100%;
 	max-width: 100%;
