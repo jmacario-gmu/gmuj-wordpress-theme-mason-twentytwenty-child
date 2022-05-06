@@ -387,3 +387,19 @@ body.blog article:last-of-type {
 body.category header.archive-header {
 	display:none;
 }
+
+/* Set figcaption width to match figure image */
+.entry-content figure {
+	display: table !important;
+	width: auto !important;
+}
+.entry-content figure figcaption{
+	display: table-caption;
+	caption-side: bottom;
+}
+
+/* Special condition for when image block uses "Full width" alignment style */
+.entry-content .alignfull > figcaption{
+	width: 100%;
+	max-width: 100%;
+}
