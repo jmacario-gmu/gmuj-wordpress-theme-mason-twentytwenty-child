@@ -1,0 +1,155 @@
+/*!
+Author: Kev Quirk
+Author URI: https://kevq.uk
+This is a template for a stylesheet that allows WordPress users to use a custom theme within Gutenberg that matches their frontend.
+*/
+
+/* Set global width for all Gutenberg blocks - this should be the same as your article width */
+.wp-block {
+    /*max-width: 640px;*/
+	width: 85%;
+	max-width: calc(100% - 40px);
+  }
+ 
+ /* Main typography elements */
+ 
+ /* Sans Serif font for headers */
+ .editor-block-list__layout .editor-block-list__block,
+ .editor-post-title__block .editor-post-title__input,
+ h1.rich-text.block-editor-rich-text__editable,
+ h2.rich-text.block-editor-rich-text__editable,
+ h3.rich-text.block-editor-rich-text__editable,
+ h4.rich-text.block-editor-rich-text__editable,
+ h5.rich-text.block-editor-rich-text__editable,
+ h6.rich-text.block-editor-rich-text__editable,
+ .has-medium-font-size,
+ #post-title-0
+ {
+	font-family: "Open Sans", Verdana, Geneva, sans-serif;
+    color: #063;
+ }
+ 
+ /* Sans-serif font for body text */
+ .editor-block-list__layout .editor-block-list__block p,
+ .rich-text.block-editor-rich-text__editable.wp-block-paragraph,
+ .block-editor-block-list__layout.is-root-container,
+ ul,
+ ol {
+	font-family: "Open Sans", Verdana, Geneva, sans-serif;
+    color: #333;
+ }
+ 
+ /* Monospace font for code */
+ pre, code, kbd, tt, var {
+     font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+ }
+ 
+ 
+ /* Format image captions */
+ .wp-block-image figcaption,
+ figcaption {
+     margin-top: 0;
+     color: #333;
+     font-size: 0.9rem;
+     text-align: center;
+ }
+ 
+ /*--------------------------------------------------------------
+ # Typography
+ --------------------------------------------------------------*/
+
+h1.wp-block-post-title {
+    font-family: 'Roboto Slab', Palatino Linotype, Palatino, serif;
+    color: #42413f;
+    font-size: 50px;
+    letter-spacing: 0.025em;
+}
+
+h1.rich-text.block-editor-rich-text__editable {
+    font-size: 45px;
+}
+h2.rich-text.block-editor-rich-text__editable {
+    font-size: 40px;
+}
+
+h3.rich-text.block-editor-rich-text__editable {
+    font-size: 35px;
+}
+
+h4.rich-text.block-editor-rich-text__editable {
+    font-size: 30px;
+}
+
+h5.rich-text.block-editor-rich-text__editable {
+    font-size: 25px;
+}
+
+h6.rich-text.block-editor-rich-text__editable {
+    font-size: 20px;
+}
+ 
+ p.rich-text.block-editor-rich-text__editable {
+     font-size: 16px;
+ }
+ 
+ /* Format code blocks */
+ pre {
+     background: #f3f3f3;
+     border-radius: 4px;
+     margin-bottom: 1.6em;
+     max-width: 100%;
+     overflow: auto;
+     padding: 1.6em;
+     white-space: pre-wrap;
+     max-height: 650px;
+ }
+ 
+ /* Format inline code blocks */
+ code, kbd, tt, var {
+     background: #f3f3f3;
+     padding: 2px 7px 2px 7px;
+     border-radius: 4px;
+ }
+ 
+ /* Format blockquotes */
+ .wp-block-quote {
+     margin-left: 2em;
+     margin-bottom: 2rem;
+     margin-top: 2rem;
+     padding: .4rem .8rem;
+     border-left: 2px solid #063;
+     color: #666;
+ }
+ 
+ /* Format the cite text in blockquotes */
+cite {
+     font-weight: bold;
+     font-style: normal;
+ }
+ 
+ /* Links & buttons */
+ 
+ a,
+ a:visited,
+ article a,
+ .menu-items a {
+    color: #063;
+    text-decoration: underline;
+ }
+  
+ a:focus {
+     outline: thin dotted;
+ }
+ 
+ a:hover, a:active {
+     outline: 0;
+ }
+ 
+ /* Standard WordPress button block */
+ .rich-text.block-editor-rich-text__editable.wp-block-button__link,
+ .rich-text.block-editor-rich-text__editable.wp-block-button__link:visited {
+     background: #063;
+     color: white;
+     border-radius: 0;
+ }
+ 
