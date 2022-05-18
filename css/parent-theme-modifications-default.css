@@ -216,7 +216,7 @@ header#site-header:before {
 }
 
 .header-titles {
-	z-index:2;
+	z-index:1;
 }
 
 /* Style site name */
