@@ -148,11 +148,55 @@ h3.tribe-events-widget-events-list__event-title {
   text-decoration: none;
 }
 
+.gmu-was-single-event-meta-wrapper {
+  width: auto !important;
+}
+@media screen and (min-width: 300px) {
+  .tribe-events-meta-group {
+    min-width: 233px;
+  }
+  .tribe-events-meta-group a{
+    display: block;
+  }
+  .tribe-events-meta-group h3 {
+    font-size: 1.5em;
+  }
+  .tribe-events-meta-group dd {
+    margin: 0;
+  }
+}
+.tribe-events-cal-links {
+  text-align: center;
+}
+
+@media screen and (min-width: 700px) {
+  .tribe-events-single-event-description {
+    display: flex;
+  }
+  .tribe-events-event-image {
+    padding: .5em 1em;
+    min-width: 300px;
+  }
+  .tribe-events-event-image img{
+    width: 100%;
+  }
+  .gmu-was-single-event-meta-wrapper {
+    display: flex;
+    row-gap: 1em;
+    column-gap: .75em;
+    flex-wrap: wrap;
+    margin: 0 auto 1em auto;
+  }
+}
+
+.gmu-was-event-meta-container {
+  box-shadow: 0 2px 2px rgba(0,0,0,0.15);
+  border-radius: 10px;
+  padding: .5em;
+  margin-bottom: 1em;
+}
 
 /* Event months */
-h3.tribe-events-calendar-list__event-title {
-  font-size: 1.2em;
-}
 .tribe-events .tribe-events-calendar-list__event-title-link{
   color: #063;
 }
@@ -161,7 +205,6 @@ h3.tribe-events-calendar-list__event-title {
 .tribe-events-view {
   background-color: #fff; 
 }
-
 
 /* month view prev/next navigation */
 .tribe-common--breakpoint-medium.tribe-events .tribe-events-c-top-bar__nav button[disabled], .tribe-common-b2[disabled]{
@@ -243,18 +286,18 @@ box-shadow: 0px 10px 8px -5px rgba(0,0,0,0.75);
 }
 
 .tribe-events-c-top-bar__datepicker-button:after {
-font-weight: 900;
-display: inline-block;
-margin-left: .5em;
-font-family: 'Font Awesome 5 Free';
-content: '\f055';
+  font-weight: 900;
+  display: inline-block;
+  margin-left: .5em;
+  font-family: 'Font Awesome 5 Free';
+  content: '\f055';
 }
 .tribe-events-c-top-bar__datepicker-button--open:after {
-font-weight: 900;
-display: inline-block;
-margin-left: .5em;
-font-family: 'Font Awesome 5 Free';
-content: '\f056';
+  font-weight: 900;
+  display: inline-block;
+  margin-left: .5em;
+  font-family: 'Font Awesome 5 Free';
+  content: '\f056';
 }
 
 .datepicker table tr td span.current, .datepicker table tr td span.current:hover {
@@ -378,4 +421,4 @@ h3.tribe-events-calendar-month__calendar-event-title {
 
 .tribe-events-calendar-month__calendar-event-tooltip-title-link {
   color: #fff;
-}
+} 
