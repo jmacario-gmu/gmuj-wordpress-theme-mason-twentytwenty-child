@@ -12,7 +12,7 @@
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
-	die( '-1' );
+  die( '-1' );
 }
 /**
  * Allows filtering the classes for the main element.
@@ -69,15 +69,7 @@ do_action( 'tribe_default_events_template_after_header', $eventDisplay );
   </div><!-- .entry-header-inner -->
 
 </header>
-  <?php
 
-  //get_template_part( 'template-parts/entry-header' );
-
-  if ( ! is_search() ) {
-    get_template_part( 'template-parts/featured-image' );
-  }
-
-  ?>
 
   <div class="post-inner <?php echo is_page_template( 'templates/template-full-width.php' ) ? '' : 'thin'; ?> ">
 
