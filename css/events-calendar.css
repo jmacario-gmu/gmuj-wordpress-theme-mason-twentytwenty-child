@@ -5,7 +5,10 @@
  * **/
 
 /** LIST VIEW (widget and all events) **/
-
+.tribe-events-widget-events-list h3 {
+  text-align: center;
+  color: #063;
+}
 .tribe-common--breakpoint-medium.tribe-events-widget .tribe-events-widget-events-list__event-row {
   margin-bottom: 0 !important;
   padding: .5em;
