@@ -15,10 +15,7 @@ $set_venue_apart = apply_filters( 'tribe_events_single_event_the_meta_group_venu
 
   // Always include the main event details in this first section
   ?>
-  <div class="gmu-was-event-meta-container gmu-was-event-meta-details">
     <?php tribe_get_template_part( 'modules/meta/details' ); ?>
-  </div>
-  <div class="gmu-was-event-meta-container gmu-was-event-meta-organizer">
     <?php
     // Include organizer meta if appropriate
     if ( tribe_has_organizer() ) {
@@ -26,15 +23,12 @@ $set_venue_apart = apply_filters( 'tribe_events_single_event_the_meta_group_venu
     }
     do_action( 'tribe_events_single_event_meta_primary_section_end' );
     ?>
-  </div>
-  <div class="gmu-was-event-meta-container gmu-was-event-meta-venue">
     <?php
     do_action( 'tribe_events_single_event_meta_secondary_section_start' );
     tribe_get_template_part( 'modules/meta/venue' );
     // tribe_get_template_part( 'modules/meta/map' );
     do_action( 'tribe_events_single_event_meta_secondary_section_end' );
     ?>
-  </div>
   <?php
   do_action( 'tribe_events_single_meta_after' );
   ?>
