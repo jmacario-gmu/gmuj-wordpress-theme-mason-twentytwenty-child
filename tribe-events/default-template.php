@@ -10,6 +10,7 @@
  * @version 4.6.23
  *
  */
+use Tribe\Events\Views\V2\Template_Bootstrap;
 
 if ( ! defined( 'ABSPATH' ) ) {
   die( '-1' );
@@ -101,10 +102,7 @@ do_action( 'tribe_default_events_template_after_header', $eventDisplay );
         if ( is_search() || ! is_singular() && 'summary' === get_theme_mod( 'blog_content', 'full' ) ) {
           the_excerpt();
         } else {
-
-
-            tribe_get_view();
-
+            echo tribe( Template_Bootstrap::class )->get_view_html();
         }
         ?>
 
