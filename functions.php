@@ -46,11 +46,17 @@ require(get_stylesheet_directory(). '/php/custom-breadcrumbs.php');
 //Include customizations related to implementation of custom meta boxes
 require(get_stylesheet_directory(). '/php/custom-meta-boxes.php');
 
+//Include customizations related to sitemaps
+require(get_stylesheet_directory(). '/php/custom-sitemap.php');
+
 //Include customizations related to the custom post type: people
 require(get_stylesheet_directory(). '/php/custom-post-type-people.php');
 
 //Include customizations related to the custom post type: homepage slider
 require(get_stylesheet_directory(). '/php/custom-post-type-slideshow.php');
+
+// Include custom stylesheets for classic and block editors.
+require(get_stylesheet_directory() . '/php/custom-editor-styles.php');
 
 // Set up auto-updates
   require 'plugin-update-checker/plugin-update-checker.php';

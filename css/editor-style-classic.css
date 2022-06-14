@@ -1,0 +1,46 @@
+body#tinymce.wp-editor.content { /* stylelint-disable-line no-duplicate-selectors */
+	background: #fff;
+	color: #333;
+	font-size: 16px;
+	letter-spacing: -0.015em;
+	margin: 0 auto;
+	width: 85%;
+	max-width: calc(100% - 40px);
+}
+
+body#tinymce.wp-editor.content p,
+body#tinymce.wp-editor.content ol,
+body#tinymce.wp-editor.content ul,
+body#tinymce.wp-editor.content dl,
+body#tinymce.wp-editor.content dt {
+	font-family: "Open Sans", Verdana, Geneva, sans-serif;
+	letter-spacing: normal;
+}
+
+body#tinymce.wp-editor.content a,
+body#tinymce.wp-editor.content a:focus,
+body#tinymce.wp-editor.content a:hover {
+	color: #063;
+	text-decoration: underline;
+}
+
+/* Titles ------------------------------------ */
+
+body#tinymce.wp-editor.content h1,
+body#tinymce.wp-editor.content h2,
+body#tinymce.wp-editor.content h3,
+body#tinymce.wp-editor.content h4,
+body#tinymce.wp-editor.content h5,
+body#tinymce.wp-editor.content h6 {
+	color: #063;
+}
+
+body#tinymce.wp-editor.content h2 {
+	font-size: 40px;
+}
+body#tinymce.wp-editor.content h3 {
+	font-size: 35px;
+}
+body#tinymce.wp-editor.content h4 {
+	font-size: 30px;
+}
