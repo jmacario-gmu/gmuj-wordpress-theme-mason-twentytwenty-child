@@ -63,7 +63,6 @@ $title = apply_filters( 'tribe_events_single_event_title_html', the_title( $befo
 
 ?>
 <div id="tribe-events-content" class="tribe-events-single">
-
   <!-- Notices -->
   <?php tribe_the_notices() ?>
 
@@ -99,10 +98,10 @@ $title = apply_filters( 'tribe_events_single_event_title_html', the_title( $befo
         <?php echo tribe_event_featured_image( $event_id, 'full', false ); ?>
         <div class="gmu-was-event-description">
           <?php the_content(); ?>
+          <?php do_action( 'tribe_events_single_event_after_the_content' ) ?>
         </div>
       </div>
       <!-- .tribe-events-single-event-description -->
-      <?php do_action( 'tribe_events_single_event_after_the_content' ) ?>
 
       <!-- Event meta -->
       <?php do_action( 'tribe_events_single_event_before_the_meta' ) ?>
