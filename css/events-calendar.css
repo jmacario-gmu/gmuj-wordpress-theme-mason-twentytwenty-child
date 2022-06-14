@@ -263,12 +263,21 @@ box-shadow: 0px 10px 8px -5px rgba(0,0,0,0.75);
   text-decoration:none;
 }
 
-
 /* Subscribe menu */
-.tribe-events-c-subscribe-dropdown__button-text {
+.tribe-events-c-subscribe-dropdown__button {
   padding: .5em !important;
   background-color: #063;
   border-radius: 5px;
+  max-width: 300px;
+}
+.tribe-events-c-subscribe-dropdown__button button {
+  background-color: inherit;
+}
+.tribe-events-c-subscribe-dropdown__button svg {
+  color: #fff;
+  fill: #fff;
+  display: inline-block;
+  width: 20px;
 }
 
 /* Date navigation bar */
