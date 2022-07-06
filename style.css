@@ -51,3 +51,6 @@ Template: twentytwenty
 
 /* RSS Blocks */
 	@import 'css/block-rss.css';
+
+/* The Events Calendar styles */
+	@import 'css/events-calendar.css';
