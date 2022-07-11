@@ -107,6 +107,20 @@
 			</td>
 		</tr>
 		<tr>
+			<td><a href="https://wordpress.org/plugins/the-events-calendar/" target="_blank">The Events Calendar</a></td>
+			<td>Easily create and manage an events calendar</td>
+			<td>
+				<?php
+				// Indicate whether this plugin is active
+				if (gmuj_is_plugin_active('the-events-calendar/the-events-calendar.php')) {
+					echo '<span style="color:green;" class="dashicons dashicons-yes"></span>';
+				} else {
+					echo '<span style="color:red;" class="dashicons dashicons-no-alt"></span>';
+				}
+				?>
+			</td>
+		</tr>
+		<tr>
 			<td><a href="https://wordpress.org/plugins/duracelltomi-google-tag-manager/" target="_blank">Google Tag Manager for WordPress</a></td>
 			<td>Add analytics to this website</td>
 			<td>
