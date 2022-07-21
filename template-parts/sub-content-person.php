@@ -25,22 +25,22 @@ $gmuj_website = trim(get_post_meta(get_the_ID(), 'gmuj_website', true));
 
 				// job_title
 					if (!empty($gmuj_person_title)) {
-						echo '<p class="person-info--title">Title: '.$gmuj_person_title.'</p>';
+						echo '<p class="person-info--title"><span>Title:</span> '.$gmuj_person_title.'</p>';
 					}
 
 				// email
 					if (!empty($gmuj_contact_email)) {
-						echo '<p class="person-info--email">Email: <a href="mailto:'.$gmuj_contact_email.'">'.$gmuj_contact_email.'</a></p>';
+						echo '<p class="person-info--email"><span>Email:</span> <a href="mailto:'.$gmuj_contact_email.'">'.$gmuj_contact_email.'</a></p>';
 					}
 
 				// phone
 					if (!empty($gmuj_contact_phone)) {
-						echo '<p class="person-info--phone">Phone: '.$gmuj_contact_phone.'</p>';
+						echo '<p class="person-info--phone"><span>Phone:</span> '.$gmuj_contact_phone.'</p>';
 					}
 
 				// website
 					if (!empty($gmuj_website)) {
-						echo '<p class="person-info--website">Website: <a href="'.$gmuj_website.'" target="_blank">'.$gmuj_website.'</a></p>';
+						echo '<p class="person-info--website"><span>Website:</span> <a href="'.$gmuj_website.'" target="_blank">'.$gmuj_website.'</a></p>';
 					}
 
 				// groups
