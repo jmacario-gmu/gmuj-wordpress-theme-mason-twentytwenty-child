@@ -12,21 +12,11 @@ $gmuj_website = trim(get_post_meta(get_the_ID(), 'gmuj_website', true));
 <div class="person-wrapper">
 	
 	<div class="person-top">
-
+		<?php if (has_post_thumbnail()): ?>
 		<div class="person-image">
-
-			<?php 
-			if (has_post_thumbnail()) {
-				// Show the post thumbnail image
-				the_post_thumbnail();
-			} else {
-				// Show nothing
-				echo '';
-			}
-			?>
-
+			<?php the_post_thumbnail(); ?>
 		</div>
-
+		<?php endif; ?>
 		<div class="person-info">
 
 			<?php
