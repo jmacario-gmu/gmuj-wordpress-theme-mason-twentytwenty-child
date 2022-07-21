@@ -50,6 +50,7 @@ function gmuj_register_custom_post_type_people() {
         'hierarchical'       => false,
         'menu_position'      => 20,
         'menu_icon'			 => 'dashicons-groups',
+		'show_in_rest'		 => true,
         'supports'           => array('title', 'editor', 'thumbnail'),
     );
  
