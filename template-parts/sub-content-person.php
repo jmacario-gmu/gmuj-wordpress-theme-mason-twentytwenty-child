@@ -12,21 +12,11 @@ $gmuj_website = trim(get_post_meta(get_the_ID(), 'gmuj_website', true));
 <div class="person-wrapper">
 	
 	<div class="person-top">
-
+		<?php if (has_post_thumbnail()): ?>
 		<div class="person-image">
-
-			<?php 
-			if (has_post_thumbnail()) {
-				// Show the post thumbnail image
-				the_post_thumbnail();
-			} else {
-				// Show nothing
-				echo '';
-			}
-			?>
-
+			<?php the_post_thumbnail(); ?>
 		</div>
-
+		<?php endif; ?>
 		<div class="person-info">
 
 			<?php
@@ -35,28 +25,28 @@ $gmuj_website = trim(get_post_meta(get_the_ID(), 'gmuj_website', true));
 
 				// job_title
 					if (!empty($gmuj_person_title)) {
-						echo '<p>Title: '.$gmuj_person_title.'</p>';
+						echo '<p class="person-info--title"><span>Title:</span> '.$gmuj_person_title.'</p>';
 					}
 
 				// email
 					if (!empty($gmuj_contact_email)) {
-						echo '<p>Email: <a href="mailto:'.$gmuj_contact_email.'">'.$gmuj_contact_email.'</a></p>';
+						echo '<p class="person-info--email"><span>Email:</span> <a href="mailto:'.$gmuj_contact_email.'">'.$gmuj_contact_email.'</a></p>';
 					}
 
 				// phone
 					if (!empty($gmuj_contact_phone)) {
-						echo '<p>Phone: '.$gmuj_contact_phone.'</p>';
+						echo '<p class="person-info--phone"><span>Phone:</span> '.$gmuj_contact_phone.'</p>';
 					}
 
 				// website
 					if (!empty($gmuj_website)) {
-						echo '<p>Website: <a href="'.$gmuj_website.'" target="_blank">'.$gmuj_website.'</a></p>';
+						echo '<p class="person-info--website"><span>Website:</span> <a href="'.$gmuj_website.'" target="_blank">'.$gmuj_website.'</a></p>';
 					}
 
 				// groups
 					$groups = strip_tags(get_the_term_list($post->ID, 'groups','',', '));
 					if (!empty($groups)) {
-						echo '<p>Groups: '.$groups.'</p>';
+						echo '<p class="person-info--groups">Groups: '.$groups.'</p>';
 					}
 			
 			?>
