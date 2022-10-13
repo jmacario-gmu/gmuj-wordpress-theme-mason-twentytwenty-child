@@ -28,7 +28,8 @@ function gmuj_register_menus(){
     register_nav_menus(array(
         'university' => 'University Menu',
         'prominent' => 'Prominent Links Menu',
-        'footer' => 'Footer Menu'
+        'footer' => 'Footer Menu',
+        'footer-social' => 'Footer Social Menu'
     ));
 
 }
