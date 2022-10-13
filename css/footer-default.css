@@ -90,3 +90,19 @@ footer#site-footer ul#footer-menu li:last-of-type {
 footer#site-footer ul#footer-menu a {
 	color:white;
 }
+
+/* Style footer social menu */
+#site-footer .footer-social {
+	justify-content: flex-start;
+	margin-bottom: 2rem;
+}
+#site-footer ul.social-icons {
+	width: auto;
+}
+#site-footer .footer-social a {
+	width: 3.5rem;
+	height: 3.5rem;
+}
+#site-footer .footer-social svg{
+	max-width: 55%;
+}
