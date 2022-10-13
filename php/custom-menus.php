@@ -53,3 +53,21 @@ function menu_footer_fallback() {
 	include(get_stylesheet_directory(). '/content/menu-footer-default.html');
 
 }
+
+/**
+ * Associates correct icons with the social links automatically for the "footer social" menu location. This is necessary because the base Twentytwenty theme only supports this for the "social" menu location.
+ */
+add_filter( 'walker_nav_menu_start_el', 'mason_theme_nav_menu_social_icons', 10, 4 );
+function mason_theme_nav_menu_social_icons( $item_output, $item, $depth, $args ) {
+    // Change SVG icon inside social links menu if there is supported URL.
+    if ( 'footer-social' === $args->theme_location ) {
+        $svg = TwentyTwenty_SVG_Icons::get_social_link_svg( $item->url );
+        if ( empty( $svg ) ) {
+            $svg = twentytwenty_get_theme_svg( 'link' );
+        }
+        $item_output = str_replace( $args->link_after, '</span>' . $svg, $item_output );
+    }
+
+    return $item_output;
+    
+}
