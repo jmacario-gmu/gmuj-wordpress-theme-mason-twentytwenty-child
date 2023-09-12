@@ -65,20 +65,6 @@
 			</td>
 		</tr>
 		<tr>
-			<td><a href="https://wordpress.org/plugins/amr-shortcode-any-widget/" target="_blank">amr shortcode any widget</a></td>
-			<td>Use widgets on any page</td>
-			<td>
-				<?php
-				// Indicate whether this plugin is active
-				if (gmuj_is_plugin_active('amr-shortcode-any-widget/amr-shortcode-any-widget.php')) { 
-					echo '<span style="color:green;" class="dashicons dashicons-yes"></span>';
-				} else {
-					echo '<span style="color:red;" class="dashicons dashicons-no-alt"></span>';
-				}
-				?>
-			</td>
-		</tr>
-		<tr>
 			<td><a href="https://wordpress.org/plugins/classic-widgets/" target="_blank">Classic Widgets</a></td>
 			<td>Restore the classic widgets settings screen</td>
 			<td>
