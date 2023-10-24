@@ -58,6 +58,9 @@ require(get_stylesheet_directory(). '/php/custom-post-type-slideshow.php');
 // Include custom stylesheets for classic and block editors.
 require(get_stylesheet_directory() . '/php/custom-editor-styles.php');
 
+// Include customizations related to Twitter
+require(get_stylesheet_directory() . '/php/custom-twitter.php');
+
 // Set up auto-updates
   require 'plugin-update-checker/plugin-update-checker.php';
   $myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
