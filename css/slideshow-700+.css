@@ -8,12 +8,12 @@
 }
 
 .gmuj-slide-body {
+	min-height: 9rem;
 	padding: 1em 1em 0;
 	font-size: 1.8rem;
 }
 
 .gmuj-slide .gmuj-slide-cta {
-	margin-left: 3em;
 	font-size: 1.1em;
 	font-weight: 500;
 }

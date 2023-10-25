@@ -85,7 +85,15 @@ if (count($slides) >= 1) {
 
 					<div id="gmuj-slide-content-<?php the_ID(); ?>" class="gmuj-slide-content">
 				
-						<h2 id="gmuj-slide-title-<?php the_ID(); ?>" class="gmuj-slide-title"><a class="gmuj-slide-link" href="<?php echo $target_link; ?>"><?php the_title(); ?></a></h2>
+						<!-- slide title -->
+						<?php
+							// should we show or hide the title?
+							if (!get_post_meta(get_the_ID(), 'gmuj_slide_hide_title', true)) {
+								?>
+								<h2 id="gmuj-slide-title-<?php the_ID(); ?>" class="gmuj-slide-title"><a class="gmuj-slide-link" href="<?php echo $target_link; ?>"><?php the_title(); ?></a></h2>
+								<?php
+							}
+						?>
 						
 						<div id="gmuj-slide-body-<?php the_ID(); ?>" class="gmuj-slide-body">
 
@@ -94,14 +102,23 @@ if (count($slides) >= 1) {
 								<div class="gmuj-slide-body-text">
 									<?php the_content(); ?>
 								</div>
-								<div class="gmuj-slide-cta">
-									<p>
-										<a class="gmuj-slide-link" href="<?php echo $target_link; ?>">
-											<?php echo $slide_cta_text; ?>
-											<span class="gmuj-slide-link-arrow fa fa-arrow-circle-right"></span>
-										</a>
-									</p>
-								</div>
+
+								<!-- slide CTA -->
+								<?php
+									// should we show or hide the cta?
+									if (!get_post_meta(get_the_ID(), 'gmuj_slide_hide_cta', true)) {
+										?>
+										<div class="gmuj-slide-cta">
+											<p>
+												<a class="gmuj-slide-link" href="<?php echo $target_link; ?>">
+													<?php echo $slide_cta_text; ?>
+													<span class="gmuj-slide-link-arrow fa fa-arrow-circle-right"></span>
+												</a>
+											</p>
+										</div>
+										<?php
+									}
+								?>
 
 							</div>
 

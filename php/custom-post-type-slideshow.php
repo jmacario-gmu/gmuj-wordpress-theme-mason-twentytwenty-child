@@ -81,6 +81,18 @@ function gmuj_register_meta_boxes_slideshow() {
                     'type'  => 'checkbox', // Field type
                 ),
                 array(
+                    'name' => 'Hide Title?', // Field name - Will be used as label
+                    'id' => $prefix . 'hide_title', // Field ID, i.e. the meta key
+                    'desc' => 'Hide the title for this slide?', // Field description (optional)
+                    'type'  => 'checkbox', // Field type
+                ),
+                array(
+                    'name' => 'Hide CTA?', // Field name - Will be used as label
+                    'id' => $prefix . 'hide_cta', // Field ID, i.e. the meta key
+                    'desc' => 'Hide the CTA button for this slide?', // Field description (optional)
+                    'type'  => 'checkbox', // Field type
+                ),
+                array(
                     'name' => 'Link', // Field name - Will be used as label
                     'id' => $prefix . 'target_url', // Field ID, i.e. the meta key
                     'desc' => 'Slide links to URL', // Field description (optional)
@@ -121,6 +133,50 @@ function gmuj_register_meta_boxes_slideshow() {
     // make the column sortable
         add_filter('manage_edit-slideshow_sortable_columns', function ($columns){
           $columns['gmuj_slide_show'] = 'gmuj_slide_show';
+          return $columns;
+        });
+
+//'hide_title' field
+    // include the field
+        add_filter('manage_slideshow_posts_columns', function($columns) {
+            return array_merge($columns, ['gmuj_slide_hide_title' => 'Hide title?']);
+        });
+    // render the data in the field
+        add_action('manage_slideshow_posts_custom_column', function($column_name, $post_id) {
+            if ($column_name == 'gmuj_slide_hide_title') {
+                $gmuj_slide_hide_title = get_post_meta($post_id, 'gmuj_slide_hide_title', true);
+                if ($gmuj_slide_hide_title) {
+                    echo '<span>'.'Yes'.'</span>';
+                } else {
+                    echo '<span>'.'No'.'</span>';
+                }
+            }
+        }, 10, 2);
+    // make the column sortable
+        add_filter('manage_edit-slideshow_sortable_columns', function ($columns){
+          $columns['gmuj_slide_show'] = 'gmuj_slide_hide_title';
+          return $columns;
+        });
+
+//'hide_cta' field
+    // include the field
+        add_filter('manage_slideshow_posts_columns', function($columns) {
+            return array_merge($columns, ['gmuj_slide_hide_cta' => 'Hide CTA button?']);
+        });
+    // render the data in the field
+        add_action('manage_slideshow_posts_custom_column', function($column_name, $post_id) {
+            if ($column_name == 'gmuj_slide_hide_cta') {
+                $gmuj_slide_hide_cta = get_post_meta($post_id, 'gmuj_slide_hide_cta', true);
+                if ($gmuj_slide_hide_cta) {
+                    echo '<span>'.'Yes'.'</span>';
+                } else {
+                    echo '<span>'.'No'.'</span>';
+                }
+            }
+        }, 10, 2);
+    // make the column sortable
+        add_filter('manage_edit-slideshow_sortable_columns', function ($columns){
+          $columns['gmuj_slide_show'] = 'gmuj_slide_hide_cta';
           return $columns;
         });
 
