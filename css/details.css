@@ -1,0 +1,61 @@
+
+/* Details block styles */
+
+/* Adust whitespace for all non-summary child elements */
+  details.wp-block-details > :not(summary) {
+    margin-block-end: 1em;
+    padding-right: 2em;
+  }
+  
+  details.wp-block-details {
+    margin-bottom: .75em;
+    position: relative;
+    max-width: 960px !important;
+  }
+  
+  details.wp-block-details > :last-child {
+    margin-bottom: 2em;
+  }
+  
+  details.wp-block-details > summary {
+    list-style: none;
+    display: block;
+    padding-right: 2em;
+    padding-bottom: .5em;
+    color: #063;
+    font-family: 'Roboto Slab', serif;
+    letter-spacing: .025em;
+    font-weight: 600;
+    font-size: 1.75rem;
+    line-height: 1.3em;
+    border-bottom: solid #ccc 1px;
+  }
+  
+  details.wp-block-details > summary:hover{
+    color: #333;
+    text-decoration:underline;
+  }
+  
+  /* Hide browser default arrow on details elements */
+  details.wp-block-details.summary::-webkit-details-marker {
+    display: none;
+  }
+  
+  /* Add plus/minus icons for closed and open states */
+  details.wp-block-details summary::after {
+    font-weight: 900;
+     font-family: "Font Awesome 5 Free";
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    content: "\f055"; 
+  }
+  details[open].wp-block-details summary::after {
+    content: "\f056";
+  }
+
+  /* Adjust width of tables inside details elements */
+  details.wp-block-details table {
+    max-width: 95% !important;
+  }

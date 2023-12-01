@@ -152,4 +152,19 @@ cite {
      color: white;
      border-radius: 0;
  }
+
+ /* Standard Wordpress Details block */
+ details.block-editor-block-list__block > summary {
+    font-family: Palatino Linotype, Palatino, serif;
+    color: #006633;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+    letter-spacing: -1px;
+}
+details.block-editor-block-list__block > :not(summary) {
+    margin: 0 0 10px 20px;
+    padding: 0;
+  }
+
  
