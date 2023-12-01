@@ -54,3 +54,6 @@ Template: twentytwenty
 
 /* The Events Calendar styles */
 	@import 'css/events-calendar.css';
+	
+/* Details block */
+	@import 'css/details.css';
