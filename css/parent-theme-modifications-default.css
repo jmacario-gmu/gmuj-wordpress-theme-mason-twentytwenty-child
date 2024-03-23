@@ -259,6 +259,10 @@ header.entry-header {
 	padding-top: 2rem !important;
 	padding-bottom:3rem !important;
 	margin-bottom: 2em;
+}
+
+/* Shade the entry header area on single post pages */
+body.singular header.entry-header {
 	background-color:#eff0e7 !important;
 }
 
