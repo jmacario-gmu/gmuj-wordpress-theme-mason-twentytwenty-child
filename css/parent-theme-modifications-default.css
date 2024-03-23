@@ -391,3 +391,16 @@ body.blog article:last-of-type {
 body.category header.archive-header {
 	display:none;
 }
+
+/* style hr post separators */
+.entry-content hr, hr.styled-separator {
+	border:1px solid #999999;
+}
+
+/* remove hr accent */
+.entry-content hr::before,
+hr.styled-separator::before,
+.entry-content hr::after,
+hr.styled-separator::after {
+	display:none;
+}
