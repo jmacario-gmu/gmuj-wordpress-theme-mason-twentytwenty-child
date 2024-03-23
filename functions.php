@@ -61,6 +61,9 @@ require(get_stylesheet_directory() . '/php/custom-editor-styles.php');
 // Include customizations related to Twitter
 require(get_stylesheet_directory() . '/php/custom-twitter.php');
 
+// Include customizations related to post meta
+require(get_stylesheet_directory() . '/php/custom-post-meta.php');
+
 // Set up auto-updates
   require 'plugin-update-checker/plugin-update-checker.php';
   $myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(

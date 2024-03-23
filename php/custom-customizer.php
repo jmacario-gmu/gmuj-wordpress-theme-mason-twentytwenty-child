@@ -218,6 +218,40 @@ function gmuj_theme_customizer_register($wp_customize) {
     // Remove 'show search in header' option
       $wp_customize->remove_control('enable_header_search');
 
+  // Field: hide post meta section in post entries? (gmuj_show_post_meta)
+      $wp_customize->add_setting('gmuj_show_post_meta',
+        array('default'     => '0')
+      );
+      $wp_customize->add_control('gmuj_show_post_meta',
+        array(
+          'type'       => 'radio',
+          'label'      => 'Show post meta?:',
+          'description' => '<p>Show post meta section (post author and date) in post headers.</p>',
+          'section'    => 'options',
+          'choices' => array(
+            '0' => 'No',
+            '1' => 'Yes'
+          )
+        )
+      );
+
+  // Field: hide post categories section in post entries? (gmuj_show_post_categories)
+      $wp_customize->add_setting('gmuj_show_post_categories',
+        array('default'     => '0')
+      );
+      $wp_customize->add_control('gmuj_show_post_categories',
+        array(
+          'type'       => 'radio',
+          'label'      => 'Show post categories?:',
+          'description' => '<p>Show post category links (above post title) in post headers.</p>',
+          'section'    => 'options',
+          'choices' => array(
+            '0' => 'No',
+            '1' => 'Yes'
+          )
+        )
+      );
+
   // Section: 'Background Image'
 
   // Remove 'Background Image' section
