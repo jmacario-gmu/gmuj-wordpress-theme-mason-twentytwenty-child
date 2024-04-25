@@ -19,7 +19,7 @@
 							<a href="https://www.gmu.edu">
 								<?php
 								// Set default footer logo
-									$footer_logo_image = get_stylesheet_directory_uri() . '/images/logo-Mason-2-color-with-shadow-259x181.png';
+									$footer_logo_image = get_stylesheet_directory_uri() . '/images/mason-logo.png';
 								// If we have an alternate footer logo specified in the theme customizer, use it instead.
 									if (get_theme_mod('gmuj_site_footer_logo') !='') {
 										$footer_logo_image = get_theme_mod('gmuj_site_footer_logo');
