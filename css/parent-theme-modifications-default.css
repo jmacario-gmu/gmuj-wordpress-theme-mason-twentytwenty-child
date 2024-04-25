@@ -269,7 +269,8 @@ body.singular header.entry-header {
 /* Style all entry titles */
 h1.entry-title {
 	margin-top:0.25em;
-	font-family: 'Roboto Slab', Palatino Linotype, Palatino, serif;
+	font-family: 'Figtree', sans-serif;
+    font-weight: 700;
 	letter-spacing: 0.025em;
 }
 /* Style entry title color for titles for single post pages and multiple post pages */
@@ -325,8 +326,8 @@ div.entry-content li.widget h3.widget-title {
     text-align: center;
     letter-spacing: 0.025em;
     padding: 20px 0px;
-    font-family: 'Roboto Slab', serif;
-    font-weight:bold;
+    font-family: 'Figtree', serif;
+    font-weight:600;
     color:#006633;
 }
 

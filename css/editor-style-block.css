@@ -59,7 +59,8 @@ This is a template for a stylesheet that allows WordPress users to use a custom 
  --------------------------------------------------------------*/
 
 h1.wp-block-post-title {
-    font-family: 'Roboto Slab', Palatino Linotype, Palatino, serif;
+    font-family: 'Figtree', sans-serif;
+    font-weight: 600;
     color: #42413f;
     font-size: 50px;
     letter-spacing: 0.025em;

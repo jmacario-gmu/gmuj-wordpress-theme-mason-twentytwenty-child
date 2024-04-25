@@ -115,7 +115,8 @@ h3.tribe-events-widget-events-list__event-title {
 
 .tribe-events-single-event-title{
   font-size: 4.5rem;
-  font-family: 'Roboto Slab', Palatino Linotype, Palatino, serif;
+  font-family: 'Figtree', sans-serif;
+  font-weight: 600;
   color: #42413f;
 }
 

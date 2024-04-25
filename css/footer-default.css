@@ -54,7 +54,8 @@ footer#site-footer p.footer-slogan-address-copyright-contact {
 
 /* Style site slogan */
 footer#site-footer p.footer-slogan-address-copyright-contact span.site-slogan {
-    font-family: 'Roboto Slab', serif;
+    font-family:'Figtree', sans-serif;
+    font-weight:600;
     letter-spacing: 0.025em;
     color: #fc3;
     font-size: 28px;
