@@ -7,7 +7,7 @@
 /** LIST VIEW (widget and all events) **/
 .tribe-events-widget-events-list h3 {
   text-align: center;
-  color: #063;
+  color: #005239;
 }
 .tribe-common--breakpoint-medium.tribe-events-widget .tribe-events-widget-events-list__event-row {
   margin-bottom: 0 !important;
@@ -30,7 +30,7 @@
 }
 .tribe-events-widget .tribe-events-widget-events-list__event-date-tag-month, .tribe-events-calendar-list__event-date-tag-weekday, .tribe-events .tribe-events-calendar-list__event-date-tag-weekday {
   border-radius: 4px 4px 0 0;
-  background-color: #063;
+  background-color: #005239;
   color: #fff !important;
   padding: 5px;
   letter-spacing: 2px;
@@ -40,7 +40,7 @@
 }
 
 .tribe-events .tribe-events-calendar-list__event-title-link:visited{
-  color: #063;
+  color: #005239;
 }
 
 /* Event day numbers */
@@ -60,7 +60,7 @@
   background-color: #fff;
 }
 .tribe-events .tribe-events-calendar-month__mobile-events-icon--event{
-  background-color: #063;
+  background-color: #005239;
 }
 
 
@@ -83,7 +83,7 @@ h3.tribe-events-widget-events-list__event-title {
   letter-spacing: 1px;
 }
 .tribe-events-widget-events-list__event-title-link {
-  color: #063;
+  color: #005239;
   font-size: .5em;
 }
 
@@ -121,19 +121,19 @@ h3.tribe-events-widget-events-list__event-title {
 }
 
 .tribe-events-schedule h2, h2.tribe-events-single-section-title {
-  color: #063;
+  color: #005239;
   font-size: 3.5rem;
   margin-top: 0;
 }
 
 .tribe-events-schedule__separator {
-  color: #063;
+  color: #005239;
 }
 
 .tribe-events-button, .tribe-block__events-link .tribe-block__btn--link {
   display: inline-block;
   padding: .5em;
-  background-color: #063;
+  background-color: #005239;
   color: #fff;
   border-radius: 5px;
   margin: .5em !important;
@@ -202,7 +202,7 @@ h3.tribe-events-widget-events-list__event-title {
 
 /* Event months */
 .tribe-events .tribe-events-calendar-list__event-title-link{
-  color: #063;
+  color: #005239;
 }
 
 /** ALL EVENTS CALENDAR VIEW **/
@@ -219,7 +219,7 @@ h3.tribe-events-widget-events-list__event-title {
 
 /* 'Find Events' button */
 .tribe-events-c-search__button {
-  background-color: #063;
+  background-color: #005239;
   margin-left: 10px !important;
   border-radius: 5px;
 }
@@ -227,7 +227,7 @@ h3.tribe-events-widget-events-list__event-title {
 /* mobile search and view select buttons */
 .tribe-events .tribe-events-c-events-bar__search-button, .tribe-events .tribe-events-c-view-selector__button{
   border-radius: 3px;
-  background-color: #063;
+  background-color: #005239;
 }
 
 @media only screen and (max-width: 600px) {
@@ -267,7 +267,7 @@ box-shadow: 0px 10px 8px -5px rgba(0,0,0,0.75);
 /* Subscribe menu */
 .tribe-events-c-subscribe-dropdown__button {
   padding: .5em !important;
-  background-color: #063;
+  background-color: #005239;
   border-radius: 5px;
   max-width: 300px;
 }
@@ -315,7 +315,7 @@ box-shadow: 0px 10px 8px -5px rgba(0,0,0,0.75);
 
 .datepicker table tr td span.current, .datepicker table tr td span.current:hover {
   background-image: none;
-  background-color: #063 !important;
+  background-color: #005239 !important;
 }
 
 .tribe-events-calendar-month {
@@ -324,7 +324,7 @@ box-shadow: 0px 10px 8px -5px rgba(0,0,0,0.75);
 
 /* month view column headers */
 .tribe-events .tribe-events-calendar-month__header-column {
-  background-color: #063;
+  background-color: #005239;
   padding-bottom: 5px;
 }
 .tribe-events-calendar-month__header-column h3 {
@@ -387,7 +387,7 @@ h3.tribe-events-calendar-month__calendar-event-title {
 /* all-day and multi-day events */
 .tribe-events-calendar-month__multiday-event-bar-inner{
   border-radius: 3px;
-  background-color: #063;
+  background-color: #005239;
   margin: 3px !important;
   height: auto;
 
@@ -406,7 +406,7 @@ h3.tribe-events-calendar-month__calendar-event-title {
 }
 
 .tribe-events-calendar-month__calendar-event-tooltip-datetime {
-  background: #063;
+  background: #005239;
   padding: .25em !important;
   font-size: .9em;
 }
@@ -416,7 +416,7 @@ h3.tribe-events-calendar-month__calendar-event-title {
   display: block;
 }
 .tribe-events-calendar-month__calendar-event-tooltip-title a {
-  color: #063;
+  color: #005239;
 }
 
 .tribe-events-calendar-month__calendar-event-tooltip-description p{

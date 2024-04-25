@@ -29,32 +29,32 @@ body.page-template-template-full-width .alignright {
 
 /* Modify default link colors */
 a {
-	color:#006633;
+	color:#005239;
 }
 
 /* Modify links colors for mobile menu */
 .modal-menu a {
-	color:#006633;
+	color:#005239;
 }
 
 /* Fix color of links in footer widget areas */
 .footer-widgets a {
-	color:#006633;
+	color:#005239;
 }
 
 /* Fix color of links in entry headers */
 .entry-header a {
-	color: #006633 !important;
+	color: #005239 !important;
 }
 
 /* Style blockquotes */
 blockquote {
-	border-color:#006633;
+	border-color:#005239;
 }
 
 /* Style pull quotes */
 .wp-block-pullquote:before {
-	color:#006633;
+	color:#005239;
 }
 
 /* Style captions */
@@ -86,7 +86,7 @@ main#site-content .color-accent-hover:focus,
 main#site-content .has-accent-color,
 main#site-content .has-drop-cap:not(:focus)::first-letter,
 main#site-content .wp-block-button.is-style-outline {
-    color: #006633;
+    color: #005239;
 }
 /* Apply this also to the sidebar areas */
 .sidebar .color-accent,
@@ -95,7 +95,7 @@ main#site-content .wp-block-button.is-style-outline {
 .sidebar .has-accent-color,
 .sidebar .has-drop-cap:not(:focus)::first-letter,
 .sidebar .wp-block-button.is-style-outline {
-    color: #006633;
+    color: #005239;
 }
 
 /* Style buttons */
@@ -108,7 +108,7 @@ main#site-content .wp-block-file .wp-block-file__button,
 main#site-content input[type="button"],
 main#site-content input[type="reset"],
 main#site-content input[type="submit"] {
-	background-color:#006633;
+	background-color:#005239;
 	color:white;
 }
 /* Apply this also to the sidebar areas */
@@ -120,7 +120,7 @@ main#site-content input[type="submit"] {
 .sidebar input[type="button"],
 .sidebar input[type="reset"],
 .sidebar input[type="submit"] {
-	background-color:#006633;
+	background-color:#005239;
 	color:white;
 }
 /* And to the parent theme footer widget areas */
@@ -132,7 +132,7 @@ main#site-content input[type="submit"] {
 .footer-widgets-wrapper input[type="button"],
 .footer-widgets-wrapper input[type="reset"],
 .footer-widgets-wrapper input[type="submit"] {
-	background-color:#006633;
+	background-color:#005239;
 	color:white;
 }
 
@@ -294,17 +294,17 @@ article.page h1.entry-title {
 /* Style entry content headers */
 /* h2 */
 .entry-content h2 {
-	color: #006940;
+	color: #005239;
 	font-size:4rem;
 }
 /* h3 */
 .entry-content h3 {
-	color: #004c2e;
+	color: #005239;
 	font-size:3.5rem;
 }
 /* h4 */
 .entry-content h4 {
-	color: #004c2e;
+	color: #005239;
 	font-size:3rem;
 }
 
@@ -328,7 +328,7 @@ div.entry-content li.widget h3.widget-title {
     padding: 20px 0px;
     font-family: 'Figtree', serif;
     font-weight:600;
-    color:#006633;
+    color:#005239;
 }
 
 /* Style content footer widget area */
@@ -358,7 +358,7 @@ ul.social-menu {
 
 /* Style search menu icons */
 .social-icons a {
-	/* background-color: #006633; - background color set in custom color schemes css files */
+	/* background-color: #005239; - background color set in custom color schemes css files */
 }
 
 /* Style WordPress cover block */

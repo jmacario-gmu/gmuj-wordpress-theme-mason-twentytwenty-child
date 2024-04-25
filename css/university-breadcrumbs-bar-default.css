@@ -3,7 +3,7 @@
 /* Default and small screens */
 
 #university-breadcrumbs-bar {
-    background: #006633;
+    background: #005239;
     color: #fff;
     padding:0.25em 0.5em;
     font-size:0.9em;
@@ -46,7 +46,7 @@
 }
 
 #university-breadcrumbs-bar ul#prominent-links a:hover {
-    color:#ffcc33;   
+    color:#ffc733;
 }
 
 #university-breadcrumbs-bar div.right-side {

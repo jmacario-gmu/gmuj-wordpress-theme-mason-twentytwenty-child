@@ -26,7 +26,7 @@ This is a template for a stylesheet that allows WordPress users to use a custom 
  #post-title-0
  {
 	font-family: "Open Sans", Verdana, Geneva, sans-serif;
-    color: #063;
+    color: #005239;
  }
  
  /* Sans-serif font for body text */
@@ -118,7 +118,7 @@ h6.rich-text.block-editor-rich-text__editable {
      margin-bottom: 2rem;
      margin-top: 2rem;
      padding: .4rem .8rem;
-     border-left: 2px solid #063;
+     border-left: 2px solid #005239;
      color: #666;
  }
  
@@ -134,7 +134,7 @@ cite {
  a:visited,
  article a,
  .menu-items a {
-    color: #063;
+    color: #005239;
     text-decoration: underline;
  }
   
@@ -149,7 +149,7 @@ cite {
  /* Standard WordPress button block */
  .rich-text.block-editor-rich-text__editable.wp-block-button__link,
  .rich-text.block-editor-rich-text__editable.wp-block-button__link:visited {
-     background: #063;
+     background: #005239;
      color: white;
      border-radius: 0;
  }
@@ -157,7 +157,7 @@ cite {
  /* Standard Wordpress Details block */
  details.block-editor-block-list__block > summary {
     font-family: Palatino Linotype, Palatino, serif;
-    color: #006633;
+    color: #005239;
     font-size: 24px;
     font-weight: bold;
     margin: 0 0 10px 0;

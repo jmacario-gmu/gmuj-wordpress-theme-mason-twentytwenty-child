@@ -5,7 +5,7 @@
 div#university-links-bar {
     display:block;
     padding:0.25em 0;
-    background-color: #fc3;
+    background-color: #ffc733;
 }
 
 div#university-links-bar ul#university-links {
@@ -38,12 +38,12 @@ div#university-links-bar ul#university-links li a {
 }
 
 div#university-links-bar ul#university-links li a:hover {
-    color:#063;
+    color:#005239;
 }
 
 div#university-links-bar ul#university-links li a:hover::after {
     content: "";
-    background-color: #063;
+    background-color: #005239;
     position: absolute;
     left: 0;
     right: 0;

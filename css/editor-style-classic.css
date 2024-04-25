@@ -20,7 +20,7 @@ body#tinymce.wp-editor.content dt {
 body#tinymce.wp-editor.content a,
 body#tinymce.wp-editor.content a:focus,
 body#tinymce.wp-editor.content a:hover {
-	color: #063;
+	color: #005239;
 	text-decoration: underline;
 }
 
@@ -32,7 +32,7 @@ body#tinymce.wp-editor.content h3,
 body#tinymce.wp-editor.content h4,
 body#tinymce.wp-editor.content h5,
 body#tinymce.wp-editor.content h6 {
-	color: #063;
+	color: #005239;
 }
 
 body#tinymce.wp-editor.content h2 {

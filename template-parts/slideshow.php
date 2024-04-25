@@ -21,7 +21,7 @@ if (count($slides) >= 1) {
 	/* remove default website header image */
 	header#site-header {
 		background-image: none !important; 
-		background-color: #006633 !important;
+		background-color: #005239 !important;
 	}
 
 	/* hide homepage banner area */
