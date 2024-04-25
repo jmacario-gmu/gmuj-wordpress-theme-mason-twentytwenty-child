@@ -180,6 +180,13 @@ header#site-header:before {
 	padding-top: 0.5em;
 }
 
+/* Style site logo */
+.site-logo img {
+	max-height: 12rem;
+	margin-top: 2rem;
+	margin-bottom: 1rem;
+}
+
 /* Style header icons for small screens (search and menu) */
 .header-inner .toggle {
 	align-items: flex-start;

@@ -45,7 +45,7 @@ header#site-header:before {
 
 /* Style site logo */
 .header-titles .site-logo {
-	margin: 1rem 0 0 0;
+	margin: 1rem 3rem 0 2rem;
 }
 
 /* Allow for larger logo */
@@ -55,7 +55,7 @@ header#site-header:before {
 
 /* Style site name */
 div.site-name {
-	margin-bottom: 0.5em;
+	margin-bottom: 1.5em;
     margin-left: -0.5em;
     font-weight: normal;
     text-shadow: 3px 3px 4px black;
