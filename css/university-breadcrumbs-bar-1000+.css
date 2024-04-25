@@ -28,24 +28,6 @@
     padding-left:0.5em;
 }
 
-#university-breadcrumbs-bar div.left-side ul#university-breadcrumbs.links li#unit,
-#university-breadcrumbs-bar div.left-side ul#university-breadcrumbs.links li#department {
-    background: linear-gradient(to right, rgba(0,0,0,0.1) 0%,rgba(0,0,0,0) 100%);
-    -webkit-transform: skewX(-30deg);
-    -moz-transform: skewX(-30deg);
-    -ms-transform: skewX(-30deg);
-    -o-transform: skewX(-30deg);
-    transform: skewX(-30deg);
-}
-#university-breadcrumbs-bar div.left-side ul#university-breadcrumbs.links li#unit a,
-#university-breadcrumbs-bar div.left-side ul#university-breadcrumbs.links li#department a {
-    -webkit-transform: skewX(30deg);
-    -moz-transform: skewX(30deg);
-    -ms-transform: skewX(30deg);
-    -o-transform: skewX(30deg);
-    transform: skewX(30deg);
-}
-
 ul#prominent-links {
     margin-right:0.5em;
 }

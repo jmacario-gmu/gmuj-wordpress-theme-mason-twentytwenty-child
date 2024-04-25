@@ -3,8 +3,7 @@
 /* Default and small screens */
 
 #university-breadcrumbs-bar {
-    background: #005239;
-    color: #fff;
+    color: #005239;
     padding:0.25em 0.5em;
     font-size:0.9em;
 }
@@ -25,11 +24,11 @@
 }
 
 #university-breadcrumbs-bar ul#university-breadcrumbs a {
-    color:#CCEBDE;
+    color:#005239;
 }
 
 #university-breadcrumbs-bar ul#university-breadcrumbs a:hover {
-    color:white;
+    text-decoration:underline;
 }
 
 #university-breadcrumbs-bar ul#prominent-links {
