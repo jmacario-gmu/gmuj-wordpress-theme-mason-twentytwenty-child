@@ -57,19 +57,6 @@ div.header-navigation-wrapper {
     padding-bottom:0.35em;
 }
 
-/* Use a pseudo element to create the main navigation menu skew detail */
-div.header-navigation-wrapper:before {
-    /*background-color:#00838f; - background color of main navigation bar - set in custom color schemes css files */
-    content:'';
-    width:3em;
-    display:block;
-    position:absolute;
-    left:-1em;
-    top:0;
-    bottom:0;
-    transform: skew(-30deg);
-}
-
 div.header-toggles {
     margin-left: 2rem !important;
 }
