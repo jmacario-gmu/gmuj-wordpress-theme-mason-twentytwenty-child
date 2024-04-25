@@ -40,8 +40,12 @@ footer#site-footer a {
 }
 
 /* Style mason logo */
+footer#site-footer p.footer-logo {
+    text-align:center;
+}
 footer#site-footer p.footer-logo img {
-    max-width:200px;
+    max-width:150px;
+    display:inline;
 }
 
 /* Style slogan/address/contact/copyright block */
@@ -49,7 +53,7 @@ footer#site-footer p.footer-slogan-address-copyright-contact {
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
     font-size: 14px;
-	text-align:right;
+	text-align:center;
 	line-height:30px;
 }
 
@@ -95,7 +99,7 @@ footer#site-footer ul#footer-menu a {
 
 /* Style footer social menu */
 #site-footer .footer-social {
-	justify-content: flex-end;
+	justify-content: center;
 	margin-bottom: 2rem;
 }
 #site-footer ul.social-icons {

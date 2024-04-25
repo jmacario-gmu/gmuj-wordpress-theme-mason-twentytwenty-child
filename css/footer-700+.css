@@ -3,8 +3,23 @@
 /* 700+ pixels */
 
 
+/* Style footer social menu */
+#site-footer .footer-social {
+    justify-content: flex-end;
+}
+
 footer#site-footer div.footer-credits {
     width: 100%;
     align-items: flex-end;
     justify-content: space-between;
+}
+
+/* Style mason logo */
+footer#site-footer p.footer-logo img {
+    max-width:unset;
+}
+
+/* Style slogan/address/contact/copyright block */
+footer#site-footer p.footer-slogan-address-copyright-contact {
+    text-align:right;
 }
