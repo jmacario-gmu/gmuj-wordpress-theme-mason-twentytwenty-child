@@ -46,7 +46,7 @@ div.header-inner {
 
 /* Style main navigation menu wrapper */
 div.header-navigation-wrapper {
-    /*background-color: #00838f; - background color of main navigation bar - set in custom color schemes css files */
+    /*background-color: #005239; - background color of main navigation bar - set in custom color schemes css files */
     position: absolute;
     right:0;
     z-index:1;
