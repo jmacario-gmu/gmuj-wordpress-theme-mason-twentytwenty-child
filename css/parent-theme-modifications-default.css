@@ -212,6 +212,42 @@ header#site-header:before {
 	z-index: 9999;
 }
 
+/* Fix font on main nav menu sub menu items */
+.primary-menu .sub-menu a {
+	font-size:0.9em;
+	font-weight: 400;
+	line-height:1em;
+}
+
+/* Set background color of main navigation sub-menus */
+.primary-menu ul {
+    background: white !important;
+}
+
+/* Set color of main navigation sub-menu background 'arrow' details */
+.primary-menu ul::after {
+    border-bottom-color: white !important;
+}
+.primary-menu ul ul::after {
+    border-bottom-color: transparent !important;
+    border-left-color: white !important;
+}
+
+/* set main nav menu sub menu link colors */
+.primary-menu .sub-menu a {
+	color:#005239 !important;
+}
+
+/* set main nav menu sub menu link hover style */
+.primary-menu .sub-menu a:hover {
+	text-decoration:underline;
+}
+
+/* set main nav menu sub menu sub menu icon colors */
+.primary-menu .sub-menu .icon {
+	color:#005239 !important;
+}
+
 /* Style site title area */
 .header-titles-wrapper .toggle-icon, .header-titles-wrapper .toggle-text {
 	color:white !important;

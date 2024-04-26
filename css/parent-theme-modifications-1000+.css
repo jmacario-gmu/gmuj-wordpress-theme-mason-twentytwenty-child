@@ -19,6 +19,21 @@ header#site-header:before {
 	margin-left:0;
 }
 
+/* Set background color of navigation bar */
+div.header-navigation-wrapper {
+    background-color: #005239;
+}
+
+/* Set link hover underline color for top level of main navigation bar */
+ul.primary-menu > li > a:hover::after {
+    background-color: #ffc733;
+}
+
+/* Style currently-active top menu item */
+ul.primary-menu li.current-menu-item > a::after {
+    background-color: #ffc733;
+}
+
 /* Fix header icons for larger screens */
 .header-inner .toggle {
 	align-items: center;
