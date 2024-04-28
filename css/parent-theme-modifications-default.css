@@ -154,6 +154,17 @@ main#site-content .is-style-outline .wp-block-button__link {
     background-color: transparent;
 }
 
+/* style custom header logo */
+.header-logo {
+	margin:1em;
+	text-align:center;
+}
+.header-logo img {
+	display:inline;
+	max-width: 100%;
+	max-height: 12rem;
+}
+
 /* Style website header area */
 header#site-header {
 	min-height:14em;
@@ -173,6 +184,11 @@ header#site-header:before {
 	bottom:0;
 	background:linear-gradient(180deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5) 10%, rgba(0,0,0,0) 30%);
 	z-index:1;
+}
+
+/* hide theme default logo location in website banner */
+.header-titles .site-logo {
+	display:none;
 }
 
 /* remove excess padding from above the site logo, title */

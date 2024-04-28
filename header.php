@@ -29,6 +29,18 @@
 		<?php dynamic_sidebar('sidebar-sitewide-alert'); ?>
 		<!-- /Child theme customization: Sitewide alert ribbon -->
 
+		<!-- Child theme customization: top logo -->
+		<p class="header-logo">
+			<a href="https://www.gmu.edu">
+				<?php
+				// Set default header logo
+				$header_logo_image = get_stylesheet_directory_uri() . '/images/mason-logo-horizontal.png';
+				?>
+				<img src="<?php echo $header_logo_image; ?>" alt="George Mason University logo" />
+			</a>
+		</p>
+		<!-- /Child theme customization: top logo -->
+
         <!-- Child theme customization: university links bar -->
         <?php if (get_theme_mod('gmuj_show_university_links_bar')=='1') { get_template_part('template-parts/university-links-bar'); } ?>
 		<!-- /Child theme customization: university links bar -->

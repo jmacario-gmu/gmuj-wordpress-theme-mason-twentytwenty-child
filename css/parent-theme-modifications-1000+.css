@@ -3,6 +3,11 @@
 /* 1,000+ pixels */
 
 
+/* style custom header logo */
+.header-logo {
+	text-align:left;
+}
+
 /* Style site header */
 header#site-header {
 	/*overflow-x: hidden; *//* Because the navigation menu wrapper div skews to the right, it may make the page appear a bit too wide and allow for horizontal scrolling (Chrome). To avoid this, we will clip any extra content appearing outside the site header div area. Edit: I have turned this off as it is causing a display issue in Chrome. */
@@ -70,15 +75,16 @@ ul.primary-menu li.current-menu-item > a::after {
 
 /* Style site name */
 div.site-name {
+    margin-top: 1em;
 	margin-bottom: 1.5em;
-    margin-left: -0.5em;
+    margin-left: 1em;
     font-weight: normal;
     text-shadow: 3px 3px 4px black;
 }
 
 /* Style site name link */
 div.site-name a {
-	font-size:1.1em;
+	font-size:1.4em;
 }
 
 /* Style page title for full width template */
