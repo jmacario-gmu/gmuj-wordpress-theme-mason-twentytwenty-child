@@ -116,6 +116,10 @@
 								<?php
 								if ( has_nav_menu( 'primary' ) ) {
 
+									//Child theme customization: main nav home link
+									echo '<li><a href="/"><i class="fa fa-home" aria-hidden="true"></i></a></li>';
+									//End child theme customization: main nav home link
+
 									wp_nav_menu(
 										array(
 											'container'  => '',
