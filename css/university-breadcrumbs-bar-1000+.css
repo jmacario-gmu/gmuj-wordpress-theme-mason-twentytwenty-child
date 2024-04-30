@@ -15,17 +15,20 @@
 }
 
 #university-breadcrumbs-bar .links a {
-    display: block;
     line-height: 50px;
 }
 
 #university-breadcrumbs-bar div.left-side ul#university-breadcrumbs.links li {
     padding-left: 1em;
-    padding-right: 1em;
 }
 
 #university-breadcrumbs-bar div.left-side ul#university-breadcrumbs.links li#university {
     padding-left:0.5em;
+}
+
+#university-breadcrumbs-bar .divider {
+    margin-left:0.5em;
+    margin-right:1em;
 }
 
 ul#prominent-links {

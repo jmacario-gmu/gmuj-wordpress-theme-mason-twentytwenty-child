@@ -39,9 +39,9 @@
                 // If we have a URL, display as a link
                 if (get_theme_mod('gmuj_mason_department_url')) {
                     // Start link tag
-                    echo '<a href="'.get_theme_mod('gmuj_mason_department_url').'">';
+                    echo '<span class="divider">/</span> <a href="'.get_theme_mod('gmuj_mason_department_url').'">';
                     // Output 'back' icon
-                    echo '<span class="fa fa-chevron-circle-left"></span> ';
+                    //echo '<span class="fa fa-chevron-circle-left"></span> ';
                     // Output department name
                     echo get_theme_mod('gmuj_mason_department');
                     //Finish link tag

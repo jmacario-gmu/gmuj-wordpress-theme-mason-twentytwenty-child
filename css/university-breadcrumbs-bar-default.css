@@ -58,3 +58,12 @@
 #university-breadcrumbs-bar #university {
     display:none;
 }
+
+#university-breadcrumbs-bar #unit span.fa {
+    margin-right:0.5em;
+}
+
+#university-breadcrumbs-bar .divider {
+    margin-left:0.5em;
+    margin-right:0.5em;
+}
