@@ -42,10 +42,16 @@ li.widget p.widget-title-sub {
     font-size:1.3em;
 }
 
+/* Style banner widget item titles */
+ul#sidebar-homepage-banner li.widget h3.widget-title, ul#sidebar-internal-page-banner li.widget h3.widget-title {
+    font-weight:600;
+}
+
 /* Style banner widget item subtitles */
 ul#sidebar-homepage-banner li.widget p.widget-title-sub, ul#sidebar-internal-page-banner li.widget p.widget-title-sub {
     text-align:left;
     margin-top:0;
+    margin-left: 0.75em;
 }
 
 /* Style custom HTML widgets used on widget areas (not homepage banner) */
