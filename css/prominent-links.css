@@ -1,0 +1,7 @@
+/* University breadcrumbs bar */
+
+/* Default and small screens */
+@import 'prominent-links-default.css';
+
+/* 1,000+ pixels */
+@import 'prominent-links-1000+.css' screen and (min-width: 1000px);
