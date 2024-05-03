@@ -41,13 +41,15 @@
 		</p>
 		<!-- /Child theme customization: top logo -->
 
-        <!-- Child theme customization: university links bar -->
-        <?php if (get_theme_mod('gmuj_show_university_links_bar')=='1') { get_template_part('template-parts/university-links-bar'); } ?>
-		<!-- /Child theme customization: university links bar -->
+		<div class="gmuj-header-links">
+			<!-- Child theme customization: university breadcrumbs bar -->
+			<?php get_template_part('template-parts/university-breadcrumbs-bar'); ?>
+			<!-- /Child theme customization: university breadcrumbs bar -->
 
-        <!-- Child theme customization: university breadcrumbs bar -->
-		<?php get_template_part('template-parts/university-breadcrumbs-bar'); ?>
-        <!-- /Child theme customization: university breadcrumbs bar -->
+			<!-- Child theme customization: university links bar -->
+			<?php if (get_theme_mod('gmuj_show_university_links_bar')=='1') { get_template_part('template-parts/university-links-bar'); } ?>
+			<!-- /Child theme customization: university links bar -->
+		</div>
 
 		<!-- Child theme modification: site header background-image -->
 		<header id="site-header" class="header-footer-group" role="banner" style="background-image:url('<?php echo gmuj_get_site_header_background_image() ?>');">
