@@ -1,6 +1,18 @@
 /* University breadcrumbs bar */
 
 /* 1,000+ pixels */
+/* University breadcrumbs bar */
+
+#university-breadcrumbs-bar {
+    display: flex;
+    justify-content: space-between;
+}
+
+#university-breadcrumbs-bar div.right-side {
+    margin-top: 0;
+    border-top: none;
+    padding-top: 0;    
+}
 
 #university-breadcrumbs-bar ul li {
     padding-left:1em;

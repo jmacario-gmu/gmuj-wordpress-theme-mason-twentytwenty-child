@@ -3,15 +3,14 @@
 /* 1,000+ pixels */
 
 div#university-links-bar {
-    display:block;
-    padding:0.25em 0;
-    background-color: #ffc733;
+    display:flex;
+    padding: 1em 0 0 0;
 }
 
 div#university-links-bar ul#university-links {
     display: flex;
     justify-content: flex-end;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     list-style-type: none;
     margin:0;
 }
@@ -24,9 +23,9 @@ div#university-links-bar ul#university-links li a {
     margin:0 0.5em;
     font-family: "Open Sans", Verdana, Geneva, sans-serif;
     display:block;
-    padding: 0.35em 1em;
-    font-size:0.725em;
-    font-weight: bold;
+    padding: 0 .5em;
+    font-size:0.6em;
+    font-weight: 600;
     color: #5c5b58;
     text-decoration: none;
     text-transform: uppercase;
@@ -39,15 +38,4 @@ div#university-links-bar ul#university-links li a {
 
 div#university-links-bar ul#university-links li a:hover {
     color:#005239;
-}
-
-div#university-links-bar ul#university-links li a:hover::after {
-    content: "";
-    background-color: #005239;
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: -0.1em;
-    height: 4px;
-    transform: skew(-30deg);
 }

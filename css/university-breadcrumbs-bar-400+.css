@@ -2,13 +2,8 @@
 
 /* 400+ pixels */
 
-#university-breadcrumbs-bar ul#prominent-links {
-    display: block;
-}
-
 #university-breadcrumbs-bar {
-    display: flex;
-    justify-content: space-between;
+    display: none;
 }
 
 #university-breadcrumbs-bar div.right-side {
