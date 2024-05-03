@@ -34,6 +34,19 @@
 							<?php get_template_part('template-parts/menu','footer-social'); ?>
 
 							<p class="footer-slogan-address-copyright-contact">
+							<?php
+								wp_nav_menu(
+									array(
+										'theme_location' => 'prominent',
+										'container' => false,
+										'menu_id' => 'prominent-links',
+										'menu_class' => 'links',
+										'depth' => 1,
+										'fallback_cb' => false // ensure that nothing will be displayed as a fallback if there is no menu set for this location
+									)
+								);
+								?>
+        
 
 								<?php
 								// Display site tagline if provided in theme customizer
