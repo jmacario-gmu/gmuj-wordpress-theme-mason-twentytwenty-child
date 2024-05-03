@@ -56,4 +56,7 @@ Template: twentytwenty
 	@import 'css/events-calendar.css';
 	
 /* Details block */
-	@import 'css/details.css';
+@import 'css/details.css';
+
+/* Prominent Links menu */
+@import 'css/prominent-links.css';
