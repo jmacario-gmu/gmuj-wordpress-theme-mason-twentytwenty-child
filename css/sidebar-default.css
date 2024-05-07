@@ -75,13 +75,13 @@ body.singular .gmuj-sidebar {
 
 .gmuj-sidebar .widget_nav_menu li {
 	min-width: 12em;
-	background-color: #e8fff6;
+	background-color: #f1f2f3;
 	border-bottom: none;
 }
 
 /* Nav menu links  */
 .gmuj-sidebar .widget_nav_menu li a {
-	color: #007f8b;
+	color: #005239;
 	font-weight: normal;
 }
 
