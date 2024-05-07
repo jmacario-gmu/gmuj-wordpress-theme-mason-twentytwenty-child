@@ -25,6 +25,10 @@
 }
 
 #university-breadcrumbs-bar div.left-side ul#university-breadcrumbs.links li {
+    padding-left: 0.5em;
+    white-space:nowrap;
+}
+#university-breadcrumbs-bar div.left-side ul#university-breadcrumbs.links li:first-of-type {
     padding-left: 1em;
 }
 
@@ -34,5 +38,5 @@
 
 #university-breadcrumbs-bar .divider {
     margin-left:0.5em;
-    margin-right:1em;
+    margin-right:0.5em;
 }
