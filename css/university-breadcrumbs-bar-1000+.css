@@ -1,6 +1,12 @@
 /* University breadcrumbs bar */
 
 /* 1,000+ pixels */
+/* University breadcrumbs bar */
+
+#university-breadcrumbs-bar {
+    display: flex;
+    justify-content: space-between;
+}
 
 #university-breadcrumbs-bar ul li {
     padding-left:1em;
@@ -19,6 +25,10 @@
 }
 
 #university-breadcrumbs-bar div.left-side ul#university-breadcrumbs.links li {
+    padding-left: 0.5em;
+    white-space:nowrap;
+}
+#university-breadcrumbs-bar div.left-side ul#university-breadcrumbs.links li:first-of-type {
     padding-left: 1em;
 }
 
@@ -28,9 +38,5 @@
 
 #university-breadcrumbs-bar .divider {
     margin-left:0.5em;
-    margin-right:1em;
-}
-
-ul#prominent-links {
     margin-right:0.5em;
 }

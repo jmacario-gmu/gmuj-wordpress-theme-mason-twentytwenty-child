@@ -77,7 +77,7 @@ ul.primary-menu li.current-menu-item > a::after {
 div.site-name {
     margin-top: 1em;
 	margin-bottom: 1.5em;
-    margin-left: 0.5em;
+    margin-left: 1em;
     font-weight: normal;
     text-shadow: 3px 3px 4px black;
 }
@@ -96,4 +96,10 @@ body.page-template-template-full-width div.entry-header-inner {
 /* Add bottom margin to articles */
 body.blog article {
 	margin-bottom:8em;
+}
+
+.gmuj-header-links {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
 }

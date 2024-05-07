@@ -60,20 +60,4 @@
             ?>
         </ul><!--/.university-breadcrumbs-->
     </div>
-    <div class="right-side">
-        <!--Prominent Links-->
-        <?php
-        wp_nav_menu(
-            array(
-                'theme_location' => 'prominent',
-                'container' => false,
-                'menu_id' => 'prominent-links',
-                'menu_class' => 'links',
-                'depth' => 1,
-                'fallback_cb' => false // ensure that nothing will be displayed as a fallback if there is no menu set for this location
-            )
-        );
-        ?>
-        <!--/Prominent Links-->
-    </div>
 </div>

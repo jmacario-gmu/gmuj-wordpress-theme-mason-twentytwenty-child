@@ -8,6 +8,21 @@
 			<?php if (is_front_page()) { get_template_part('template-parts/widget-area','homepage-bottom'); } ?>
 			<!-- /Child theme customization: homepage bottom widget area -->
 
+			<!-- Child theme customization: prominent links menu -->
+			<?php
+			wp_nav_menu(
+				array(
+					'theme_location' => 'prominent',
+					'container' => false,
+					'menu_id' => 'prominent-links',
+					'menu_class' => 'links',
+					'depth' => 1,
+					'fallback_cb' => false // ensure that nothing will be displayed as a fallback if there is no menu set for this location
+				)
+			);
+			?>
+			<!-- /Child theme customization: prominent links menu -->
+
 			<footer id="site-footer" role="contentinfo" class="header-footer-group">
 
 				<div class="section-inner">

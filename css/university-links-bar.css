@@ -5,3 +5,6 @@
 
 /* 1,000+ pixels */
 @import 'university-links-bar-1000+.css' screen and (min-width: 1000px);
+
+/* 1,280+ pixels */
+@import 'university-links-bar-1280+.css' screen and (min-width: 1280px);

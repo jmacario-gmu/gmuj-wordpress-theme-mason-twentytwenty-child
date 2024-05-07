@@ -6,6 +6,7 @@
     color: #005239;
     padding:0.25em 0.5em;
     font-size:0.9em;
+    display: none;
 }
 
 #university-breadcrumbs-bar a {
@@ -16,6 +17,8 @@
     margin-bottom: 0;
     margin-left:0;
     list-style-type: none;
+    display: flex;
+    flex-wrap: nowrap;
 }
 
 #university-breadcrumbs-bar ul li {
@@ -31,28 +34,6 @@
     text-decoration:underline;
 }
 
-#university-breadcrumbs-bar ul#prominent-links {
-    display: flex;
-    justify-content: space-between;
-}
-
-#university-breadcrumbs-bar ul#prominent-links li {
-    text-align: center;
-}
-
-#university-breadcrumbs-bar ul#prominent-links a {
-    color:white;
-}
-
-#university-breadcrumbs-bar ul#prominent-links a:hover {
-    color:#ffc733;
-}
-
-#university-breadcrumbs-bar div.right-side {
-    margin-top: 0.5em;
-    border-top: 1px solid #CCEBDE;
-    padding-top: 0.25em;    
-}
 
 /* now that we have the new header logo, hide the university text link */
 #university-breadcrumbs-bar #university {
