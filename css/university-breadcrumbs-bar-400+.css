@@ -5,9 +5,3 @@
 #university-breadcrumbs-bar {
     display: none;
 }
-
-#university-breadcrumbs-bar div.right-side {
-    margin-top: 0;
-    border-top: none;
-    padding-top: 0;    
-}

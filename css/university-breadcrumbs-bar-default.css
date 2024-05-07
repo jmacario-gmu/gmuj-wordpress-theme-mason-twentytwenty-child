@@ -35,12 +35,6 @@
 }
 
 
-#university-breadcrumbs-bar div.right-side {
-    margin-top: 0.5em;
-    border-top: 1px solid #CCEBDE;
-    padding-top: 0.25em;    
-}
-
 /* now that we have the new header logo, hide the university text link */
 #university-breadcrumbs-bar #university {
     display:none;

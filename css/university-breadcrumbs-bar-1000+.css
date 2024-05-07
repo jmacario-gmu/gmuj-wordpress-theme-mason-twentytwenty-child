@@ -8,12 +8,6 @@
     justify-content: space-between;
 }
 
-#university-breadcrumbs-bar div.right-side {
-    margin-top: 0;
-    border-top: none;
-    padding-top: 0;    
-}
-
 #university-breadcrumbs-bar ul li {
     padding-left:1em;
 }
@@ -41,8 +35,4 @@
 #university-breadcrumbs-bar .divider {
     margin-left:0.5em;
     margin-right:1em;
-}
-
-ul#prominent-links {
-    margin-right:0.5em;
 }
