@@ -10,3 +10,8 @@
 .header-logo img {
 	max-height: 12.75rem;
 }
+
+/* style site title */
+div.site-name a {
+	font-size:1.5em;
+}

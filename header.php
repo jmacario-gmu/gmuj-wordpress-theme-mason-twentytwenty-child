@@ -29,6 +29,8 @@
 		<?php dynamic_sidebar('sidebar-sitewide-alert'); ?>
 		<!-- /Child theme customization: Sitewide alert ribbon -->
 
+		<!-- Child theme customization: top header -->
+		<div class="top-header">
 		<!-- Child theme customization: top logo -->
 		<p class="header-logo">
 			<a href="https://www.gmu.edu">
@@ -40,6 +42,13 @@
 			</a>
 		</p>
 		<!-- /Child theme customization: top logo -->
+		<!-- Child theme customization: top title -->
+		<div class="site-name">
+			<a href="<?php echo get_home_url()?>"><?php echo get_bloginfo('name')?></a>
+		</div>
+		<!-- /Child theme customization: top title -->
+		</div>
+		<!-- /Child theme customization: top header -->
 
 		<div class="gmuj-header-links">
 			<!-- Child theme customization: university breadcrumbs bar -->
@@ -79,6 +88,7 @@
 
 					<?php } ?>
 
+					<!--
 					<div class="header-titles">
 
 						<?php

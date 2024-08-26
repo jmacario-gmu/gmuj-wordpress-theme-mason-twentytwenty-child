@@ -154,14 +154,32 @@ main#site-content .is-style-outline .wp-block-button__link {
     background-color: transparent;
 }
 
+/* top header */
+.top-header {
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-bottom:1em;
+}
+
 /* style custom header logo */
 .header-logo {
-	margin:.9em 1em 1em 1.75em;
+	margin:.9em 1em 0.5em 1.75em;
 	text-align:center;
 }
 .header-logo img {
 	display:inline;
 	max-height: 8rem;
+}
+
+/* style site title */
+div.site-name a {
+	font-family: 'Figtree', sans-serif;
+	font-size:1.25em;
+	font-weight: 700;
+	color: rgb(0, 82, 57);
+	text-decoration: none;
 }
 
 /* Style website header area */
@@ -275,21 +293,6 @@ header#site-header:before {
 
 .header-titles {
 	z-index:1;
-}
-
-/* Style site name */
-div.site-name {
-	color: white;
-	font-weight: bold;
-	font-size: 1.5em;
-	font-family: "Figtree", Verdana, Geneva, sans-serif;
-	text-shadow: 3px 3px 4px black;
-}
-
-/* Style site name link */
-div.site-name a {
-	color: white;
-	text-decoration: none;
 }
 
 /* Hide site description/tagline */
