@@ -156,13 +156,12 @@ main#site-content .is-style-outline .wp-block-button__link {
 
 /* style custom header logo */
 .header-logo {
-	margin:1em;
+	margin:.9em 1em 1em 1.75em;
 	text-align:center;
 }
 .header-logo img {
 	display:inline;
-	max-width: 100%;
-	max-height: 12rem;
+	max-height: 8rem;
 }
 
 /* Style website header area */

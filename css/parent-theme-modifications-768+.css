@@ -1,0 +1,12 @@
+/* General style modifications to parent theme */
+
+/* 1,000+ pixels */
+
+
+/* style custom header logo */
+.header-logo {
+	text-align:left;
+}
+.header-logo img {
+	max-height: 12.75rem;
+}

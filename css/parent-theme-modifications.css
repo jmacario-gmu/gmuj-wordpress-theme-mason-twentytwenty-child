@@ -6,5 +6,8 @@
 /* 700+ pixels */
 @import 'parent-theme-modifications-700+.css' screen and (min-width: 700px);
 
+/* 768+ pixels */
+@import 'parent-theme-modifications-768+.css' screen and (min-width: 768px);
+
 /* 1,000+ pixels */
 @import 'parent-theme-modifications-1000+.css' screen and (min-width: 1000px);
