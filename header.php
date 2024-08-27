@@ -35,8 +35,13 @@
 		<p class="header-logo">
 			<a href="https://www.gmu.edu">
 				<?php
-				// Set default header logo
-				$header_logo_image = get_stylesheet_directory_uri() . '/images/mason-logo-horizontal.png';
+				//set header logo
+				//get theme customizer logo
+				$header_logo_image = wp_get_attachment_image_url(get_theme_mod('custom_logo'), 'full', false);
+				//if there is no logo specified in the theme customizer, use the default
+				if (!$header_logo_image) {
+					$header_logo_image = get_stylesheet_directory_uri() . '/images/mason-logo-horizontal.png';
+				}
 				?>
 				<img src="<?php echo $header_logo_image; ?>" alt="George Mason University logo" />
 			</a>
