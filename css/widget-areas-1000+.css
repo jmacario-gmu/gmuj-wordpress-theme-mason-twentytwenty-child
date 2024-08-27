@@ -8,6 +8,11 @@ ul#sidebar-homepage-banner, ul#sidebar-internal-page-banner {
     position: unset; /* unset the relative position set in the default stylesheet */
 }
 
+/* Style homepage banner widget area */
+ul#sidebar-homepage-banner {
+    margin-top: 7em;
+}
+
 /* search form - standard WordPress search widget in homepage widget area */
 ul.sidebar-homepage li.widget_search form.search-form, ul.sidebar-internal-page li.widget_search form.search-form {
 	justify-content: center;
