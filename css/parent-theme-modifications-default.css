@@ -348,21 +348,22 @@ article.page h1.entry-title {
   max-width: 58rem;
 }
 
-/* Style entry content headers */
-/* h2 */
-.entry-content h2 {
+/* Style headers */
+h2,
+h3,
+h4 {
 	color: #005239;
-	font-size:4rem;
+	font-weight:600;
 }
-/* h3 */
-.entry-content h3 {
-	color: #005239;
+
+h2 {
 	font-size:3.5rem;
 }
-/* h4 */
-.entry-content h4 {
-	color: #005239;
+h3 {
 	font-size:3rem;
+}
+h4 {
+	font-size:2.5rem;
 }
 
 /* Basic widget styling */
