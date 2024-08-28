@@ -10,13 +10,15 @@ footer#site-footer {
 		background-color: #005239;
 	/* Add Mason M graphic element */
 	    background-image: url('../images/graphic-element-gm-803x580.png');
-	    background-size: 54rem;
-	    background-repeat: no-repeat;
+		background-size: 90rem;
+		background-repeat: no-repeat;
+		background-position: 0% 45%;
 }
 
-/* Remove flex display from footer div.section-inner */
+/* Remove flex display from footer div.section-inner and set max width */
 footer#site-footer div.section-inner {
 	display:block;
+	max-width: 76em;
 }
 
 /* Hide parent theme footer elements */
