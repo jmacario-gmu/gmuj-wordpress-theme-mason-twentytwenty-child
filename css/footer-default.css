@@ -50,7 +50,6 @@ footer#site-footer p.footer-logo img {
 
 /* Style slogan/address/contact/copyright block */
 footer#site-footer p.footer-slogan-address-copyright-contact {
-    font-family: 'Open Sans', sans-serif;
     font-weight: bold;
     font-size: 14px;
 	text-align:center;
@@ -78,7 +77,6 @@ footer#site-footer ul#footer-menu {
 	border-top:1px solid white;
 	padding-top: 1em;
 	list-style-type:none;
-	font-family: "Open Sans", Verdana, Geneva, sans-serif;
 	font-size: 0.8em;
 	color:white;
 }

@@ -13,7 +13,7 @@ body#tinymce.wp-editor.content ol,
 body#tinymce.wp-editor.content ul,
 body#tinymce.wp-editor.content dl,
 body#tinymce.wp-editor.content dt {
-	font-family: "Open Sans", Verdana, Geneva, sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	letter-spacing: normal;
 }
 

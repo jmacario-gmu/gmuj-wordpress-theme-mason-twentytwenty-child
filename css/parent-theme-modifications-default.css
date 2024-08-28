@@ -3,9 +3,10 @@
 /* Default and small screens */
 
 
-/* Remove background color on the page body added by the Twentytwenty theme. */
+/* Remove background color on the page body added by the Twentytwenty theme, and fix the base font */
 body {
 	background-color:transparent;
+	font-family: 'Open Sans', sans-serif;
 }
 
 /* Fix font sizes */
@@ -303,11 +304,6 @@ div.site-description {
 /* Style main content area */
 main#site-content {
 	background-color: white;
-}
-
-/* Set font for main content area and sidebars */
-article, .entry-content, .sidebar {
-	font-family: "Open Sans", Verdana, Geneva, sans-serif !important;
 }
 
 /* Remove padding before main page content */

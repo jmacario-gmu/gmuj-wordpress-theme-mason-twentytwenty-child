@@ -19,7 +19,6 @@ ul#prominent-links li:not(:last-child)::after {
 }
 
 ul#prominent-links a {
-    font-family: "Open Sans", Verdana, Geneva, sans-serif;
     display:block;
     font-size: inherit;
     font-weight: 600;
