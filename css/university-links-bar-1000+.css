@@ -13,7 +13,7 @@ div#university-links-bar ul#university-links {
     flex-wrap: wrap;
     list-style-type: none;
     margin:0;
-    padding: 0 0 1em 0;
+    padding: 0;
 }
 
 div#university-links-bar ul#university-links li {
