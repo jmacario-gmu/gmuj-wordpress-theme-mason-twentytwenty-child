@@ -9,6 +9,11 @@ body {
 	font-family: 'Open Sans', sans-serif;
 }
 
+/* fix font for entry content */
+.entry-content {
+	font-family: 'Open Sans', sans-serif;
+}
+
 /* Fix font sizes */
 main#site-content, .entry-content {
 	font-size:0.9em;
