@@ -1,11 +1,193 @@
 /* CSS file to implement custom slideshow */
 
 
-/* Default and small screens */
-@import 'slideshow-default.css';
+/*--- Default and small screens ---*/
 
-/* 700+ pixels */
-@import 'slideshow-700+.css' screen and (min-width: 700px);
+#gmuj-slideshow-wrapper {
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	bottom: 0;
+	overflow: hidden;
+	width: 100%;
+}
 
-/* 1,000+ pixels */
-@import 'slideshow-1000+.css' screen and (min-width: 1000px);
+.gmuj-slide {
+	/*background-position: top center;*/
+	/*background-repeat: no-repeat;*/
+	display: none;
+	cursor: grab;
+}
+
+.gmuj-slide-content {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	text-align: center;
+	color: white;
+}
+
+.gmuj-slide-body {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	padding: 0.5em 0.5em 0;
+	font-size: 0.9em;
+}
+
+.gmuj-slide-body-wrapper {
+	display: flex;
+	max-width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	justify-content: center;
+}
+
+.gmuj-slide a.gmuj-slide-link {
+	position: relative;
+	z-index: 2;
+}
+
+.gmuj-slide .gmuj-slide-body-text {
+	text-align: left;
+	font-size: 0.9em;
+	margin-right:2em;
+}
+
+.gmuj-slide .gmuj-slide-cta {
+	margin-top: 0.25em;
+	margin-right: 0;
+}
+
+.gmuj-slide .gmuj-slide-cta a {
+	text-transform: uppercase;
+	border: 1px solid #868686;
+	background: rgba(0,0,0,0.25);
+	color: white;
+	padding: 10px;
+	text-decoration: none;
+	font-size: 0.9em;
+	display: block;
+	min-width: 8em;
+}
+
+.gmuj-slide .gmuj-slide-cta a:hover {
+	border: 1px solid #005239;
+	background-color: #005239;
+}
+
+.gmuj-slide-cta .gmuj-slide-link-arrow {
+	display: none;
+}
+
+.gmuj-slide-active {
+	display: block;
+}
+
+.gmuj-slide-nav {
+	position: absolute;
+	top :50%;
+	width: 100%;
+}
+
+.gmuj-slide-nav a {
+    display: block;
+    width: 24px;
+    height: 34px;
+    background: url(../images/slideshow/arrows.png) no-repeat;
+    text-indent: -9999px;
+    border: 0;
+    opacity: 0.75;
+    transition: all 200ms ease-in-out;
+    margin: 0 1em;
+}
+
+.gmuj-slideshow:hover .gmuj-slide-nav a { opacity: 1 }
+
+.gmuj-slide-nav-previous, .gmuj-slide-nav-next {
+    position: absolute;
+    top: 50%;
+    z-index: 3;
+}
+
+.gmuj-slide-nav-previous {
+	left: 1em;
+}
+.gmuj-slide-nav-next {
+	right: 1em;
+}
+
+.gmuj-slide-nav-next a {
+    background-position: -24px 0;
+}
+
+.gmuj-slide-title {
+	margin-top: 5em;
+    font-family: "Figtree",sans-serif;
+    font-weight: 700;
+    text-shadow: -1px 2px 1px rgba(0,0,0,0.5),0 0 40px black;
+    letter-spacing: 0.025em;
+}
+
+.gmuj-slide-title a {
+    color:  white;
+    text-decoration: none;
+}
+
+/*--- 700+ pixels ---*/
+@media screen and (min-width: 700px) {
+
+	.gmuj-slide-title {
+		margin-top: 4.5em;
+	}
+
+	.gmuj-slide-body {
+		min-height: 9rem;
+		padding: 1em 1em 0;
+		font-size: 1.8rem;
+	}
+
+	.gmuj-slide .gmuj-slide-cta {
+		font-size: 1.1em;
+		font-weight: 500;
+	}
+
+	.gmuj-slide .gmuj-slide-cta a {
+		min-width: 10em;
+	}
+
+	.gmuj-slide-cta .gmuj-slide-link-arrow {
+		display: inline-block;
+		margin-left: 0.5em;
+		font-size: 0.9em;
+	}
+
+}
+
+/*--- 1,000+ pixels ---*/
+@media screen and (min-width: 1000px) {
+
+	#gmuj-slideshow-wrapper {
+		z-index: 0;
+	}
+
+	.gmuj-slide {
+		background-size: cover !important;
+	}
+
+	.gmuj-slide-nav {
+		top :87.5%;
+		max-width: 1000px;
+		left: 50%;
+		transform: translate(-50%, 0);
+		opacity: 0.5;
+	}
+
+	.gmuj-slideshow:hover .gmuj-slide-nav {
+		opacity: 0.75;
+	}
+
+}

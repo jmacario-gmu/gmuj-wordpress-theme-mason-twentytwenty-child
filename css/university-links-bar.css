@@ -1,10 +1,62 @@
 /* University links bar */
 
-/* Default and small screens */
-@import 'university-links-bar-default.css';
 
-/* 1,000+ pixels */
-@import 'university-links-bar-1000+.css' screen and (min-width: 1000px);
+/*--- Default and small screens --*/
 
-/* 1,280+ pixels */
-@import 'university-links-bar-1280+.css' screen and (min-width: 1280px);
+/* Do not display on small screens */
+div#university-links-bar {
+    display: none;
+}
+
+/*--- 1,000+ pixels --*/
+@media screen and (min-width: 1000px) {
+
+	div#university-links-bar {
+	    display:flex;
+	    padding: 1em 0 0 0;
+	}
+
+	div#university-links-bar ul#university-links {
+	    display: flex;
+	    justify-content: flex-end;
+	    flex-wrap: wrap;
+	    list-style-type: none;
+	    margin:0;
+	    padding: 0;
+	}
+
+	div#university-links-bar ul#university-links li {
+	    margin:0;
+	    margin-bottom:0.5em;
+	}
+
+	div#university-links-bar ul#university-links li a {
+	    margin:0 0.5em;
+	    display:block;
+	    padding: 0 .5em;
+	    font-size:0.6em;
+	    font-weight: 600;
+	    color: #5c5b58;
+	    text-decoration: none;
+	    text-transform: uppercase;
+	    letter-spacing: normal;
+	}
+
+	div#university-links-bar ul#university-links li a {
+	    position: relative;
+	}
+
+	div#university-links-bar ul#university-links li a:hover {
+	    color:#005239;
+	}
+
+}
+
+/*--- 1,280+ pixels --*/
+@media screen and (min-width: 1280px) {
+
+	div#university-links-bar ul#university-links li a {
+	    font-size:0.7em;
+	}
+
+}

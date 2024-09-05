@@ -1,13 +1,640 @@
 /* General style modifications to parent theme */
 
-/* Default and small screens */
-@import 'parent-theme-modifications-default.css';
 
-/* 700+ pixels */
-@import 'parent-theme-modifications-700+.css' screen and (min-width: 700px);
+/*--- Default and small screens ---*/
 
-/* 768+ pixels */
-@import 'parent-theme-modifications-768+.css' screen and (min-width: 768px);
+	/* Remove background color on the page body added by the Twentytwenty theme, and fix the base font */
+	body {
+		background-color:transparent;
+		font-family: 'Open Sans', sans-serif;
+	}
 
-/* 1,000+ pixels */
-@import 'parent-theme-modifications-1000+.css' screen and (min-width: 1000px);
+	/* fix font for entry content */
+	.entry-content {
+		font-family: 'Open Sans', sans-serif;
+	}
+
+	/* Fix font sizes */
+	main#site-content, .entry-content {
+		font-size:0.9em;
+	}
+
+	/* Fix word breaking and wrapping rules */
+	*,
+	*::before,
+	*::after {
+		word-break: normal;
+		word-wrap: normal;
+	}
+
+	/* Fix left- and right- aligned images on full-page template view to enable them to take up a reasonable amount of space. (The default parent theme 'narrow' template shrinks-down floated images to fit them in the margins). */
+	body.page-template-template-full-width .alignleft,
+	body.page-template-template-full-width .alignright {
+	    max-width: 50% !important;
+	}
+
+	/* Modify default link colors */
+	a {
+		color:#005239;
+	}
+
+	/* Modify links colors for mobile menu */
+	.modal-menu a {
+		color:#005239;
+	}
+
+	/* Fix color of links in footer widget areas */
+	.footer-widgets a {
+		color:#005239;
+	}
+
+	/* Fix color of links in entry headers */
+	.entry-header a {
+		color: #005239 !important;
+	}
+
+	/* Style blockquotes */
+	blockquote {
+		border-color:#005239;
+	}
+
+	/* Style pull quotes */
+	.wp-block-pullquote:before {
+		color:#005239;
+	}
+
+	/* Style captions */
+	.entry-content figcaption {
+	    background-color: #232525;
+	    color: white;
+	    margin-top: 0;
+	    padding: 1.25em;
+	}
+	.entry-content figcaption, .wp-caption-text {
+	    font-size: 1.4rem;
+	}
+
+	/* Style code */
+	code {
+		color:#595855;
+	}
+
+	/* Set default color for main content area */
+	main#site-content {
+		color: #333;
+	}
+
+	/* Fix colors, generally */
+	/* Only apply this to the main content area, to avoid affecting header and footer, which have differently-colored backgrounds */
+	main#site-content .color-accent,
+	main#site-content .color-accent-hover:hover,
+	main#site-content .color-accent-hover:focus,
+	main#site-content .has-accent-color,
+	main#site-content .has-drop-cap:not(:focus)::first-letter,
+	main#site-content .wp-block-button.is-style-outline {
+	    color: #005239;
+	}
+	/* Apply this also to the sidebar areas */
+	.sidebar .color-accent,
+	.sidebar .color-accent-hover:hover,
+	.sidebar .color-accent-hover:focus,
+	.sidebar .has-accent-color,
+	.sidebar .has-drop-cap:not(:focus)::first-letter,
+	.sidebar .wp-block-button.is-style-outline {
+	    color: #005239;
+	}
+
+	/* Style buttons */
+	/* Only apply this to the main content area, to avoid affecting header and footer, which have differently-colored backgrounds */
+	main#site-content button,
+	main#site-content .button,
+	main#site-content .faux-button,
+	main#site-content .wp-block-button__link,
+	main#site-content .wp-block-file .wp-block-file__button,
+	main#site-content input[type="button"],
+	main#site-content input[type="reset"],
+	main#site-content input[type="submit"] {
+		background-color:#005239;
+		color:white;
+	}
+	/* Apply this also to the sidebar areas */
+	.sidebar button,
+	.sidebar .button,
+	.sidebar .faux-button,
+	.sidebar .wp-block-button__link,
+	.sidebar .wp-block-file .wp-block-file__button,
+	.sidebar input[type="button"],
+	.sidebar input[type="reset"],
+	.sidebar input[type="submit"] {
+		background-color:#005239;
+		color:white;
+	}
+	/* And to the parent theme footer widget areas */
+	.footer-widgets-wrapper button,
+	.footer-widgets-wrapper .button,
+	.footer-widgets-wrapper .faux-button,
+	.footer-widgets-wrapper .wp-block-button__link,
+	.footer-widgets-wrapper .wp-block-file .wp-block-file__button,
+	.footer-widgets-wrapper input[type="button"],
+	.footer-widgets-wrapper input[type="reset"],
+	.footer-widgets-wrapper input[type="submit"] {
+		background-color:#005239;
+		color:white;
+	}
+
+	/* Fix text color for outline style */
+	main#site-content .is-style-outline .wp-block-button__link:not(.has-text-color) {
+	    color: inherit;
+	}
+	/* Apply this also to the sidebar areas */
+	.sidebar .is-style-outline .wp-block-button__link:not(.has-text-color) {
+	    color: inherit;
+	}
+
+	/* Fix background color for outline style */
+	main#site-content .is-style-outline .wp-block-button__link {
+	    background-color: transparent;
+	}
+	/* Apply this also to the sidebar areas */
+	.sidebar .is-style-outline .wp-block-button__link {
+	    background-color: transparent;
+	}
+
+	/* top header */
+	.top-header {
+		display:flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin-bottom:1em;
+	}
+
+	/* style custom header logo */
+	.header-logo {
+		margin:.9em 1em 0.5em 1.75em;
+		text-align:center;
+	}
+	.header-logo img {
+		display:inline;
+		max-height: 8rem;
+	}
+
+	/* style site title */
+	div.site-name a {
+		font-family: 'Figtree', sans-serif;
+		font-size:1.25em;
+		font-weight: 700;
+		color: rgb(0, 82, 57);
+		text-decoration: none;
+	}
+
+	/* Style website header area */
+	header#site-header {
+		min-height:14em;
+		background-color:transparent; /* Remove background color on the site header added by the Twentytwenty theme. */
+		background-repeat:no-repeat;
+		background-size: 200%;
+		background-position: top center;
+	}
+
+	header#site-header:before {
+		content: '';
+		display:block;
+		position:absolute;
+		left:0;
+		top:0;
+		right:0;
+		bottom:0;
+		background:linear-gradient(180deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5) 10%, rgba(0,0,0,0) 30%);
+		z-index:1;
+	}
+
+	/* hide theme default logo location in website banner */
+	.header-titles .site-logo {
+		display:none;
+	}
+
+	/* remove excess padding from above the site logo, title */
+	.header-inner {
+		padding-top: 0.5em;
+	}
+
+	/* Style site logo */
+	.site-logo img {
+		max-height: 12rem;
+		margin-top: 2rem;
+		margin-bottom: 1rem;
+	}
+
+	/* Style header icons for small screens (search and menu) */
+	.header-inner .toggle {
+		align-items: flex-start;
+		padding: 2rem;
+		z-index: 3;
+	}
+
+	/* Style the toggle-inner container (contains the search and menu icons) */
+	.toggle-inner{
+		position: absolute; /* For small screens, force the toggle-inner container to be at the top (This is a fix for iOS (both Safari and Chrome) and arguably shouldn't be necessary.) */
+		top: 1rem;
+	}
+
+	/* Give the search and nav toggle buttons smaller hitboxes */
+	.search-toggle, .nav-toggle {
+		bottom: unset;
+		height: 4em;
+		width: 4em;
+	}
+
+	/* Ensure modal menu and search are always on top */
+	.menu-modal, .search-modal{
+		z-index: 9999;
+	}
+
+	/* Fix font on main nav menu sub menu items */
+	.primary-menu .sub-menu a {
+		font-size:0.9em;
+		font-weight: 400;
+		line-height:1em;
+	}
+
+	/* Set background color of main navigation sub-menus */
+	.primary-menu ul {
+	    background: white !important;
+	}
+
+	/* Set color of main navigation sub-menu background 'arrow' details */
+	.primary-menu ul::after {
+	    border-bottom-color: white !important;
+	}
+	.primary-menu ul ul::after {
+	    border-bottom-color: transparent !important;
+	    border-left-color: white !important;
+	}
+
+	/* set main nav menu sub menu link colors */
+	.primary-menu .sub-menu a {
+		color:#005239 !important;
+	}
+
+	/* set main nav menu sub menu link hover style */
+	.primary-menu .sub-menu a:hover {
+		text-decoration:underline;
+	}
+
+	/* set main nav menu sub menu sub menu icon colors */
+	.primary-menu .sub-menu .icon {
+		color:#005239 !important;
+	}
+
+	/* Style site title area */
+	.header-titles-wrapper .toggle-icon, .header-titles-wrapper .toggle-text {
+		color:white !important;
+	}
+
+	/* Style site title area */
+	.header-titles-wrapper {
+		max-width:100%; /* Ensure that site title can take up full width */
+	}
+
+	.header-titles {
+		z-index:1;
+	}
+
+	/* Hide site description/tagline */
+	div.site-description {
+		display:none;
+	}
+
+	/* Style main content area */
+	main#site-content {
+		background-color: white;
+	}
+
+	/* Remove padding before main page content */
+	.post-inner {
+		padding-top:0;
+	}
+
+	/* Style entry header area */
+	header.entry-header {
+		padding-top: 2rem !important;
+		padding-bottom:3rem !important;
+		margin-bottom: 2em;
+	}
+
+	/* Shade the entry header area on single post pages */
+	body.singular header.entry-header {
+		background-color:#eff0e7 !important;
+	}
+
+	/* Style all entry titles */
+	h1.entry-title {
+		margin-top:0.25em;
+		font-family: 'Figtree', sans-serif;
+	    font-weight: 700;
+		letter-spacing: 0.025em;
+	}
+	/* Style entry title color for titles for single post pages and multiple post pages */
+	h1.entry-title, h2.entry-title {
+		color: #42413f;
+	}
+	/* Style entry title for pages only */
+	article.page h1.entry-title {
+		text-align:left;
+	}
+
+	/* Style entry content */
+	.entry-content {
+
+	}
+
+	.entry-content > :not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide) {
+	  max-width: 58rem;
+	}
+
+	/* Style headers */
+	h2,
+	h3,
+	h4 {
+		color: #005239;
+		font-weight:600;
+	}
+
+	h2 {
+		font-size:3.5rem;
+	}
+	h3 {
+		font-size:3rem;
+	}
+	h4 {
+		font-size:2.5rem;
+	}
+
+	/* Basic widget styling */
+	li.widget {
+		list-style-type: none;
+		clear: both; /* ensure that if a preceding widget contains a floated element, the subsequent widget will start below the floated item */
+	}
+
+	/* Fix widget fonts */
+	.widget_text p, .widget_text ol, .widget_text ul, .widget_text dl, .widget_text dt, .widget-content .rssSummary {
+	    font-family: inherit;
+	    letter-spacing: normal;
+	}
+
+	/* Style widget item titles in content areas */
+	div.entry-content li.widget h3.widget-title {
+	    margin:0 1em 0.5em;
+	    text-align: center;
+	    letter-spacing: 0.025em;
+	    padding: 20px 0px;
+	    font-family: 'Figtree', serif;
+	    font-weight:600;
+	    color:#005239;
+	}
+
+	/* Style content footer widget area */
+	.footer-widgets-outer-wrapper {
+	    border-bottom: none;
+	}
+
+	/* Hide parent theme footer menu */
+	nav.footer-menu-wrapper {
+		display:none;
+	}
+
+	/* Style social media menu */
+	ul.social-menu {
+		justify-content: center;
+	}
+
+	/* center the social media even if there is a parent theme footer menu (which we've hidden above, as ours appears in the lower site footer area) */
+	.has-footer-menu .footer-social {
+	    justify-content: center;
+	}
+
+	/* and ensure we're not adding extra padding even if there's a parent theme footer menu (which we've hidden above, as ours appears in the lower site footer area) */
+	.has-footer-menu .footer-social-wrapper {
+		margin-left:1rem !important;
+	}
+
+	/* Style search menu icons */
+	.social-icons a {
+		background-color: #005239;
+	}
+
+	/* Style WordPress cover block */
+	.wp-block-cover.has-background-dim:not(.has-background-gradient):before {
+		display:none; /* The parent theme has a full page overlay which doesn't work for our child theme, so we hide it. */
+	}
+
+	/* Homepage customizations */
+	/* Hide page title for home page */
+	body.home.singular header.entry-header {
+		display:none;
+	}
+
+	/* Hide post separators on homepage */
+	body.home .post-separator {
+		display:none;
+	}
+
+	/* Blog page customizations */
+	/* Add bottom margin to articles */
+	body.blog article {
+		margin-bottom:3em;
+	}
+	/* But not on the last article */
+	body.blog article:last-of-type {
+		margin-bottom:0em;
+	}
+
+	/* Archive page customizations */
+	/* Hide category archive page headings */
+	body.category header.archive-header {
+		display:none;
+	}
+
+	/* style hr post separators */
+	.entry-content hr, hr.styled-separator {
+		border:1px solid #999999;
+	}
+
+	/* remove hr accent */
+	.entry-content hr::before,
+	hr.styled-separator::before,
+	.entry-content hr::after,
+	hr.styled-separator::after {
+		display:none;
+	}
+
+/*--- 700+ pixels ---*/
+@media screen and (min-width: 700px) {
+
+	/* Style website header area */
+	header#site-header {
+		background-size: cover;
+	}
+
+	/* Style the toggle-inner container (contains the search and menu icons) */
+	.toggle-inner{
+		top: 2rem;
+	}
+	/* Style entry header area */
+	header.entry-header {
+		padding-bottom: 2rem !important;
+	}
+
+	/* Style entry title */
+	h1.entry-title, h2.entry-title {
+		font-size:4.5rem;
+	}
+
+	/* Fix main content area font-size */
+	.entry-content {
+		font-size:18px;
+	}
+
+	body.singular.page-template-template-full-width .entry-content > * {
+		margin-left: unset;
+	}
+
+	body.singular.page-template-template-full-width .entry-content h1,
+	body.singular.page-template-template-full-width .entry-content h2,
+	body.singular.page-template-template-full-width .entry-content h3 {
+		margin-left: 0;
+	}
+
+	body.singular.page-template-template-full-width .entry-content > :not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide) {
+	  width: 100%;
+	}
+
+	/* On only singular pages using the full-width template, style entry-content div */
+	body.singular.page-template-template-full-width .entry-content {
+		min-width: 27em;
+	}
+
+	/* Remove extra space above the first article on archive pages */
+	body:not(.singular) main > article:first-of-type {
+	    padding-top:0;
+	}
+
+	/* Remove extra margin above WP column blocks in the main content area */
+	#site-content article .entry-content .wp-block-columns {
+		margin-top:0;
+	}
+
+	/* Blog page customizations */
+	/* Add bottom margin to articles */
+	body.blog article {
+		margin-bottom:5em;
+	}
+
+}
+
+/*--- 768+ pixels ---*/
+@media screen and (min-width: 768px) {
+
+	/* style custom header logo */
+	.header-logo {
+		text-align:left;
+	}
+	.header-logo img {
+		max-height: 12.75rem;
+	}
+
+	/* style site title */
+	div.site-name a {
+		font-size:1.5em;
+	}
+
+}
+
+/*--- 1,000+ pixels ---*/
+@media screen and (min-width: 1000px) {
+
+	/* top header */
+	.top-header {
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: flex-end;
+		margin-bottom:0;
+	}
+
+	/* style header logo */
+	/* allow for larger logo */
+	.site-logo img {
+		max-height: 13rem;
+	}
+
+	/* site name */
+	.site-name {
+		margin-right:2em;
+		position: relative;
+		top:-1em;
+	}
+
+	/* header links */
+	.gmuj-header-links {
+		display: flex;
+		flex-wrap: nowrap;
+		justify-content: space-between;
+		margin-left: 2em;
+	    margin-right: 1em;
+	}
+
+	/* Style site header */
+	header#site-header {
+		/*overflow-x: hidden; *//* Because the navigation menu wrapper div skews to the right, it may make the page appear a bit too wide and allow for horizontal scrolling (Chrome). To avoid this, we will clip any extra content appearing outside the site header div area. Edit: I have turned this off as it is causing a display issue in Chrome. */
+	}
+
+	/* Add semi-transparent background gradient to the site header by using a pseudo-element */
+	header#site-header:before {
+		background:linear-gradient(145deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5) 30%, rgba(0,0,0,0));
+		z-index:-1;
+	}
+
+	/* Style site header */
+	.header-inner {
+		margin-left:0;
+	}
+
+	/* Set background color of navigation bar */
+	div.header-navigation-wrapper {
+	    background-color: #005239;
+	}
+
+	/* Set link hover underline color for top level of main navigation bar */
+	ul.primary-menu > li > a:hover::after {
+	    background-color: #ffc733;
+	}
+
+	/* Style currently-active top menu item */
+	ul.primary-menu li.current-menu-item > a::after {
+	    background-color: #ffc733;
+	}
+
+	/* Fix header icons for larger screens */
+	.header-inner .toggle {
+		align-items: center;
+		padding: 0 2rem;
+	}
+
+	/* Style the toggle-inner container (contains the search icon) */
+	.toggle-inner{
+		position: static;
+	}
+
+	/* Style page title for full width template */
+	body.page-template-template-full-width div.entry-header-inner {
+		max-width:120rem;
+	}
+
+	/* Blog page customizations */
+	/* Add bottom margin to articles */
+	body.blog article {
+		margin-bottom:8em;
+	}
+
+}

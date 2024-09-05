@@ -1,4 +1,36 @@
 /* people styling */
 
-/* Default and small screens */
-@import 'people-default.css';
+
+/*--- Default and small screens ---*/
+
+/* On single person posts, hide the post date, as it is not relevant to the person post type */
+body.single-person li.post-date.meta-wrapper {display:none;}
+
+/* On single person posts, hide the post featured image, as we want to display it differently for people */
+body.single-person figure.featured-media {display:none;}
+
+/* Style the single person listing */
+div.person-top {
+	display:flex;
+}
+
+/* Style the person image section */
+div.person-top div.person-image {
+	width:40%;
+	margin-right:2em;
+}
+
+/* Style the person top info section */
+div.person-top div.person-info {
+	width:60%;
+}
+
+/* Style the person bottom section */
+div.person-bottom {
+	margin-top:1.5em;
+}
+
+/* Hide the post navigation at the bottom of single post pages */
+article.type-person nav.pagination-single {
+	display:none;
+}

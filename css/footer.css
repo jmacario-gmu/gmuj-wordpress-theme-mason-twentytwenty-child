@@ -1,7 +1,143 @@
 /* Footer modifications to parent theme */
 
-/* Default and small screens */
-@import 'footer-default.css';
+/*--- Default and small screens ---*/
 
-/* 700+ pixels */
-@import 'footer-700+.css' screen and (min-width: 700px);
+/* Style footer */
+footer#site-footer {
+	/* Colors */
+		color:#fff;
+		background-color: #005239;
+	/* Add Mason M graphic element */
+	    background-image: url('../images/graphic-element-gm-803x580.png');
+		background-size: 90rem;
+		background-repeat: no-repeat;
+		background-position: 0% 45%;
+}
+
+/* Remove flex display from footer div.section-inner and set max width */
+footer#site-footer div.section-inner {
+	display:block;
+	max-width: 76em;
+}
+
+/* Hide parent theme footer elements */
+	/* Copyright*/
+	footer#site-footer p.footer-copyright {
+	    display:none;
+	}
+	/* WordPress message*/
+	footer#site-footer p.powered-by-wordpress {
+	    display:none;
+	}
+	/* Back to top link*/
+	footer#site-footer a.to-the-top {
+	    display:none;
+	}
+
+/* Style footer links */
+footer#site-footer a {
+	color:white;
+	text-decoration:none;
+}
+
+/* Style mason logo */
+footer#site-footer p.footer-logo {
+    text-align:center;
+}
+footer#site-footer p.footer-logo img {
+    max-width:150px;
+    display:inline;
+}
+
+/* Style slogan/address/contact/copyright block */
+footer#site-footer p.footer-slogan-address-copyright-contact {
+    font-weight: bold;
+    font-size: 14px;
+	text-align:center;
+	line-height:30px;
+}
+
+/* Style site slogan */
+footer#site-footer p.footer-slogan-address-copyright-contact span.site-slogan {
+    font-family:'Figtree', sans-serif;
+    font-weight:600;
+    letter-spacing: 0.025em;
+    color: #ffc733;
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+/* Style footer menu */
+footer#site-footer ul#footer-menu {
+	display:flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-top: 1em;
+	margin-bottom: 0;
+	margin-left:0;
+	border-top:1px solid white;
+	padding-top: 1em;
+	list-style-type:none;
+	font-size: 0.8em;
+	color:white;
+}
+
+footer#site-footer ul#footer-menu li {
+	margin: 1em 0;
+	border-right: 1px solid white;
+	padding: 0 1.5em;
+}
+
+footer#site-footer ul#footer-menu li:last-of-type {
+	border-right: none;
+}
+
+footer#site-footer ul#footer-menu a {
+	color:white;
+}
+
+/* Style footer social menu */
+#site-footer .footer-social {
+	justify-content: center;
+	margin-bottom: 2rem;
+}
+#site-footer ul.social-icons {
+	width: auto;
+}
+#site-footer .footer-social a {
+	background-color: transparent !important;
+	width: 3.5rem;
+	height: 3.5rem;
+}
+#site-footer .footer-social svg{
+	/*max-width: 55%;*/
+	height:50px;
+	width:50px;
+}
+
+/*--- 700+ pixels ---*/
+@media screen and (min-width: 700px) {
+
+	/* Style footer social menu */
+	#site-footer .footer-social {
+	    justify-content: flex-end;
+	}
+
+	footer#site-footer div.footer-credits {
+	    width: 100%;
+	    align-items: flex-end;
+	    justify-content: space-between;
+	}
+
+	/* Style mason logo */
+	footer#site-footer p.footer-logo img {
+	    max-width: 9em;
+	    margin-top: 0.9em;
+	}
+
+	/* Style slogan/address/contact/copyright block */
+	footer#site-footer p.footer-slogan-address-copyright-contact {
+	    text-align:right;
+	}
+
+}

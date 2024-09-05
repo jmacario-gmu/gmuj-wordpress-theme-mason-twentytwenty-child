@@ -1,10 +1,93 @@
 /* University breadcrumbs bar */
 
-/* Default and small screens */
-@import 'university-breadcrumbs-bar-default.css';
+/*--- Default and small screens ---*/
 
-/* Default and small screens */
-@import 'university-breadcrumbs-bar-400+.css';
+#university-breadcrumbs-bar {
+    color: #005239;
+    padding:0.25em 0.5em;
+    font-size:0.9em;
+    display: none;
+}
 
-/* 1,000+ pixels */
-@import 'university-breadcrumbs-bar-1000+.css' screen and (min-width: 1000px);
+#university-breadcrumbs-bar a {
+    text-decoration: none;
+}
+
+#university-breadcrumbs-bar ul {
+    margin-bottom: 0;
+    margin-left:0;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+#university-breadcrumbs-bar ul li {
+    margin-top:0;
+    margin-left:0;
+}
+
+#university-breadcrumbs-bar ul#university-breadcrumbs a {
+    color:#005239;
+}
+
+#university-breadcrumbs-bar ul#university-breadcrumbs a:hover {
+    text-decoration:underline;
+}
+
+
+/* now that we have the new header logo, hide the university text link */
+#university-breadcrumbs-bar #university {
+    display:none;
+}
+
+#university-breadcrumbs-bar #unit span.fa {
+    margin-right:0.5em;
+}
+
+#university-breadcrumbs-bar .divider {
+    margin-left:0.5em;
+    margin-right:0.5em;
+}
+
+/*--- 1,000+ pixels ---*/
+@media screen and (min-width: 1000px) {
+
+	#university-breadcrumbs-bar {
+	    display: flex;
+	    justify-content: space-between;
+	}
+
+	#university-breadcrumbs-bar ul li {
+	    padding-left:1em;
+	}
+
+	#university-breadcrumbs-bar {
+	    padding:0 0.5em;
+	}
+
+	#university-breadcrumbs-bar .links li {
+	    display: inline-block;
+	}
+
+	#university-breadcrumbs-bar .links a {
+	    line-height: 50px;
+	}
+
+	#university-breadcrumbs-bar div.left-side ul#university-breadcrumbs.links li {
+	    padding-left: 0.5em;
+	    white-space:nowrap;
+	}
+	#university-breadcrumbs-bar div.left-side ul#university-breadcrumbs.links li:first-of-type {
+	    padding-left: 1em;
+	}
+
+	#university-breadcrumbs-bar div.left-side ul#university-breadcrumbs.links li#university {
+	    padding-left:0.5em;
+	}
+
+	#university-breadcrumbs-bar .divider {
+	    margin-left:0.5em;
+	    margin-right:0.5em;
+	}
+
+}

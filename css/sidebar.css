@@ -1,11 +1,225 @@
 /* sidebar styling */
 
-/* Default and small screens */
-@import 'sidebar-default.css';
 
-/* 700+ pixels */
-@import 'sidebar-700+.css' screen and (min-width: 700px);
+/*--- Default and small screens ---*/
 
-/* 800+ pixels */
-@import 'sidebar-800+.css' screen and (min-width: 800px);
+/* Style sidebar wrapper, which contains two elements: the actual sidebar div, and the original regular content div */
+.gmuj-sidebar-wrapper {
 
+}
+
+/* Style sidebar div - by default, don't display it */
+.gmuj-sidebar {
+	display:none;
+	margin-bottom: 2em;
+}
+
+/* Show the sidebar if we are on a 'singular' type page/post */
+body.singular .gmuj-sidebar {
+	display:block;
+}
+
+/* Style the post meta content area */
+.gmuj-sidebar-post-meta {
+	margin-top:1em;
+	margin-botom: 1em;
+}
+/* But no top margin when it's the first item */
+.gmuj-sidebar .gmuj-sidebar-post-meta:first-child {
+	margin-top:0;
+}
+
+/* Sidebar headings (both in widget and in post meta) */
+.gmuj-sidebar .widget h3, .gmuj-sidebar .gmuj-sidebar-post-meta h3 {
+	margin:0.5em 1px;
+	font-size: 1em;
+	font-weight: normal;
+	color: white;
+	background-color: #006940;
+	padding: 1em;
+	min-width: 12em;
+}
+
+/* Sidebar ULs */
+.gmuj-sidebar ul {
+	margin:1px;
+	list-style-type: none;
+}
+
+.gmuj-sidebar li {
+	margin:1px 0;
+	font-size: 1em;
+	font-weight: normal;
+	padding: 1em;
+	border-bottom: 1px solid #cdd5d4;
+}
+
+.gmuj-sidebar li a {
+	display: block;
+	color: #005239;
+}
+
+/* Sidebar As */
+.gmuj-sidebar a {
+	text-decoration:none;
+}
+
+/* Sidebar Ps */
+.gmuj-sidebar p {
+	margin: 1em;
+}
+
+/* Style the nav menus in the sidebar */
+.gmuj-sidebar .widget_nav_menu {
+	font-size: 0.9em;
+}
+
+.gmuj-sidebar .widget_nav_menu li {
+	min-width: 12em;
+	background-color: #f1f2f3;
+	border-bottom: none;
+}
+
+/* Nav menu links  */
+.gmuj-sidebar .widget_nav_menu li a {
+	color: #005239;
+	font-weight: normal;
+}
+
+/* Nav menu current page */
+.gmuj-sidebar .widget_nav_menu li.current_page_item > a {
+	color: #114145;
+	font-weight: bold;
+}
+
+/* but different first child LI */
+.gmuj-sidebar .widget_nav_menu ul.menu > li:first-child {
+	color: white;
+	background-color: #006940;
+	position: relative;
+}
+.gmuj-sidebar .widget_nav_menu ul.menu > li:first-child a {
+	color: white;
+}
+.gmuj-sidebar .widget_nav_menu ul.menu > li.current_page_item:first-child > a {
+	color: white;
+}
+
+/* Nav menu sub menus */
+.gmuj-sidebar .widget_nav_menu .sub-menu li {
+	margin-left: 0;
+	padding-bottom: 0;
+}
+
+/* Custom widgets */
+/* CTA list */
+.gmuj-sidebar .widget_gmuj_widget_cta_list ul.cta-menu {
+	display: block;
+}
+.gmuj-sidebar .widget_gmuj_widget_cta_list ul.cta-menu li {
+	margin: 0.5em 0 !important;
+}
+.gmuj-sidebar .widget_gmuj_widget_cta_list ul.cta-menu li a {
+	padding: 0.5em 0;
+}
+
+/* CTA menu */
+.gmuj-sidebar .widget_gmuj_widget_call_to_action_menu ul.cta-menu {
+	display: block;
+}
+.gmuj-sidebar .widget_gmuj_widget_call_to_action_menu ul.cta-menu li {
+	margin: 0.5em 0 !important;
+}
+.gmuj-sidebar .widget_gmuj_widget_call_to_action_menu ul.cta-menu li a {
+	padding: 0.5em 0;
+}
+
+/* Widget which use the display grid */
+.gmuj-sidebar .widget_gmuj_widget_display_list_grid_container {
+	margin-right: 1em;
+}
+
+/*--- 700+ pixels ---*/
+@media screen and (min-width: 700px) {
+
+	.gmuj-sidebar-wrapper {
+		width: calc(100% - 8rem);
+		max-width: 120rem;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+}
+
+/*--- 800+ pixels ---*/
+@media screen and (min-width: 800px) {
+
+	/* Hide the sidebar on the narrow (default) template */
+	body.singular .gmuj-sidebar {
+		display:none;
+	}
+
+	/* On only singular pages using the full-width template, Style sidebar wrapper, which contains two elements: the actual sidebar div, and the original regular content div */
+	body.singular.page-template-template-full-width .gmuj-sidebar-wrapper {
+		display:flex;
+	}
+
+	/* On only singular pages using the full-width template, style sidebar div */
+	body.singular.page-template-template-full-width .gmuj-sidebar {
+		display: block;
+		max-width:20em;
+	}
+
+	/* On only singular pages using the full-width template, style entry content area */
+	body.singular.page-template-template-full-width .entry-content {
+		flex-grow: 1;
+	}
+
+	.gmuj-sidebar > * {
+		margin-right: 2em;
+	}
+
+	/* Sidebar navigation menus */
+
+	/* Sidebar headings (both in widget and in post meta) */
+	.gmuj-sidebar .widget h3, .gmuj-sidebar .gmuj-sidebar-post-meta h3 {
+		/*margin:1px 2em 1px 0;*/
+		margin-top: 1px;
+		margin-bottom: 1px;
+	}
+
+	/* Sidebar ULs */
+	.gmuj-sidebar ul {
+		/*margin:1px 2em 1px 0;*/
+		margin-top: 1px;
+		margin-bottom: 1px;
+	}
+
+	.gmuj-sidebar ul ul {
+		margin-right:0;
+	}
+	.gmuj-sidebar ul ul ul {
+		margin-right:0;
+	}
+
+	/* extra visual element on navigation menu top links when active */
+	.gmuj-sidebar .widget_nav_menu ul.menu > li.current_page_item:first-child > a::after {
+		display: inline-block;
+		position: absolute;
+		top: 50%;
+		right: 0;
+		content: '';
+		border: 3px solid #006940;
+		background-color: #006940;
+		transform: rotate(45deg) translate(0, -50%);
+		padding: 3px;
+	}
+
+	/* style sidebar Search widget */
+	.gmuj-sidebar .search-form .search-submit {
+		margin-right: 2.1em;
+		padding: 0.75em 0.75em;
+		font-size:14px;
+	}
+
+}

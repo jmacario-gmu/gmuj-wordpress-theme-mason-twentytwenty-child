@@ -1,4 +1,37 @@
 /* prominent links menu */
 
 /* Default and small screens */
-@import 'prominent-links-default.css';
+
+ul#prominent-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin:1em;
+}
+
+ul#prominent-links li {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+ul#prominent-links li:not(:last-child)::after {
+    content: '|';
+    color: #005239;
+    display: inline-block;
+    font-size: .75em;
+}
+
+ul#prominent-links a {
+    display:block;
+    font-size: inherit;
+    font-weight: 600;
+    color: #005239;
+    text-decoration: none;
+    letter-spacing: normal;
+    margin: .5rem 2rem;
+}
+
+ul#prominent-links a:hover {
+    text-decoration: underline;
+}
