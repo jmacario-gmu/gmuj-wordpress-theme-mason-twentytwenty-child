@@ -563,6 +563,10 @@
 	}
 
 	/* style header logo */
+	.header-logo {
+		margin-left:unset;
+	}
+
 	/* allow for larger logo */
 	.site-logo img {
 		max-height: 13rem;
@@ -580,8 +584,6 @@
 		display: flex;
 		flex-wrap: nowrap;
 		justify-content: space-between;
-		margin-left: 2em;
-	    margin-right: 1em;
 	}
 
 	/* Style site header */
@@ -635,6 +637,22 @@
 	/* Add bottom margin to articles */
 	body.blog article {
 		margin-bottom:8em;
+	}
+
+}
+
+/*--- 1,100+ pixels ---*/
+@media screen and (min-width: 1100px) {
+
+	/* style custom header logo */
+	.header-logo {
+		margin-left:1.75em;
+	}
+
+	/* header links */
+	.gmuj-header-links {
+		margin-left: 2em;
+	    margin-right: 1em;
 	}
 
 }
