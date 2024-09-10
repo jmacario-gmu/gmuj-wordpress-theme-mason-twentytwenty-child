@@ -11,6 +11,26 @@ ul.primary-menu li a:hover {
     text-decoration:none;
 }
 
+/* fix style of pop-up sub menus */
+.primary-menu ul {
+    /* remove border radius */
+    border-radius: 0;
+    /* remove spacing at the top */
+    top: calc(100% + 1.6rem);
+}
+/* remove little sub menu "arrow" on all pop-up menus */
+/* or only top-level pop-up menus */
+/* .primary-menu > li > ul::before, .primary-menu > li > ul::after { */
+.primary-menu ul::before, .primary-menu ul::after {
+    content: unset;
+}
+/* sub-sub menus */
+.primary-menu ul li.menu-item-has-children:hover > ul,
+.primary-menu ul li.menu-item-has-children:focus > ul,
+.primary-menu ul li.menu-item-has-children.focus > ul {
+  right: calc(100% + 0.1rem);
+}
+
 /*--- 1,000+ pixels ---*/
 @media screen and (min-width: 1000px) {
 
