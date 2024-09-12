@@ -74,3 +74,12 @@ require(get_stylesheet_directory() . '/php/custom-site-icon.php');
   __FILE__,
   'gmuj-wordpress-theme-mason-twentytwenty-child'
   );
+
+// temporary fix for updating the old tagline
+add_action( 'init', function() {
+  //if the site tagline theme mod is the old tagline, update it to the new one
+  if (preg_match("/Patriots Brave (and|&(amp;)?) Bold/i", get_theme_mod('gmuj_site_tagline'))) {
+    set_theme_mod('gmuj_site_tagline', 'All Together Different');
+  }
+});
+// end temporary fix for updating the old tagline
