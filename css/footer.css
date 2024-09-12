@@ -21,10 +21,6 @@ footer#site-footer div.section-inner {
 }
 
 /* Hide parent theme footer elements */
-	/* Copyright*/
-	footer#site-footer p.footer-copyright {
-	    display:none;
-	}
 	/* WordPress message*/
 	footer#site-footer p.powered-by-wordpress {
 	    display:none;
@@ -42,6 +38,7 @@ footer#site-footer a {
 
 /* Style mason logo */
 footer#site-footer p.footer-logo {
+    padding-top: 15px;
     text-align:center;
 }
 footer#site-footer p.footer-logo img {
@@ -50,21 +47,55 @@ footer#site-footer p.footer-logo img {
 }
 
 /* Style slogan/address/contact/copyright block */
-footer#site-footer p.footer-slogan-address-copyright-contact {
-    font-weight: bold;
-    font-size: 14px;
-	text-align:center;
-	line-height:30px;
+.footer-social-slogan-contact-copyright {
+	padding-top: 30px;
 }
-
+/* Style footer social menu */
+#site-footer .footer-social {
+	justify-content: center;
+	margin-bottom: 0.25em;
+}
+#site-footer ul.social-icons {
+	width: auto;
+}
+#site-footer .footer-social a {
+	background-color: transparent !important;
+	width: 3.5rem;
+	height: 3.5rem;
+}
+#site-footer .footer-social svg{
+	/*max-width: 55%;*/
+	height:50px;
+	width:50px;
+}
+/* style social footer links */
+ul.footer-social li {
+	margin-left: 1.75rem;
+}
 /* Style site slogan */
-footer#site-footer p.footer-slogan-address-copyright-contact span.site-slogan {
+footer#site-footer .site-slogan {
     font-family:'Figtree', sans-serif;
-    font-weight:600;
+    font-weight:700;
     letter-spacing: 0.025em;
     color: #ffc733;
     font-size: 28px;
     text-transform: uppercase;
+    line-height: 2;
+}
+/* text block */
+footer#site-footer .footer-slogan-address-copyright-contact {
+    font-weight: 600;
+    font-size: 16px;
+	text-align:center;
+	line-height:28px;
+	margin-bottom:0;
+	letter-spacing: normal;
+}
+/* Copyright*/
+footer#site-footer .footer-copyright {
+	font-size: 14px;
+	font-weight:600;
+	line-height: 21px
 }
 
 /* Style footer menu */
@@ -72,7 +103,7 @@ footer#site-footer ul#footer-menu {
 	display:flex;
 	justify-content: center;
 	flex-wrap: wrap;
-	margin-top: 1em;
+	margin-top: 0.5em;
 	margin-bottom: 0;
 	margin-left:0;
 	border-top:1px solid white;
@@ -96,25 +127,6 @@ footer#site-footer ul#footer-menu a {
 	color:white;
 }
 
-/* Style footer social menu */
-#site-footer .footer-social {
-	justify-content: center;
-	margin-bottom: 2rem;
-}
-#site-footer ul.social-icons {
-	width: auto;
-}
-#site-footer .footer-social a {
-	background-color: transparent !important;
-	width: 3.5rem;
-	height: 3.5rem;
-}
-#site-footer .footer-social svg{
-	/*max-width: 55%;*/
-	height:50px;
-	width:50px;
-}
-
 /*--- 700+ pixels ---*/
 @media screen and (min-width: 700px) {
 
@@ -125,7 +137,7 @@ footer#site-footer ul#footer-menu a {
 
 	footer#site-footer div.footer-credits {
 	    width: 100%;
-	    align-items: flex-end;
+	    align-items: flex-start;
 	    justify-content: space-between;
 	}
 

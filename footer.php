@@ -44,7 +44,7 @@
 							</a>
 						</p>
 
-						<div>
+						<div class="footer-social-slogan-contact-copyright">
 							<!-- Footer Social menu -->
 							<?php get_template_part('template-parts/menu','footer-social'); ?>
 
@@ -59,7 +59,7 @@
 								}
 								// If a custom address was *not* provided in theme customizer, use default address
 								if (!get_theme_mod('gmuj_contact_address_line_1') && !get_theme_mod('gmuj_contact_address_line_2') && !get_theme_mod('gmuj_contact_address_line_3')) {
-									echo '4400 University Drive, Fairfax, Virginia 22030<br />';
+									echo 'George Mason University<br />4400 University Drive<br />Fairfax, Virginia 22030<br />';
 
 								}
 								?>
@@ -95,9 +95,12 @@
 
 								<!--Contact phone number from theme customizer-->
 								<?php if (get_theme_mod('gmuj_contact_phone')) {
-									echo 'Call: ';
+									echo 'Tel: ';
 									echo get_theme_mod('gmuj_contact_phone');
 									echo '<br />';
+								} else {
+									//default phone number content
+									echo 'Tel: +1703-993-1000<br />';
 								}
 								?>
 
@@ -110,18 +113,9 @@
 								?>
 
 								<!--Copyright notice-->
-								&copy; <span style="font-weight:normal;"><?php echo date("Y"); ?> George Mason University</span>
+								<span class="footer-copyright">&copy; <?php echo date("Y"); ?> George Mason University</span>
 							</p>
 						
-							<p class="footer-copyright">&copy;
-								<?php
-								echo date_i18n(
-									/* translators: Copyright date format, see https://secure.php.net/date */
-									_x( 'Y', 'copyright date format', 'twentytwenty' )
-								);
-								?>
-								<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a>
-							</p><!-- .footer-copyright -->
 						</div>
 
 						<p class="powered-by-wordpress">
