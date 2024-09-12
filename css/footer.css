@@ -87,7 +87,7 @@ footer#site-footer .footer-slogan-address-copyright-contact {
     font-weight: 600;
     font-size: 16px;
 	text-align:center;
-	line-height:28px;
+	line-height: 25px;
 	margin-bottom:0;
 	letter-spacing: normal;
 }
@@ -109,7 +109,7 @@ footer#site-footer ul#footer-menu {
 	border-top:1px solid white;
 	padding-top: 1em;
 	list-style-type:none;
-	font-size: 0.8em;
+	font-size: 16px;
 	color:white;
 }
 
@@ -127,8 +127,24 @@ footer#site-footer ul#footer-menu a {
 	color:white;
 }
 
+
 /*--- 700+ pixels ---*/
 @media screen and (min-width: 700px) {
+
+	/* ensure footer stays as block display, not flex as the parent theme directs */
+	.footer-credits {
+		display: block;
+	}
+
+}
+
+/*--- 1000+ pixels ---*/
+@media screen and (min-width: 1000px) {
+
+	/* change footer to flex */
+	.footer-credits {
+		display: flex;
+	}
 
 	/* Style footer social menu */
 	#site-footer .footer-social {
