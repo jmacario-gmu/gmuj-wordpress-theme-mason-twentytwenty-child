@@ -27,8 +27,8 @@ function gmuj_login_stylesheet() {
 add_filter('login_headerurl', 'mhtp_login_header_url');
 function mhtp_login_header_url() {
 
-	// Return appropriate URL for login header link
-		return 'https://www2.gmu.edu';
+	//return appropriate URL for login header link
+	return 'https://www.gmu.edu';
 
 }
 
