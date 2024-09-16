@@ -104,10 +104,10 @@
 							echo '<div class="site-name"><a href="'.get_home_url().'">'.get_bloginfo('name').'</a></div>';
 
 							// Site description.
-							twentytwenty_site_description();
+							//twentytwenty_site_description();
 						?>
 
-					</div><!-- .header-titles -->
+					</div>--><!-- .header-titles -->
 
 					<button class="toggle nav-toggle mobile-nav-toggle" data-toggle-target=".menu-modal"  data-toggle-body-class="showing-menu-modal" aria-expanded="false" data-set-focus=".close-nav-toggle">
 						<span class="toggle-inner">
