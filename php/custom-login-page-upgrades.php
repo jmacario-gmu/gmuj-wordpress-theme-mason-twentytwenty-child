@@ -38,8 +38,11 @@ function mhtp_login_header_url() {
 add_filter( 'login_message', 'gmuj_custom_login_message' );
 function gmuj_custom_login_message() {
 
-	// Return appropriate login message
-		return 'George Mason University WordPress';
+	//return appropriate login message
+	//return 'George Mason University WordPress';
+
+	//return nothing (no message)
+	return false;
 
 }
 
