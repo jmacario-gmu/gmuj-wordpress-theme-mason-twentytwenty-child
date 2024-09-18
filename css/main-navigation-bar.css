@@ -18,11 +18,9 @@ ul.primary-menu li a:hover {
     /* remove spacing at the top */
     top: calc(100% + 1.6rem);
 }
-/* remove little sub menu "arrow" on all pop-up menus */
-/* or only top-level pop-up menus */
-/* .primary-menu > li > ul::before, .primary-menu > li > ul::after { */
+/* hide little sub menu "arrow" on all pop-up menus */
 .primary-menu ul::before, .primary-menu ul::after {
-    content: unset;
+    opacity:0;
 }
 /* sub-sub menus */
 .primary-menu ul li.menu-item-has-children:hover > ul,
