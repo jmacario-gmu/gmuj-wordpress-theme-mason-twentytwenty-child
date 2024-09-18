@@ -458,7 +458,10 @@
 
 	/* style hr post separators */
 	.entry-content hr, hr.styled-separator {
-		border:1px solid #999999;
+		border: none;
+		border-bottom: 1px solid #999999;
+		height: 1px;
+		margin: 1.6rem auto;
 	}
 
 	/* remove hr accent */
