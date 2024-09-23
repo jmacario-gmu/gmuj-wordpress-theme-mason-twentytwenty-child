@@ -34,13 +34,7 @@
     text-decoration:underline;
 }
 
-
-/* now that we have the new header logo, hide the university text link */
-#university-breadcrumbs-bar #university {
-    display:none;
-}
-
-#university-breadcrumbs-bar #unit span.fa {
+#university-breadcrumbs-bar span.fa {
     margin-right:0.5em;
 }
 
@@ -79,10 +73,6 @@
 	}
 	#university-breadcrumbs-bar div.left-side ul#university-breadcrumbs.links li:first-of-type {
 	    padding-left: 1em;
-	}
-
-	#university-breadcrumbs-bar div.left-side ul#university-breadcrumbs.links li#university {
-	    padding-left:0.5em;
 	}
 
 	#university-breadcrumbs-bar .divider {

@@ -3,10 +3,12 @@
     <div class="left-side">
         <!--University breadcrumbs-->
         <ul id="university-breadcrumbs" class="links">
-            <li id="university">
-                <a href="https://www.gmu.edu"><span class="fa fa-chevron-circle-left"></span> George Mason University</a></li>
-
             <?php
+
+            // If a unit has not been specified in the theme customizer, display the default university link
+            if (empty(get_theme_mod('gmuj_mason_unit'))) {
+                echo '<li id="university"><a href="https://www.gmu.edu"><span class="fa fa-chevron-circle-left"></span> George Mason University</a></li>';
+            }
             // If a unit has been specified in the theme customizer, display it
             if (get_theme_mod('gmuj_mason_unit')) {
                 // Start li tag
