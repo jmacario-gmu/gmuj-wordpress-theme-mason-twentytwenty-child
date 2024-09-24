@@ -35,7 +35,7 @@ body.singular .gmuj-sidebar {
 	font-size: 1em;
 	font-weight: normal;
 	color: white;
-	background-color: #006940;
+	background-color: #005239;
 	padding: 1em;
 	min-width: 12em;
 }
@@ -95,7 +95,7 @@ body.singular .gmuj-sidebar {
 /* but different first child LI */
 .gmuj-sidebar .widget_nav_menu ul.menu > li:first-child {
 	color: white;
-	background-color: #006940;
+	background-color: #005239;
 	position: relative;
 }
 .gmuj-sidebar .widget_nav_menu ul.menu > li:first-child a {
@@ -209,8 +209,8 @@ body.singular .gmuj-sidebar {
 		top: 50%;
 		right: 0;
 		content: '';
-		border: 3px solid #006940;
-		background-color: #006940;
+		border: 3px solid #005239;
+		background-color: #005239;
 		transform: rotate(45deg) translate(0, -50%);
 		padding: 3px;
 	}
