@@ -7,7 +7,7 @@
 </p>
 <p>For more information about this theme, please visit the <a href="https://wordpress.gmu.edu" target="_blank">Mason 2020 platform website</a>.</p>
 
-<h3><strong>Customize Your Site<strong></h3>
+<h3><strong>Customize Your Site</strong></h3>
 <ul>
 <?php 
 // Show link to Mason Meta Information plugin, if it is active
