@@ -155,6 +155,22 @@ function gmuj_enqueue_styles() {
 }
 
 /**
+ * Enqueue admin styles for this theme
+ */
+add_action( 'admin_enqueue_scripts', 'gmuj_enqueue_styles_admin' );
+function gmuj_enqueue_styles_admin() {
+
+    // customizer
+    wp_enqueue_style(
+        'gmuw-style-customizer',
+        get_stylesheet_directory_uri() . '/css/customizer.css',
+        '',
+        time()
+    );
+
+}
+
+/**
  * Dequeue some parent theme styles
  *
  * Hooked to the admin_enqueue_scripts action, with a late priority (100),

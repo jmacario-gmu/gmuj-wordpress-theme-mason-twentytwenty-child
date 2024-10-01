@@ -1,0 +1,15 @@
+/* customizer style modifications */
+
+
+/*--- Default and small screens ---*/
+
+
+/* hide the retina logo control in the site identity section of the customizer (only visible if a logo is specified) */
+body.wp-customizer li#customize-control-retina_logo {
+	display:none !important;
+}
+
+/* hide the colors section of the customizer */
+body.wp-customizer li#accordion-section-colors {
+	display:none !important;
+}
