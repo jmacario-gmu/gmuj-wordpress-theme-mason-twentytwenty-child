@@ -15,9 +15,6 @@ function gmuj_theme_customizer_register($wp_customize) {
   // Remove site tagline control
     $wp_customize->remove_control('blogdescription');
 
-  // Remove retina logo control
-    $wp_customize->remove_control('retina_logo');
-
   // Field: gmuj_site_tagline
       $wp_customize->add_setting('gmuj_site_tagline');
       $wp_customize->add_control('gmuj_site_tagline',
@@ -189,9 +186,6 @@ function gmuj_theme_customizer_register($wp_customize) {
 
     // Remove custom header and footer background color control
       $wp_customize->remove_control('header_footer_background_color');
-
-    // Remove custom primary color control
-      $wp_customize->remove_control('accent_hue_active');
 
   // Field: theme color scheme (gmuj_theme_color)
       $wp_customize->add_setting('gmuj_theme_color',
