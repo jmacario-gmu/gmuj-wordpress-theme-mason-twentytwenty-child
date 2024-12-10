@@ -31,22 +31,29 @@
 
 		<!-- Child theme customization: top header -->
 		<div class="top-header">
+
 		<!-- Child theme customization: top logo -->
+		<?php
+		//set site header logo image and link
+		//get custom logo from theme customizer, if any
+		$customizer_custom_logo_image_url = wp_get_attachment_image_url(get_theme_mod('custom_logo'), 'full', false);
+		//if there is no custom logo specified in the theme customizer, use the default image and link
+		if (!$customizer_custom_logo_image_url) {
+			$header_logo_image_url = get_stylesheet_directory_uri() . '/images/mason-logo-horizontal.png';
+			$header_logo_link_url = 'https://www.gmu.edu';
+		} else {
+			//if there is a custom logo specified in the theme customizer, use the custom logo and the site's home url
+			$header_logo_image_url = $customizer_custom_logo_image_url;
+			$header_logo_link_url = get_home_url();
+		}
+		?>
 		<p class="header-logo">
-			<a href="https://www.gmu.edu">
-				<?php
-				//set header logo
-				//get theme customizer logo
-				$header_logo_image = wp_get_attachment_image_url(get_theme_mod('custom_logo'), 'full', false);
-				//if there is no logo specified in the theme customizer, use the default
-				if (!$header_logo_image) {
-					$header_logo_image = get_stylesheet_directory_uri() . '/images/mason-logo-horizontal.png';
-				}
-				?>
-				<img src="<?php echo $header_logo_image; ?>" alt="George Mason University logo" />
+			<a href="<?php echo $header_logo_link_url; ?>">
+				<img src="<?php echo $header_logo_image_url; ?>" alt="George Mason University logo" />
 			</a>
 		</p>
 		<!-- /Child theme customization: top logo -->
+
 		<!-- Child theme customization: top title -->
 		<div class="site-name">
 			<a href="<?php echo get_home_url()?>"><?php echo get_bloginfo('name')?></a>
