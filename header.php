@@ -141,7 +141,7 @@
 								if ( has_nav_menu( 'primary' ) ) {
 
 									//Child theme customization: main nav home link
-									echo '<li><a href="/"><i class="fa fa-home" aria-hidden="true"></i></a></li>';
+									echo '<li class="gmuw_main_nav_home"><a href="/"><i class="fa fa-home" aria-hidden="true"></i></a></li>';
 									//End child theme customization: main nav home link
 
 									wp_nav_menu(
