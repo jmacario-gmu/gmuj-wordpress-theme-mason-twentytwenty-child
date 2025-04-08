@@ -27,7 +27,7 @@ general editor styles
  h2.rich-text.block-editor-rich-text__editable,
  h3.rich-text.block-editor-rich-text__editable,
  h4.rich-text.block-editor-rich-text__editable,
- h5.rich-text.block-editor-rich-text__editable,
+ h5.rich-text.block-editor-rich-text__editable
  h6.rich-text.block-editor-rich-text__editable,
  .has-medium-font-size,
  #post-title-0
@@ -90,10 +90,12 @@ h4.rich-text.block-editor-rich-text__editable {
 
 h5.rich-text.block-editor-rich-text__editable {
     font-size: 25px;
+    color: #333;
 }
 
 h6.rich-text.block-editor-rich-text__editable {
     font-size: 20px;
+    color: #333;
 }
  
  p.rich-text.block-editor-rich-text__editable {
@@ -163,7 +165,7 @@ cite {
 
  /* Standard Wordpress Details block */
  details.block-editor-block-list__block > summary {
-    font-family: Palatino Linotype, Palatino, serif;
+    font-family: 'Open Sans', sans-serif;
     color: #005239;
     font-size: 24px;
     font-weight: bold;
@@ -175,4 +177,7 @@ details.block-editor-block-list__block > :not(summary) {
     padding: 0;
   }
 
- 
+ /* Columns block in block editor */
+ .block-editor-block-list__block .wp-block-column {
+    border: dotted 1px #333;
+  }
