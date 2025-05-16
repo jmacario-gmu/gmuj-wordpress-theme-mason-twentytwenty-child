@@ -472,6 +472,26 @@
 		display:none;
 	}
 
+	/* Set figcaption width to match figure image */
+	/*.entry-content figure {*/
+	.entry-content > figure:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide) {
+		display: table;
+		width: auto;
+	}
+	.entry-content figure figcaption{
+		display: table-caption;
+		caption-side: bottom;
+	}
+
+	/* Special condition for when image block uses "Full width" alignment style */
+	.entry-content .alignfull {
+		width: 100%;
+	}
+	.entry-content .alignfull > figcaption{
+		width: 100%;
+		max-width: 100%;
+	}
+
 /*--- 700+ pixels ---*/
 @media screen and (min-width: 700px) {
 
