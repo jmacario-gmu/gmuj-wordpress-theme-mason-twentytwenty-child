@@ -79,20 +79,6 @@
 			</td>
 		</tr>
 		<tr>
-			<td><a href="https://wordpress.org/plugins/jquery-collapse-o-matic/" target="_blank">Collapse-O-Matic</a></td>
-			<td>Organize content with expandable content areas</td>
-			<td>
-				<?php
-				// Indicate whether this plugin is active
-				if (gmuj_is_plugin_active('jquery-collapse-o-matic/collapse-o-matic.php')) {
-					echo '<span style="color:green;" class="dashicons dashicons-yes"></span>';
-				} else {
-					echo '<span style="color:red;" class="dashicons dashicons-no-alt"></span>';
-				}
-				?>
-			</td>
-		</tr>
-		<tr>
 			<td><a href="https://wordpress.org/plugins/the-events-calendar/" target="_blank">The Events Calendar</a></td>
 			<td>Easily create and manage an events calendar</td>
 			<td>
