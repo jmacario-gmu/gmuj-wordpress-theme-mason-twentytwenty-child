@@ -123,6 +123,11 @@ function gmuj_register_meta_boxes_people() {
 	                'type'  => 'text', // Field type
 	            ),
 	            array(
+	                'name' => 'Department', // Field name - Will be used as label
+	                'id' => $prefix . 'department', // Field ID, i.e. the meta key
+	                'type'  => 'text', // Field type
+	            ),
+	            array(
 	                'name' => 'Phone Number', // Field name - Will be used as label
 	                'id' => $prefix . 'contact_phone', // Field ID, i.e. the meta key
 	                'desc' => 'Format: 555-123-1234', // Field description (optional)
