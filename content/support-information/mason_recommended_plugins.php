@@ -51,20 +51,6 @@
 			</td>
 		</tr>
 		<tr>
-			<td>Mason Sucuri Integration</td>
-			<td>Integration with our web application firewall</td>
-			<td>
-				<?php
-				// Indicate whether this plugin is active
-				if (gmuj_is_plugin_active('gmuj-wordpress-plugin-mason-sucuri-integration/gmuj-wordpress-plugin-mason-sucuri-integration.php')) {
-					echo '<span style="color:green;" class="dashicons dashicons-yes"></span>';
-				} else {
-					echo '<span style="color:red;" class="dashicons dashicons-no-alt"></span>';
-				}
-				?>
-			</td>
-		</tr>
-		<tr>
 			<td><a href="https://wordpress.org/plugins/classic-widgets/" target="_blank">Classic Widgets</a></td>
 			<td>Restore the classic widgets settings screen</td>
 			<td>
