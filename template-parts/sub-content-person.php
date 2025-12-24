@@ -5,6 +5,7 @@ $gmuj_person_title = trim(get_post_meta(get_the_ID(), 'gmuj_person_title', true)
 $gmuj_contact_email = trim(get_post_meta(get_the_ID(), 'gmuj_contact_email', true));
 $gmuj_contact_phone = trim(get_post_meta(get_the_ID(), 'gmuj_contact_phone', true));
 $gmuj_website = trim(get_post_meta(get_the_ID(), 'gmuj_website', true));
+$gmuj_department = trim(get_post_meta(get_the_ID(), 'gmuj_department', true));
 	
 ?>
 
@@ -26,6 +27,10 @@ $gmuj_website = trim(get_post_meta(get_the_ID(), 'gmuj_website', true));
 				// job_title
 					if (!empty($gmuj_person_title)) {
 						echo '<p class="person-info--title"><span>Title:</span> '.$gmuj_person_title.'</p>';
+					}
+				// department
+					if (!empty($gmuj_department)) {
+						echo '<p class="person-info--department"><span>Department:</span> '.$gmuj_department.'</p>';
 					}
 
 				// email
