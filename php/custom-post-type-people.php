@@ -83,6 +83,7 @@ function gmuj_create_people_taxonomy() {
 				'menu_name' => 'Groups',
 				),
 			'show_ui' => true,
+			'show_in_rest' => true,
 			'query_var' => true,
 			'rewrite' => array( 'slug' => 'group' ),
 			)
