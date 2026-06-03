@@ -5,6 +5,17 @@
 
 
 /**
+ * Register a custom image size for slideshow slides.
+ * 1920x1080 (16:9), hard cropped so every slide has a consistent aspect ratio.
+ * The slideshow template (template-parts/slideshow.php) requests this 'homepage-slide'
+ * size; without it WordPress falls back to the full-size original.
+ */
+add_action('after_setup_theme', 'gmuj_register_slideshow_image_size');
+function gmuj_register_slideshow_image_size() {
+    add_image_size('homepage-slide', 1920, 1080, true);
+}
+
+/**
  * Register a custom post type for the homepage slider slides
  */
 add_action('init', 'gmuj_register_custom_post_type_slideshow');

@@ -15,6 +15,10 @@
 .gmuj-slide {
 	/*background-position: top center;*/
 	/*background-repeat: no-repeat;*/
+	/* !important is required: the inline `background` shorthand on each slide
+	   resets background-size to `auto`, and only !important can override an
+	   inline declaration. Applied at all widths so slides fill on mobile too. */
+	background-size: cover !important;
 	display: none;
 	cursor: grab;
 }
@@ -172,10 +176,6 @@
 
 	#gmuj-slideshow-wrapper {
 		z-index: 0;
-	}
-
-	.gmuj-slide {
-		background-size: cover !important;
 	}
 
 	.gmuj-slide-nav {
