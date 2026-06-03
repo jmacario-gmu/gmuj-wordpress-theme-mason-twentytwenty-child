@@ -95,18 +95,29 @@ if (count($slides) >= 1) {
 							}
 						?>
 						
+						<?php
+							// Only render the caption strip if it has something to show:
+							// body text and/or a visible CTA button. Prevents an empty
+							// black bar on image-only slides. (The title sits above the
+							// strip and is controlled separately by hide_title.)
+							$slide_content = trim( get_the_content() );
+							$show_cta = !get_post_meta( get_the_ID(), 'gmuj_slide_hide_cta', true );
+							if ( $slide_content !== '' || $show_cta ) {
+						?>
 						<div id="gmuj-slide-body-<?php the_ID(); ?>" class="gmuj-slide-body">
 
 							<div class="gmuj-slide-body-wrapper">
 
+								<?php if ( $slide_content !== '' ) { ?>
 								<div class="gmuj-slide-body-text">
 									<?php the_content(); ?>
 								</div>
+								<?php } ?>
 
 								<!-- slide CTA -->
 								<?php
 									// should we show or hide the cta?
-									if (!get_post_meta(get_the_ID(), 'gmuj_slide_hide_cta', true)) {
+									if ( $show_cta ) {
 										?>
 										<div class="gmuj-slide-cta">
 											<p>
@@ -123,6 +134,7 @@ if (count($slides) >= 1) {
 							</div>
 
 						</div>
+						<?php } // end caption strip ?>
 
 					</div>	
 
@@ -130,10 +142,15 @@ if (count($slides) >= 1) {
 
 		<?php endwhile; else: endif; wp_reset_query(); ?>
 
+	<?php
+		// Only show the previous/next arrows when there is more than one slide
+		if ( $slide_counter > 1 ) {
+	?>
 	<div class="gmuj-slide-nav">
 		<div class="gmuj-slide-nav-previous"><a href="#" onclick="gmuj_slide_back(); return false;">Previous Slide</a></div>
 		<div class="gmuj-slide-nav-next"><a href="#" onclick="gmuj_slide_forward(); return false;">Next Slide</a></div>
 	</div>
+	<?php } ?>
 
 </div>
 
