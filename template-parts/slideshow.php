@@ -51,7 +51,7 @@ if (count($slides) >= 1) {
 		$slide_counter=0;
 
 		// query homepage_slider custom post type posts
-		query_posts('post_type=slideshow&posts_per_page=7&orderby=menu_order&order=ASC&meta_key=gmuj_slide_show&meta_value=1');
+		query_posts('post_type=slideshow&posts_per_page=-1&orderby=menu_order&order=ASC&meta_key=gmuj_slide_show&meta_value=1');
 
 		// loop through posts
 		if (have_posts()) : while (have_posts()) : the_post();
