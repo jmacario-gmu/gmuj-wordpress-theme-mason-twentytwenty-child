@@ -197,3 +197,24 @@ function gmuj_register_meta_boxes_slideshow() {
           $columns['menu_order'] = 'menu_order';
           return $columns;
         });
+
+// thumbnail field
+    // include the field
+        add_filter('manage_slideshow_posts_columns', function ($columns) {
+          $columns['slide_thumbnail'] = "Image";
+          return $columns;
+        });
+    // render the data in the field
+        add_action('manage_slideshow_posts_custom_column', function ($column_name, $post_id){
+          if ($column_name == 'slide_thumbnail') {
+
+            //does this post have an image?
+            if (has_post_thumbnail($post_id)) {
+                //echo the 'thumbnail' size specifically
+                echo get_the_post_thumbnail($post_id, 'thumbnail', array('style' => 'max-width: 60px; height: auto;'));
+            } else {
+                echo '-';
+            }
+
+          }
+        }, 10, 2);
